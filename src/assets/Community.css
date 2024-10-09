@@ -1,0 +1,121 @@
+#Community{
+    min-height: 150vh;
+}
+#Community-title{
+    text-align: center;
+    font-size: 3.5rem;
+}
+.Community-reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 5%;
+    padding: 3%;
+    padding-top: 1%;
+}
+.Community-category{
+    padding-top: 1%;
+    background: var(--grey-light);
+}
+.Community-category > h2{
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    padding:0.75%;
+    color:var(--grey-lighter);
+    background:var(--grey-dark);
+}
+.Community-review > ul{
+    color: var(--grey-lighter);
+}
+.Community-review > .TeacherStar{
+    display: flex;
+    justify-content: center;
+}
+.Community-review > .TeacherStar > img{
+    width: 10%;
+}
+.Community-review{
+    width: 100%;
+    background: var(--grey-dark);
+    border-radius: 15px;
+    padding: 2%;
+}
+.Community-review-content{
+    background:var(--grey-light);
+    margin: 2%;
+    border-radius: 5px;
+}
+#Community-input-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#Community-input{
+    width: 40%;
+    min-width: 250px;
+    aspect-ratio: 10/1;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+.Community-category-review-relatable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--grey-lighter);
+    height: 7vw;
+    width: 80%;
+    margin: auto;
+    margin-top:20%;
+}
+.Community-category-review-relatable > img{
+    margin: 5%;
+    height: 50%;
+    fill: white;
+}
+.Community-category-review-relatable > img:hover{
+    cursor: pointer;
+}
+.Community-category-review-relatable > div{
+    width: 60%;
+    font-weight: bold;
+    height: 60%;
+}
+.Community-category-review-relatable-count{
+    /* width: 0%;*/
+    margin: 0;
+    text-align: center;
+}
+progress{
+    width: 100%;
+    height: 6.5px;
+    grid-column: 1 / span 2;
+    border-radius: 0;
+}
+progress::-webkit-progress-bar{
+    background: var(--black);
+}
+progress::-webkit-progress-value {
+    background: var(--grey-lighter);
+}
+.Community-category-review-relatable > div > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Community-category-review-relatable > div > div > p:last-child{
+    justify-self: right;
+}
+
+@media (max-width:900px) {
+    .Community-reviews{
+        grid-template-columns: 1fr;
+        height: 130vh;
+    }
+    .Community-review{
+        width: 70vw;
+        height: 35vh;
+    }
+    .Community-category{
+        padding-top: 7.5vh;
+    }
+}

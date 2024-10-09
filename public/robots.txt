@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Sitemap: https://www.lfmreviews.com/sitemap.xml
+Crawl-delay: 5

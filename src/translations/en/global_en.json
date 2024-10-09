@@ -1,0 +1,127 @@
+{
+  "Global": {
+    "true": "True",
+    "false": "False"
+  },
+  "Home": {
+    "LastReviews": "Latest Reviews",
+    "AuthButton": "Let's go!",
+    "Description": "Welcome to LFMReview! Share and read reviews about your teachers to improve the educational quality of your community."
+  },
+  "Bottombar": {
+    "communityRules": "Community Rules",
+    "cookiePolicy": "Cookie Policy",
+    "privacyPolicy": "Privacy Policy",
+    "disclaimer": "Disclaimer",
+    "securityProtection": "Security and Protection",
+    "termsOfService": "Terms of Service"
+  },
+  "FAQ": {
+    "Q1": "What is LFMReviews?",
+    "R1": "LFMReviews is a site where you can write and read community reviews about different teachers in different years and subjects at LFM.",
+    "Q2": "How many courses are there?",
+    "R2": "Most teachers from 6th to Terminal are available. However, you can help us enrich our list by sending us information about a teacher we haven’t yet listed via the 'Add a teacher' tab.",
+    "Q3": "Will people know who posted the review?",
+    "R3": "No, all reviews are anonymous, no one will know who posted them. We only ask for your email address for database reasons and to prevent the creation of multiple accounts."
+  },
+  "Auth": {
+    "button-signup": "Sign up",
+    "button-login": "Log in",
+    "signup-message": "Welcome!",
+    "signup-paragraph": "Join us and share your reviews now!",
+    "login-message": "Glad to see you again!",
+    "login-paragraph": "Thank you for coming back, we eagerly await your new reviews.",
+
+    "invalid-mail": "The email address is not valid. Please check and try again.",
+    "invalid-password": "The password must contain at least 8 characters, including alphanumeric and special characters. It must not be a common password. Please try again.",
+    "not-corresponding-password": "Passwords do not match. Please check and try again.",
+    "password-too-short": "The password must be at least 8 characters long.",
+
+    "mail-address-placeholder": "Email Address",
+    "password-placeholder": "Password",
+    "re-password-placeholder": "Confirm Password",
+
+    "email-used": "This email address has already been used to create another account.",
+
+    "reset-password-button": "Reset my password"
+  },
+  "Navbar": {
+    "community": "Community Reviews",
+    "publish": "Publish a Review",
+    "settings": "Settings",
+    "teachers": "Teachers"
+  },
+  "Cookies": {
+    "cookie-acceptance": "This website uses functional and third-party cookies to enhance your experience. You can choose to accept or reject these cookies. If you continue to browse without selecting an option, we will assume you accept the use of cookies. To change your preferences, visit the Settings page. For more information, please check our "
+  },
+  "Activate": {
+    "error": "An error has occurred",
+    "success": "Account activated."
+  },
+  "Teacher": {
+    "no-rating": "No review has been made by a user yet. Be the first!"
+  },
+  "CreateReview": {
+    "clarte": "Clarity of explanations",
+    "interaction_soutien": "Interaction and support",
+    "methodes": "Teaching methods",
+    "justice": "Fairness in evaluation",
+    "gestion_temps": "Time management",
+    "amabilite": "Friendliness",
+    "gestion_colere": "Anger management",
+    "charge_travail": "Workload",
+    "distraction": "Distraction",
+    "difficulte": "Course difficulty level",
+
+    "ponctuel": "Is the teacher punctual?",
+    "aide": "Help with exams?",
+    "greves": "Participates in strikes?",
+    "punitions": "Applies punishments?",
+
+    "text_rating": "Final comment",
+    "tot_rating": "Final rating",
+
+    "publication": "Publication",
+    "ofA": "of a",
+    "review": "Review",
+    "chooseTeacher": "To start, please choose the teacher you would like to evaluate.",
+    "selectSubject": "Next, select the subject this teacher teaches.",
+    "selectYear": "In which year does this teacher teach?",
+    "startEvaluation": "-Now we can start the evaluation. Please fill out the fields below.",
+    "yesOrNoQuestions": "- Now please answer the following questions with yes or no",
+    "optionalComment": "-You can add a comment (optional). No insults, threats, or any inappropriate behavior will be tolerated.",
+    "textPlaceholder": "Click to start writing...",
+    "submit": "PUBLISH"
+  },
+  "Error": {
+    "fatal": "An unknown error occurred. Please try again.",
+    "duplicate-review": "A review for this teacher, subject, and year has already been created by the user.",
+    "collision": "You have already created similar content.",
+    "wrong-teacher": "The selected teacher is invalid. Please choose a valid teacher.",
+    "wrong-subject": "The selected subject is invalid. Please choose a valid subject.",
+    "wrong-year": "The selected year is invalid. Please choose a valid year.",
+    "incorrect-grade": "The grade provided is incorrect. Grades must be between 0 and 10.",
+    "incorrect-overall": "The overall grade is incorrect. The overall grade must be between 0 and 10.",
+    "wrong-login": "No active account was found with the provided credentials. Please check if you have verified your account via your email.",
+    "request-reset-password": "The request was not completed. Please try again.",
+    "404": "The page you accessed does not exist",
+    "ReviewFormIdentical": "Values have not been changed",
+    "teacher-query": "An error occurred while searching for teachers"
+  },
+  "Success": {
+    "ReviewEdit": "Your review has been updated",
+    "create-review": "The review has been successfully created",
+    "signup": "Your account was created successfully. Check your email to activate it.",
+    "login": "You have successfully logged in to your account",
+    "request-reset-password": "The request was completed. Check your email."
+  },
+  "Year": {
+    "0": "Senior year",
+    "1": "Junior year",
+    "2": "Sophomore year",
+    "3": "Third year",
+    "4": "Fourth year",
+    "5": "Fifth year",
+    "6": "Sixth year"
+  }
+}

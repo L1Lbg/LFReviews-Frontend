@@ -1,0 +1,55 @@
+.FormGradeInput{
+    background: var(--grey-light);
+    border-radius: 10px;
+    color:white;
+    display: grid;
+    grid-template-columns: 1fr  0.7fr;
+    align-items: center;
+    justify-items: center;
+    height: 10vh;
+    max-height: 70px;
+    max-width: 250px;
+    width: 80%;
+    padding: 2%;
+}
+.FormGradeInput-Select{
+    background: none;
+    border: none;
+    color:white;
+    font-size: 1.1rem;
+    direction: rtl;
+}
+.FormGradeInput-Select:hover, .FormGradeInput-Select > option:hover{
+    cursor: pointer;
+}
+.FormGradeInput-Select > option{
+    color:var(--black)
+}
+.num-label{
+    color: white;
+    font-size: 0.7vw;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.FormGradeInput > span{
+    display: flex;
+    background: var(--purple);
+    justify-content: center;
+    align-items: center;
+    padding:5%;
+    min-width: 4vw;
+    border-radius: 5px;
+    
+}
+.FormGradeInput > span > input{
+    background: none;
+    border:none;
+    text-align: right;
+    color:white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction:rtl;
+    width: 60%;
+}

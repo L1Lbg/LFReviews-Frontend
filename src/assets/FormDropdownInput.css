@@ -1,0 +1,115 @@
+.FormDropdownInput-Container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+.FormDropdownInput{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    background: var(--grey-light);
+    padding:1%;
+    align-items: center;
+    justify-items: right;
+    border-radius: 5px;
+    width: 93%;
+    height: 6vh;
+}
+/* .FormDropdownInput-Arrow{
+    border: solid var(--grey-light);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    height: 45%;    
+    aspect-ratio: 1/1;
+    transform: rotate(-45deg);
+    align-self: left;
+    transition: 0.5s;
+}
+.FormDropdownInput-ArrowOpen{
+    transform: rotate(45deg);
+} */
+.FormDropdownInput-Delete{
+    color:var(--purple);
+    fill:var(--purple);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding:10%;
+    font-weight: bolder;
+}
+.FormDropdownInput-Delete:hover{
+    cursor: pointer;
+}
+.FormDropdownInput-Delete > img{
+    width: 10vw;
+    max-width: 23px;
+    object-fit: contain;
+}
+.FormDropdownInput-Container > label {
+    color:var(--purple);
+    text-align: center;
+}
+.FormDropdownInput > input {
+    width: 100%;
+    height: 100%;
+    background: var(--grey-light);
+    border: 0;
+    padding:0;
+    color:var(--white);
+    text-align: center;
+}
+.FormDropdownInput-List {
+    display: block;
+    background: var(--grey-dark);
+    width: 80%;
+    border: solid 2px #373737;
+    padding-bottom: 0.75%;
+    max-height: 70vw;
+    overflow-y: auto;
+    transition: max-height 0.5s;
+    position: absolute; 
+    z-index: 10;
+    top: 100%; 
+    left: 50%;  
+    transform: translateX(-50%);
+}
+.FormDropdownInput-ListClosed{
+    max-height:0px !important;
+    border: 0px;
+    padding-bottom: 0px;
+}
+.FormDropdownInput-ListClosed > div{
+    display: none !important;
+}
+.FormDropdownInput-ListItem{
+    color:var(--white);
+    text-overflow: ellipsis;
+    padding:5%;
+    background:#373737;
+    margin-bottom: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns:none;
+}
+.FormDropdownInput-ListItem:hover{
+    background:#252525;
+    cursor: pointer;    
+}
+/* .FormDropdownInput-ListItem::before{
+    content: '·';
+    margin-right: 3%;
+} */
+.FormDropdownInput-ListItem-StarsContainer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.FormDropdownInput-ListItem-Span {
+    font-size: 0.8rem;
+    text-align: left;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

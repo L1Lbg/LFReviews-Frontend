@@ -1,0 +1,15 @@
+#me{
+    min-height: 100vh;
+}
+.Me-Review{
+    background: var(--white);
+    border-radius: 15px;
+    padding: 1%;
+    width: fit-content;
+    margin: 2%;
+    color: var(--black);
+    aspect-ratio: 3/1;
+}
+.Me-Review:hover{
+    cursor: pointer;
+}

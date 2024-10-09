@@ -1,0 +1,154 @@
+{
+    "Global":{
+      "true":"Vrai",
+      "false":"Faux",
+      "yes":"Oui",
+      "no":"Non",
+      "Slogan":"Écoutez l'opinion des élèves"
+    },
+    "Community":{
+      "title":"Reviews de la communauté",
+      "search":"Chercher un professeur",
+      "recent":"Les plus récentes",
+      "highest":"Les meilleures valorisées",
+      "lowest":"Les pires valorisées"
+    },
+    "Titles":{
+      "":"Écoutez l'opinion des élèves",
+      "communaute":"Reviews de la communauté",
+      "publication":"Publier une Review",
+      "me":"Mon profil",
+      "settings":"Mes réglages",
+      "auth":"Authentification"
+    },
+    "Home":{
+      "LastReviews":"Dernières Reviews",
+      "AuthButton":"Allons-y!",
+      "Description":"Bienvenue sur LFMReview! Partagez et consultez des avis sur vos professeurs pour améliorer la qualité éducative de votre communauté."
+    },
+    "Bottombar": {
+      "communityRules": "Règles de la communauté",
+      "cookiePolicy": "Politique des cookies",
+      "privacyPolicy": "Politique de confidentialité",
+      "disclaimer": "Clause de non-responsabilité",
+      "securityProtection": "Sécurité et protection",
+      "termsOfService": "Conditions de service"
+    },
+    "FAQ":{
+      "Q1":"C'est quoi LFMReviews?",
+      "R1":"LFMReviews est un site où vous pouvez écrire et consulter les avis de la communauté sur différents professeurs dans différents années et matières du LFM.",
+      "Q2":"Combien de cours y a-t-il ?",
+      "R2":"La plupart des professeurs de la 6ème à la Terminale sont disponibles. Cependant, vous pouvez nous aider à enrichir notre liste en nous envoyant des informations sur un enseignant que nous n'avons pas encore répertorié via l'onglet 'Ajouter un professeur'.",
+      "Q3":"Les gens pourront savoir qui a publié la review?",
+      "R3":"Non, toutes les critiques sont anonymes, personne ne pourra savoir qui les a publiées. Nous demandons votre adresse e-mail uniquement pour des raisons de base de données et pour prévenir la création de plusieurs comptes."
+    },
+    "Settings":{
+      "PageLanguage":"Langage de la page:"
+    },
+    "Auth":{
+      "button-signup": "S'inscrire",
+      "button-login": "Se connecter",
+      "signup-message": "Bienvenue !",
+      "signup-paragraph": "Rejoignez-nous et partagez vos avis dès maintenant !",
+      "login-message": "Contents de vous revoir !",
+      "login-paragraph": "Merci de revenir, nous attendons vos nouvelles Reviews avec impatience.",
+
+      "invalid-mail": "L'adresse e-mail n'est pas valide. Veuillez vérifier et réessayer.",
+      "invalid-password": "Le mot de passe doit contenir au moins 8 caractères, variées entre alphanumériques et caractères spéciaux. Ne doit pas contenir un mot de passe trop commun. Veuillez essayer à nouveau.",
+      "not-corresponding-password": "Les mots de passe ne correspondent pas. Veuillez vérifier et essayer à nouveau.",
+      "password-too-short":"Le mot de passe doit être au moins 8 caractères de long.",
+
+      "mail-address-placeholder": "Adresse Email",
+      "password-placeholder": "Mot de passe",
+      "re-password-placeholder": "Confirmation du mot de passe",
+
+      "email-used":"Cette adresse email a déjà été utilisée pour la création d'un autre compte.",
+
+      "reset-password-button": "Réinitialiser mon mot de passe"
+    },
+    "Navbar":{
+      "community":"Reviews de la communauté",
+      "publish":"Publier une Review",
+      "settings":"Réglages",
+      "teachers":"Professeurs",
+      "profile":"Mon profil"
+    },
+    "Cookies":{
+      "cookie-acceptance":"Ce site web utilise des cookies fonctionnels ainsi que des cookies tiers pour améliorer votre expérience. Vous pouvez choisir d'accepter ou de refuser ces cookies. Si vous continuez à naviguer sans sélectionner une option, nous considérerons que vous acceptez l'utilisation des cookies. Pour changer vos preferences visitez la page de Réglages. Pour plus d'informations, veuillez consulter notre "
+    },
+    "Activate":{
+      "error":"Une erreur est survenue",
+      "success":"Compte activée."
+    },
+    "Teacher":{
+      "no-rating":"Aucune review n'a ete faite par un utilisateur pour cet instant. Soyez le premier!"
+    },
+  "CreateReview": {
+      
+      "clarte": "Clarté des explications",
+      "interaction_soutien": "Interaction et soutien",
+      "methodes": "Méthodes d'enseignement",
+      "justice": "Justice dans l'évaluation",
+      "ambiance": "Ambiance en classe",
+      "relation_eleves": "Relation avec les élèves",
+      "gestion_temps": "Gestion du temps",
+      "amabilite": "Amabilité",
+      "gestion_colere": "Gestion de la colère",
+      "charge_travail": "Charge de travail",
+      "distraction": "Distraction",
+      "difficulte": "Niveau de difficulté des cours",
+
+      "ponctuel": "Est-il ponctuel?",
+      "aide": "Aide aux examens?",
+      "greves": "Participe aux grèves?",
+      "punitions": "Applique des punitions?",
+
+      "text_rating": "Commentaire final",
+      "tot_rating": "Note finale",
+
+
+      "publication": "Publication",
+      "ofA": "d'une",
+      "review": "Review",
+      "chooseTeacher": "Pour commencer, veuillez choisir le professeur auquel vous souhaitez attribuer votre évaluation.",
+      "selectSubject": "Ensuite, sélectionnez la matière que ce professeur enseigne.",
+      "selectYear": "En quelle année ce professeur enseigne-t-il ?",
+      "startEvaluation": "-Nous pouvons maintenant commencer l'évaluation. Veuillez remplir les champs ci-dessous.",
+      "yesOrNoQuestions": "- Maintenant s’il vous plait répondez aux prochaines questions par oui ou non",
+      "optionalComment": "-Vous avez la possibilité d'ajouter un commentaire (optionnel). Aucun type d'insulte, menace ou autre comportement inapproprié ne sera toléré.",
+      "textPlaceholder": "Cliquez pour commencer à écrire...",
+      "submit": "PUBLIER"
+  },
+  "Error":{
+    "maintenance":"Une maintenance du site web démarrera dans moins de 5 minutes...",
+    "fatal": "Une erreur inconnue est survenue. Veuillez re-essayer",
+    "duplicate-review": "Une review sur ce professeur, matière et année a déjà ete créé par l'utilisateur",
+    "collision": "Vous aviez deja crée un contenu pareil.",
+    "wrong-teacher": "Le professeur sélectionné est invalide. Veuillez choisir un professeur valide.",
+    "wrong-subject": "La matière sélectionnée est invalide. Veuillez choisir une matière valide.",
+    "wrong-year": "L'année sélectionnée est invalide. Veuillez choisir une année valide.",
+    "incorrect-grade": "La note fournie est incorrecte. Les notes doivent être comprises entre 0 et 10.",
+    "incorrect-overall": "La note globale est incorrecte. La note globale doit être comprise entre 0 et 10.",
+    "wrong-login": "Aucun compte actif trouvé avec les informations d'identification fournies. Vérifiez si vous avez vérifiée votre compte a travers votre boite mail.",
+    "request-reset-password": "La demande n'a ete réalisée. Réessayez s'il vous plait.",
+    "404":"La page accédée n'existe pas",
+    "ReviewFormIdentical":"Les valeurs n'ont pas été changées",
+    "teacher-query":"Une erreur est survenue en cherchant des professeurs"
+  },
+  "Success":{
+    "ReviewEdit":"Votre review a été modifiée",
+    "create-review": "La review a été créée avec succès",
+    "signup":"Votre compte a été créé correctement. Vérifiez votre boite mail pour l'activer.",
+    "login":"Vous êtes connecté correctement a votre compte",
+    "request-reset-password":"La demande a ete réalisée. Vérifiez votre boite mail."
+  },
+  "Year":{
+    "0":"Terminale",
+    "1":"Premiere",
+    "2":"Seconde",
+    "3":"Troisième",
+    "4":"Quatrième",
+    "5":"Cinquième",
+    "6":"Sixième"
+  }
+}

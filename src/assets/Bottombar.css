@@ -1,0 +1,80 @@
+#Bottombar{
+    background: #111111;
+    height: 15vh;
+    color:white;
+    text-decoration: none;
+    bottom:0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    overflow: hidden;
+    width: 100%;
+}
+#Bottombar > p{
+    text-align: center;
+    justify-self: left;
+    padding-left: 2vw;
+}
+#Bottombar-legal{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color:white;
+    gap: 5%;
+}
+#Bottombar-legal > a{
+    color:inherit;
+    padding:5%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.8rem;
+}
+#Bottombar-links{
+    display: grid;
+    justify-self: right;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 3vw;
+    width: 100%;
+    max-width: 200px;
+}
+#Bottombar-links > a{
+    width: fit-content;
+
+}
+#Bottombar-links > a > svg, #Bottombar-links > a > img{
+    color: inherit;
+    text-decoration: inherit;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+#Bottombar-links > a > svg{
+    height: 6vh;
+}
+#Bottombar-links > a > img{
+    height: 4vh;
+}
+#Bottombar-links > a:hover{
+    text-decoration: underline;
+}
+
+@media (min-width:900px) {
+    #Bottombar-links{
+        justify-self: center;
+    }
+    #Bottombar > p{
+        justify-self: center;
+    }
+}
+@media (max-width:900px) {
+    #Bottombar{
+        height: 20vh;
+    }
+    #Bottombar-legal{
+        width: 50vw;
+        
+    }
+}

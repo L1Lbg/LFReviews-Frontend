@@ -1,0 +1,39 @@
+#RelateReviewButton-container{
+    border: solid 1px var(--white);
+    border-radius: 15px;
+    aspect-ratio: 1/1;
+    height: 20vh;
+    max-width: 400px;
+    transition: 0.5s;
+    margin: auto;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+}
+#RelateReviewButton-container:hover{
+    
+}
+.RelateReviewButton-container-clicked{
+    aspect-ratio: 3/1 !important;
+}
+#RelateReviewButton-opened {
+    display: none;
+    height: 100%;
+}
+#RelateReviewButton-preview{
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.RelateReviewButton-container-clicked > #RelateReviewButton-preview{
+    opacity: 0;
+    display: none;
+    transition-delay: 0s;
+}
+.RelateReviewButton-container-clicked > #RelateReviewButton-opened{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+}
+#RelateReviewButton-open > button {
+    height: 100vh;
+}

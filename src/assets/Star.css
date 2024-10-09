@@ -1,0 +1,11 @@
+.StarContainer{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.StarContainer > img{
+    width: 5vw;
+    object-fit: contain;
+    transform: scale(150%);
+}

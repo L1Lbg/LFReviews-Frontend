@@ -1,0 +1,30 @@
+{
+  "short_name": "LFReviews",
+  "name": "LFReviews",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "sizes": "224x224",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "screenshots": [
+    {
+      "src": "loading_wide.gif",
+      "type": "image/gif",
+      "form_factor": "wide",
+      "label": "Application",
+      "sizes": "1920x1080"
+    },
+    {
+      "src": "loading.gif",
+      "type": "image/gif",
+      "label": "Application",
+      "sizes":"1080x1920"
+    }
+  ]
+}

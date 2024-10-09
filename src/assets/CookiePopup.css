@@ -1,0 +1,32 @@
+#CookiePopup{
+    width: 80vw;
+    height: 20vh;
+    background: var(--grey-dark);
+    color:var(--white);
+    border-radius: 15px;
+    position: fixed;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    gap: 2%;
+    box-shadow: 0 0 15px 15px var(--grey-light);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+#CookiePopup > p > a{
+    color:var(--white)                  
+}
+#CookiePopup > button{
+    border-radius: 15px;
+    border: none;
+    height: 80%;
+}
+#CookiePopup > button:hover{
+    border: solid 1px var(--white);
+    background: var(--grey-dark);
+    color:white;
+}

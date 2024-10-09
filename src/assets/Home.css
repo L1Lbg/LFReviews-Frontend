@@ -1,0 +1,150 @@
+.embla {
+    overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+
+#Home-Presentation-Container{
+    width: 70vw;
+    margin: auto;
+}
+#Home-Presentation-Media-Container{
+    width: 100%;
+    margin-top: 10vh;
+}
+#Home-Presentation-Media{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    object-fit: contain;
+    box-shadow: 0 0 70px 7.5px rgba(255, 255, 255, 0.5);
+}
+#Home-Description{
+    color:white;
+    text-align: center;
+    font-size: 2rem;
+}
+#Home-ExampleReview {
+    display: flex;
+}
+.Home-ExampleReview-Img{
+    margin: auto;
+    width: 100vw;
+    object-fit: contain;
+    max-height: 60vh;
+}
+
+
+#Home-AuthButton{
+    width: 50vw;
+    min-width: 200px;
+    max-width: 500px;
+    background: linear-gradient(180deg, var(--gradient-blue), var(--gradient-red));
+    outline: solid 4px var(--gradient-blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight:600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-family: "Inter";
+    text-decoration: none;
+    aspect-ratio: 4/1.5;
+    box-shadow: 0 0 15px 15px rgba(84, 84, 84, 0.5);
+    transition: 0.75s;
+}
+#Home-AuthButton:hover{
+    
+    background: linear-gradient(180deg, var(--high-gradient-blue), var(--high-gradient-red));
+    background-clip: text;
+    outline-color:rgb(0, 119, 255);
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 0 30px 30px rgba(84, 84, 84, 0.5);
+}
+.Home-FAQ-Title{
+    margin-top: 0;
+}
+
+#Home-FAQ-Container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2vw;
+}
+#Home-FAQ-Container section:nth-child(1){
+    padding-left: 2vw;
+    justify-items: right;
+}
+#Home-FAQ-Container section:nth-child(2){
+    padding-right: 2vw;
+}
+.Home-FAQ{
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 0;
+    width: 45vw;
+    color:var(--white);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 10vh;
+    row-gap: 0;
+    align-items: start;
+    height: fit-content;
+    z-index: 2;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes grow {
+    from{max-height: 2rem;}
+    to{max-height: 10rem;}
+}
+    
+.Home-FAQ > details{
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+    padding:1%;
+    font-weight: normal;
+    width: 40vw;
+    padding: 0.4vh;
+    min-height: 7vh;
+}
+
+.Home-FAQ > details > summary{
+    background: var(--grey-light);
+    font-size:1.2vw;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    max-height: 100px;
+    border-radius: 7px;
+}
+
+.Home-FAQ > details > summary::marker {
+    content: '+';
+    transition: 0.2s;
+}
+.Home-FAQ > details > p{
+    font-weight: 300;
+    font-size: 1vw;
+    margin-left: 3%;
+}
+
+@media (max-width:900px){
+    #Home-Presentation-Container{
+        width: 95vw;
+    }
+    .Home-FAQ{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,129 @@
+{
+  "Global": {
+    "true": "Verdadero",
+    "false": "Falso"
+  },
+  "Home": {
+    "LastReviews": "Últimas Reviews",
+    "AuthButton": "¡Vamos allá!",
+    "Description": "¡Bienvenido a LFMReviews! Comparte y consulta reviews sobre tus profesores para mejorar la calidad educativa de tu comunidad."
+  },
+  "Bottombar": {
+    "communityRules": "Reglas de la comunidad",
+    "cookiePolicy": "Política de cookies",
+    "privacyPolicy": "Política de privacidad",
+    "disclaimer": "Descargo de responsabilidad",
+    "securityProtection": "Seguridad y protección",
+    "termsOfService": "Términos del servicio"
+  },
+  "FAQ": {
+    "Q1": "¿Qué es LFMReviews?",
+    "R1": "LFMReviews es un sitio donde puedes escribir y consultar las reviews de la comunidad sobre diferentes profesores en diferentes años y materias del LFM.",
+    "Q2": "¿Cuántos cursos hay?",
+    "R2": "La mayoría de los profesores desde 6º hasta la Terminal están disponibles. Sin embargo, puedes ayudarnos a enriquecer nuestra lista enviándonos información sobre un profesor que aún no hemos registrado a través de la pestaña 'Agregar un profesor'.",
+    "Q3": "¿La gente sabrá quién ha publicado la review?",
+    "R3": "No, todas las críticas son anónimas, nadie sabrá quién las ha publicado. Solicitamos tu correo electrónico solo por razones de base de datos y para prevenir la creación de múltiples cuentas."
+  },
+  "Auth": {
+    "button-signup": "Registrarse",
+    "button-login": "Iniciar sesión",
+    "signup-message": "¡Bienvenido!",
+    "signup-paragraph": "¡Únete a nosotros y comparte tus reviews ahora mismo!",
+    "login-message": "¡Nos alegra verte de nuevo!",
+    "login-paragraph": "Gracias por volver, esperamos con entusiasmo tus nuevas reviews.",
+
+    "invalid-mail": "La dirección de correo electrónico no es válida. Por favor, verifica y vuelve a intentarlo.",
+    "invalid-password": "La contraseña debe contener al menos 8 caracteres, combinando alfanuméricos y caracteres especiales. No debe ser una contraseña común. Intenta nuevamente.",
+    "not-corresponding-password": "Las contraseñas no coinciden. Verifica e intenta nuevamente.",
+    "password-too-short": "La contraseña debe tener al menos 8 caracteres.",
+
+    "mail-address-placeholder": "Correo electrónico",
+    "password-placeholder": "Contraseña",
+    "re-password-placeholder": "Confirmación de contraseña",
+
+    "email-used": "Esta dirección de correo ya ha sido utilizada para crear otra cuenta.",
+
+    "reset-password-button": "Restablecer mi contraseña"
+  },
+  "Navbar": {
+    "community": "Reviews de la comunidad",
+    "publish": "Publicar una Review",
+    "settings": "Configuraciones",
+    "teachers": "Profesores"
+  },
+  "Cookies": {
+    "cookie-acceptance": "Este sitio web utiliza cookies funcionales y de terceros para mejorar tu experiencia. Puedes elegir aceptar o rechazar estas cookies. Si continúas navegando sin seleccionar una opción, asumiremos que aceptas el uso de cookies. Para cambiar tus preferencias, visita la página de Configuraciones. Para más información, consulta nuestra "
+  },
+  "Activate": {
+    "error": "Ha ocurrido un error",
+    "success": "Cuenta activada."
+  },
+  "Teacher": {
+    "no-rating": "Ninguna review ha sido hecha por un usuario hasta el momento. ¡Sé el primero!"
+  },
+  "CreateReview": {
+    "clarte": "Claridad de las explicaciones",
+    "interaction_soutien": "Interacción y apoyo",
+    "methodes": "Métodos de enseñanza",
+    "justice": "Justicia en la evaluación",
+    "ambiance": "Ambiente en clase",
+    "relation_eleves": "Relación con los estudiantes",
+    "gestion_temps": "Gestión del tiempo",
+    "amabilite": "Amabilidad",
+    "gestion_colere": "Control de la ira",
+    "charge_travail": "Carga de trabajo",
+    "distraction": "Se distrae",
+    "difficulte": "Nivel de dificultad de los cursos",
+
+    "ponctuel": "¿Es puntual?",
+    "aide": "¿Ayuda en los exámenes?",
+    "greves": "¿Participa en huelgas?",
+    "punitions": "¿Aplica castigos?",
+
+    "text_rating": "Comentario final",
+    "tot_rating": "Calificación final",
+
+    "publication": "Publicación",
+    "ofA": "de una",
+    "review": "Review",
+    "chooseTeacher": "Para comenzar, elija al profesor al que desea evaluar.",
+    "selectSubject": "Luego, seleccione la materia que enseña este profesor.",
+    "selectYear": "¿En qué año enseña este profesor?",
+    "startEvaluation": "-Ahora podemos comenzar la evaluación. Por favor, complete los campos a continuación.",
+    "yesOrNoQuestions": "- Ahora, por favor responde a las siguientes preguntas con sí o no",
+    "optionalComment": "-Puedes agregar un comentario (opcional). No se tolerarán insultos, amenazas o cualquier otro comportamiento inapropiado.",
+    "textPlaceholder": "Haz clic para comenzar a escribir...",
+    "submit": "PUBLICAR"
+  },
+  "Error": {
+    "fatal": "Ha ocurrido un error desconocido. Inténtalo nuevamente.",
+    "duplicate-review": "Ya existe una review creada por el usuario para este profesor, materia y año.",
+    "collision": "Ya has creado un contenido similar.",
+    "wrong-teacher": "El profesor seleccionado no es válido. Elige un profesor válido.",
+    "wrong-subject": "La materia seleccionada no es válida. Elige una materia válida.",
+    "wrong-year": "El año seleccionado no es válido. Elige un año válido.",
+    "incorrect-grade": "La calificación proporcionada es incorrecta. Las calificaciones deben estar entre 0 y 10.",
+    "incorrect-overall": "La calificación general es incorrecta. Debe estar entre 0 y 10.",
+    "wrong-login": "No se encontró ninguna cuenta activa con las credenciales proporcionadas. Verifica si has activado tu cuenta a través de tu correo electrónico.",
+    "request-reset-password": "La solicitud no se ha realizado. Inténtalo de nuevo.",
+    "404": "La página a la que has accedido no existe",
+    "ReviewFormIdentical": "Los valores no han cambiado",
+    "teacher-query": "Ocurrió un error al buscar profesores"
+  },
+  "Success": {
+    "ReviewEdit": "Tu review ha sido modificada",
+    "create-review": "La review se ha creado con éxito",
+    "signup": "Tu cuenta se ha creado correctamente. Verifica tu correo electrónico para activarla.",
+    "login": "Has iniciado sesión correctamente",
+    "request-reset-password": "La solicitud se ha realizado. Revisa tu correo electrónico."
+  },
+  "Year": {
+    "0": "Terminal",
+    "1": "Primer",
+    "2": "Segundo",
+    "3": "Tercero",
+    "4": "Cuarto",
+    "5": "Quinto",
+    "6": "Sexto"
+  }
+}
