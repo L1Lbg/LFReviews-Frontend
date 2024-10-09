@@ -71,6 +71,7 @@ export default function FormDropdownInput(props){
     const handleClick = (e) => {
       
       let id = e.currentTarget.getAttribute("value")
+      setNameShown(e.currentTarget.getAttribute("name"))
       setRealId(id);
       setListClass("FormDropdownInput-List FormDropdownInput-ListClosed");
       setInputDisabled(true);
@@ -79,6 +80,7 @@ export default function FormDropdownInput(props){
         let value = values.find((teacher) => teacher.id == id);
         setSpecial(value["subjects"]);
         setValues([]);
+        console.log(e.currentTarget.getAttribute("prefix") + ' ' +  e.currentTarget.getAttribute("name"))
         setNameShown(e.currentTarget.getAttribute("prefix") + ' ' +  e.currentTarget.getAttribute("name"));
       }
     }
