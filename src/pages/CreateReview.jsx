@@ -12,9 +12,12 @@ import { Context } from '../pages/Root'
 import Star from '../../public/Icons/Star.svg';
 
 
-const StyledRating = styled(Rating)({
-  fontSize: '5vw', // Customize the size here
-});
+const StyledRating = styled(Rating)(({ theme }) => ({
+  // '& .MuiRating-iconEmpty': {
+  //   color: 'white',
+  // },
+  fontSize:'2rem'
+}));
 
 function StarIcon(props) {
   return (
@@ -42,6 +45,8 @@ function StarIcon(props) {
     </SvgIcon>
   );
 }
+
+
 
 export default function CreateReview(){
   const { customFetch, setError, setSuccess } = useContext(Context);
