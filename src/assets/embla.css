@@ -27,4 +27,8 @@
     object-fit: contain;
   }
 
-  
+@media (max-width:900px){
+  .embla{
+    --slide-size:90%;
+  }
+}

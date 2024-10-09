@@ -140,11 +140,18 @@
     margin-left: 3%;
 }
 
-@media (max-width:900px){
+@media (max-width:1000px){
     #Home-Presentation-Container{
         width: 95vw;
     }
     .Home-FAQ{
         grid-template-columns: 1fr;
+    }
+    .Home-FAQ > details > p{
+        font-size:1.6vw;
+    }
+    
+    .Home-FAQ > details > summary{
+        font-size:1.7vw;
     }
 }
