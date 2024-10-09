@@ -1,6 +1,6 @@
 import { startTransition } from "react";
 import { useEffect, useState } from "react";
-
+import '../assets/TeacherStar.css'
 export default function TeacherStar(props){
     const [stars, setStars] = useState(<></>)
 
@@ -25,7 +25,7 @@ export default function TeacherStar(props){
           starsArray.push(<img src="./Icons/Star.svg" key={`full-${i}}`} />);
         }
         if (hasHalfStar) {
-          starsArray.push(<img src="./Icons/HalfStar.svg" key="half" />);
+          starsArray.push(<img src="./Icons/HalfStar.svg" className='HalfStar' key="half" />);
         }
 
         setStars(starsArray);

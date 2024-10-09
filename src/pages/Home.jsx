@@ -16,7 +16,7 @@ export default function Home(){
         <div id="Home-container">
             <div id="Home-Presentation-Container">
                 <div id="Home-Presentation-Media-Container">
-                    <img src="https://www.techspot.com/images2/news/bigimage/2020/07/2020-07-20-image.png" alt="Main Image" id="Home-Presentation-Media" />
+                    <img loading='lazy' src="https://www.techspot.com/images2/news/bigimage/2020/07/2020-07-20-image.png" alt="Main Image" id="Home-Presentation-Media" />
                 </div>
                 <p id='Home-Description'>{t('Home.Description')}</p>
             </div>

@@ -39,6 +39,8 @@ export default function Root(){
 
     url = `${import.meta.env.VITE_BACKEND_URL}${url}`
 
+    console.log(url)
+
     return fetch(url, options).then(
       (res) => {
         if (res.status === 200 || res.status === 201) {

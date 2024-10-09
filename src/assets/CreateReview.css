@@ -134,10 +134,14 @@
     justify-items: center;
 }
 #FormOverallInput{
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5vh;
+    max-width: 30vw;
+    overflow: hidden;
+    min-height: 5vh;
 }
 @media (max-width: 900px) {
     #CreateReview{

@@ -29,13 +29,6 @@
 .Community-review > ul{
     color: var(--grey-lighter);
 }
-.Community-review > .TeacherStar{
-    display: flex;
-    justify-content: center;
-}
-.Community-review > .TeacherStar > img{
-    width: 10%;
-}
 .Community-review{
     width: 100%;
     background: var(--grey-dark);

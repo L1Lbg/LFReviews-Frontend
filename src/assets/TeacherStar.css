@@ -1,0 +1,13 @@
+.TeacherStar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TeacherStar > img{
+    height: 5vh;
+    aspect-ratio: 1/1;
+
+}
+.TeacherStar > .HalfStar{
+    height: 3.8vh;
+}

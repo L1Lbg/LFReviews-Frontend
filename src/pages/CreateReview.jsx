@@ -1,12 +1,47 @@
 import { useState, useContext } from 'react';
 import '../assets/CreateReview.css';
 import { Rating } from "@mui/material";
+import { styled } from '@mui/material/styles';
+import SvgIcon from '@mui/material/SvgIcon';
 import FormDropdownInput from '../components/FormDropdownInput';
 import FormCheckboxInput from '../components/FormCheckboxInput';
 import FormGradeInput from '../components/FormGradeInput';
 import Info from '/Icons/info.svg?url'
 import {useTranslation} from 'react-i18next';
 import { Context } from '../pages/Root'
+import Star from '../../public/Icons/Star.svg';
+
+
+const StyledRating = styled(Rating)({
+  fontSize: '5vw', // Customize the size here
+});
+
+function StarIcon(props) {
+  return (
+    <SvgIcon {...props}>
+      <svg width="361" height="340" viewBox="0 0 361 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_92_611)">
+        <path d="M229.056 104.379L188.936 34.2179C185.855 29.4139 178.88 29.2872 175.628 33.9762L132.986 102.634C131.856 104.262 130.162 105.414 128.232 105.864L46.6266 120.506C40.8589 121.854 38.5043 128.783 42.2572 133.366L96.8482 193.159C98.155 194.755 98.7951 196.794 98.6348 198.85L88.2494 277.834C87.7996 283.606 93.4412 287.93 98.8986 285.995L175.47 254.443C177.293 253.797 179.289 253.833 181.088 254.545L256.463 288.857C261.846 290.989 267.641 286.873 267.401 281.087L259.891 201.778C259.805 199.718 260.519 197.704 261.883 196.157L318.609 138.385C322.526 133.942 320.424 126.931 314.709 125.375L233.689 107.78C231.777 107.259 230.126 106.047 229.056 104.379Z" fill="url(#paint0_linear_92_611)" fill-opacity="0.7"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_92_611" x="0.44043" y="0.535767" width="360.173" height="338.892" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="10"/>
+        <feGaussianBlur stdDeviation="20"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_92_611"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_92_611" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_92_611" x1="178.681" y1="286.391" x2="181.301" y2="89.5765" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FF3A40"/>
+        <stop offset="1" stop-color="#366EFD"/>
+        </linearGradient>
+        </defs>
+        </svg>
+    </SvgIcon>
+  );
+}
 
 export default function CreateReview(){
   const { customFetch, setError, setSuccess } = useContext(Context);
@@ -173,13 +208,13 @@ export default function CreateReview(){
             </div>
 
             <div id="FormOverallInput">
-              <Rating
+              <StyledRating 
                 precision={0.5}
                 defaultValue={2.5}
                 name="simple-controlled"
                 value={overall}
                 onChange={handleOverallChange}
-                icon={<img src='./Icons/Star.svg'/>}
+                icon={<StarIcon color="primary" fontSize='inherit'/>}
               />
             </div>
 

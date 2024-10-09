@@ -102,10 +102,6 @@
     content: '·';
     margin-right: 3%;
 } */
-.FormDropdownInput-ListItem-StarsContainer{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-}
 .FormDropdownInput-ListItem-Span {
     font-size: 0.8rem;
     text-align: left;
