@@ -149,3 +149,8 @@
    'opsz' 48;
 }
 
+@media (max-width:700px){
+    #Navbar{
+        display: flex;
+    }
+}

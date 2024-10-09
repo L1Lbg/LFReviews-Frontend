@@ -19,9 +19,6 @@ export default function SmallNavbar(){
         setScrollY(window.scrollY);
     };
 
-    // addEventListener('resize', (e) =>{
-    //   setWidth(window.outerWidth)
-    // })
 
 
 
@@ -35,50 +32,47 @@ export default function SmallNavbar(){
 
     }
 
-  useEffect(() => {
-    // Attach scroll event listener
-    window.addEventListener('scroll', handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  // }, []);
 
-  useEffect(() => {
-    // Attach scroll event listener
-    let navbar = document.getElementById('Navbar')
-    let logo = document.getElementById('Navbar-Logo')
-    clearTimeout(lastTimeout) 
-    const navLinks = document.querySelectorAll('#Navbar > a, #Navbar > button');
-    if(scrollY > threshold){ 
-        //move logo to center
-        if(window.outerWidth > 700){
-          navLinks.forEach(link => {
-            link.setAttribute('style', 'transform:translateY(-500px);');  
-          });
-        } else {
-          navLinks.forEach(link => {
-            link.setAttribute('style', 'transform:translateX(-1000px);');  
-          });
-        }
-        logo.setAttribute(
-          "style",
-          "left: 50%;transform: translateX(-50%);"
-        );
+  // useEffect(() => {
+  //   let navbar = document.getElementById('Navbar')
+  //   let logo = document.getElementById('Navbar-Logo')
+  //   clearTimeout(lastTimeout) 
+  //   const navLinks = document.querySelectorAll('#Navbar > a, #Navbar > button');
+  //   if(scrollY > threshold){ 
+  //       if(window.outerWidth > 700){
+  //         navLinks.forEach(link => {
+  //           link.setAttribute('style', 'transform:translateY(-500px);');  
+  //         });
+  //       } else {
+  //         navLinks.forEach(link => {
+  //           link.setAttribute('style', 'transform:translateX(-1000px);');  
+  //         });
+  //       }
+  //       logo.setAttribute(
+  //         "style",
+  //         "left: 50%;transform: translateX(-50%);"
+  //       );
 
-        setLastTimeout( 
-            setTimeout(()=>{
-                if(window.scrollY > threshold){
-                    setShowOthers(false)
-                }
-            }, 1300)
-        )
+  //       setLastTimeout( 
+  //           setTimeout(()=>{
+  //               if(window.scrollY > threshold){
+  //                   setShowOthers(false)
+  //               }
+  //           }, 1300)
+  //       )
 
-    } else { // make everything re-appear
-      navbar.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
-      logo.setAttribute('style', 'transform:translateX(0%) scale(1);');   
-      setShowOthers(true)
-      navLinks.forEach(link => {
-          link.setAttribute('style', 'transform:translateY(0px) translateX(0px);');  
-      });
-    }
-  }, [scrollY, email]);
+  //   } else { // make everything re-appear
+  //     navbar.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
+  //     logo.setAttribute('style', 'transform:translateX(0%) scale(1);');   
+  //     setShowOthers(true)
+  //     navLinks.forEach(link => {
+  //         link.setAttribute('style', 'transform:translateY(0px) translateX(0px);');  
+  //     });
+  //   }
+  // }, [scrollY, email]);
 
     return (
       <>
@@ -90,10 +84,7 @@ export default function SmallNavbar(){
               }}
               className="Logo"
               id="Navbar-Logo"
-            >
-              {/* <img src={Logo} alt="LFMReviews Logo" /> */}
-              LFMReviews
-            </img>
+            />
           ) : (
             <img
                 onClick={() => {
@@ -102,10 +93,7 @@ export default function SmallNavbar(){
               className="Logo"
               id="Navbar-Logo"
               src=""
-            >
-              {/* <img src={Logo} alt="LFMReviews Logo" /> */}
-              LFMReviews
-            </img>
+            />
           )}
         </div>
       
@@ -115,7 +103,6 @@ export default function SmallNavbar(){
         
         {showOthers ? (
           <>
-            <span></span>
             <Link to="/communaute">{t("Navbar.community")}</Link>
             <Link to="/publication">{t("Navbar.publish")}</Link>
 
