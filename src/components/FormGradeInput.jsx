@@ -12,13 +12,13 @@ import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfi
 const StyledRating = styled(Rating)(({ theme }) => ({
   '& .MuiRating-iconEmpty .MuiSvgIcon-root': {
     color: theme.palette.action.disabled,
-    fontSize: '2rem',
+    fontSize: '2.5rem',
   },
   '& .MuiRating-iconFilled .MuiSvgIcon-root': {
-    fontSize: '2rem',
+    fontSize: '2.5rem',
   },
   '& .MuiRating-iconHover .MuiSvgIcon-root': {
-    fontSize: '2rem',
+    fontSize: '2.5rem',
   },
 }));
 

@@ -13,14 +13,19 @@
 #Home-Presentation-Container{
     width: 70vw;
     margin: auto;
+    margin-top: 10vh;
 }
 #Home-Presentation-Media-Container{
     width: 100%;
-    margin-top: 10vh;
+    aspect-ratio: 16/9 !important;
 }
 #Home-Presentation-Media{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
+    height: 100%;
+    width: 100%;
     border-radius: 15px;
     object-fit: contain;
     box-shadow: 0 0 70px 7.5px rgba(255, 255, 255, 0.5);
@@ -130,10 +135,6 @@
     border-radius: 7px;
 }
 
-.Home-FAQ > details > summary::marker {
-    content: '+';
-    transition: 0.2s;
-}
 .Home-FAQ > details > p{
     font-weight: 300;
     font-size: 1vw;

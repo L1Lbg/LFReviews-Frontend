@@ -127,8 +127,6 @@
 #FormGradeInput-Container{
     display: grid;
     margin-bottom: 8vh;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows:repeat(3,10vh);
     row-gap: 6vh;
     align-items: center;
     justify-items: center;

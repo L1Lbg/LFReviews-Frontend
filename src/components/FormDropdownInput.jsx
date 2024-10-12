@@ -13,6 +13,7 @@ export default function FormDropdownInput(props){
     const [listClass, setListClass] = useState(
       "FormDropdownInput-List FormDropdownInput-ListClosed"
     );
+    const [teacherDisplay, setTeacherDisplay] = useState('flex')
     const { customFetch, setError } = useContext(Context); 
     const [inputDisabled, setInputDisabled] = useState(false);
     const requestInterval = 500
@@ -113,6 +114,13 @@ export default function FormDropdownInput(props){
     }
 
 
+    useEffect(()=>{
+      if(props.name == 'teacher'){
+        setTeacherDisplay('grid')
+      } 
+    }, [props.name])
+
+
 
 
 
@@ -143,31 +151,51 @@ export default function FormDropdownInput(props){
         <input name={props.name} type="hidden" value={realId} />
         <div className={listClass}>
           {values.map((value, index) => (
-            <div
-              className="FormDropdownInput-ListItem"
-              onClick={handleClick}
-              key={index}
-              prefix={value?.prefix}
-              name={value.name}
-              value={value.id}
-            >
-              <span className="FormDropdownInput-ListItem-Span">
+            <>
+              {
+                index != 0 ? (
+                  <hr className="FormDropDownInput-HR"/>
+                ) : (
+                  <></>
+                )
+              }
+              <div
+                className="FormDropdownInput-ListItem"
+                onClick={handleClick}
+                key={index}
+                prefix={value?.prefix}
+                name={value.name}
+                value={value.id}
+                style={{
+                  display:teacherDisplay
+                }}
+              >
+                <span className="FormDropdownInput-ListItem-Span">
+                  {
+                    props.name == 'teacher' ? (
+                      <>
+                        {value.prefix} {value.name}
+                      </>
+                    ) : (
+                      <>
+                        {value.name}
+                      </>
+                    )
+                  }
+                </span>
+                
                 {
-                  props.name == 'teacher' ? (
-                    <>
-                      {value.prefix} {value.name}
-                    </>
+                  value?.rating != null ? (
+                    <div className="FormDropdownInput-ListItem-StarsContainer">
+                    <TeacherStar rating={value?.rating} />
+                  </div>
                   ) : (
-                    <>
-                      {value.name}
-                    </>
+                    <></>
                   )
                 }
-              </span>
-              <div className="FormDropdownInput-ListItem-StarsContainer">
-                <TeacherStar rating={value?.rating} />
+
               </div>
-            </div>
+            </>
           ))}
         </div>
       </div>

@@ -59,6 +59,7 @@
     padding:0;
     color:var(--white);
     text-align: center;
+    font-size: 1.2rem;
 }
 .FormDropdownInput > input::placeholder{
     padding-left: 8vw;
@@ -66,10 +67,11 @@
 }
 .FormDropdownInput-List {
     display: block;
-    background: var(--grey-dark);
+    background: var(--grey-light);
     width: 80%;
-    border: solid 2px #373737;
     padding-bottom: 0.75%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     max-height: 70vw;
     overflow-y: auto;
     transition: max-height 0.5s;
@@ -78,6 +80,8 @@
     top: 100%; 
     left: 50%;  
     transform: translateX(-50%);
+    border: solid 1px grey;
+    border-top: none;
 }
 .FormDropdownInput-ListClosed{
     max-height:0px !important;
@@ -91,29 +95,55 @@
     color:var(--white);
     text-overflow: ellipsis;
     padding:5%;
-    background:#373737;
     margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
     display: grid;
+    grid-template-columns:1fr 1fr;
     align-items: center;
     justify-items: center;
-    grid-template-columns:none;
+    height: 5vh;
 }
 .FormDropdownInput-ListItem:hover{
     background:#252525;
     cursor: pointer;    
 }
-/* .FormDropdownInput-ListItem::before{
-    content: '·';
-    margin-right: 3%;
-} */
 .FormDropdownInput-ListItem-Span {
-    font-size: 0.8rem;
-    text-align: left;
+    font-size: 1.1rem;
     text-overflow:ellipsis;
     overflow: hidden;
+    padding-right: 2vw;
     white-space: nowrap;
+    width: -webkit-fill-available;
 }
+.FormDropdownInput-ListItem-StarsContainer{
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    background: var(--grey-dark);
+}
+.FormDropdownInput-ListItem-StarsContainer > .TeacherStar{
+    justify-content: left;
+    padding: 5%;
+    align-items: center;
 
+}
+.FormDropdownInput-ListItem-StarsContainer > .TeacherStar > img{
+    width: 20%;
+    height: 100%;
+    aspect-ratio: 1/1 !important;
+}
+.FormDropdownInput-ListItem-StarsContainer > .TeacherStar > .HalfStar{
+    height: 75%;
+    width: 15%;
+}
+.FormDropDownInput-HR{
+    color: white;
+    width: 80%;
+    background: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 @media (max-width:900px) {
     .FormDropdownInput > input::placeholder{
         color:var(--grey-lighter)
