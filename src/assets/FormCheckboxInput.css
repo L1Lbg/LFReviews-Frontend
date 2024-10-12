@@ -8,6 +8,7 @@
     padding:2%;
     margin-top: 3vh;
     margin-bottom: 3vh;
+    min-height: 70px;
 }
 .FormCheckboxInput-Container > select, .FormCheckboxInput-Container > select > option {
     font-weight: bold;

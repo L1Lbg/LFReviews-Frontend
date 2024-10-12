@@ -60,6 +60,10 @@
     color:var(--white);
     text-align: center;
 }
+.FormDropdownInput > input::placeholder{
+    padding-left: 8vw;
+    color: transparent;
+}
 .FormDropdownInput-List {
     display: block;
     background: var(--grey-dark);
@@ -108,4 +112,17 @@
     text-overflow:ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+@media (max-width:900px) {
+    .FormDropdownInput > input::placeholder{
+        color:var(--grey-lighter)
+    }
+    .FormDropdownInput-Container{
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+    .FormLabel{
+        display: none;
+    }
 }

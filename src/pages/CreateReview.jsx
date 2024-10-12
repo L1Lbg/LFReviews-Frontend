@@ -60,12 +60,12 @@ export default function CreateReview(){
     { name: "Sixieme", id: "6" },
   ])
   const gradesInputs = [
-    "clarte", "interaction_soutien", "methodes", "justice",
+    "clarte", "interaction_soutien",
     "gestion_temps", "gestion_colere", "amabilite", 
-    "charge_travail", "distraction", "difficulte", 
+    "charge_travail","difficulte" 
   ]
   const boolInputs = [
-    "ponctuel", "aide", "greves", "punitions"
+    "ponctuel", "aide", "greves", "punitions", "justice","distraction"
   ]
   const [submitDisabled, setSubmitDisabled] = useState(false)
   const [t] = useTranslation('global')
@@ -118,11 +118,11 @@ export default function CreateReview(){
           return;
         }
 
-        // const regex = /^[0-9a-zA-Z]$/;
-        // if(!regex.test(e.target.text_rating.value) && e.target.text_rating.value.trim() != ''){
-        //   setError('text-rating-forbidden-characters')
-        //   return;
-        // }
+        const regex = /^[0-9a-zA-Z]$/;
+        if(!regex.test(e.target.text_rating.value) && e.target.text_rating.value.trim() != ''){
+          setError('text-rating-forbidden-characters')
+          return;
+        }
         
 
 
@@ -161,16 +161,19 @@ export default function CreateReview(){
                 name="teacher"
                 ressource="/teachers"
                 special_method={setSubjects}
+                placeholder="Nom du professeur"
               />
               <FormDropdownInput
                 label={t('CreateReview.selectSubject')}
                 name="subject"
                 options={subjects}
+                placeholder="Matière"
               />
               <FormDropdownInput
                 label={t('CreateReview.selectYear')}
                 name="year"
                 options={years}
+                placeholder="Année scolaire"
               />
             </div>
             <h2 className="FormLabel">

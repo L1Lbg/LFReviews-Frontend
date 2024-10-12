@@ -87,12 +87,11 @@
     },
   "CreateReview": {
       
-      "clarte": "Clarté des explications",
+      "clarte": "Clarté/Méthodes d'explication(s)",
       "interaction_soutien": "Interaction et soutien",
       "methodes": "Méthodes d'enseignement",
       "justice": "Justice dans l'évaluation",
       "ambiance": "Ambiance en classe",
-      "relation_eleves": "Relation avec les élèves",
       "gestion_temps": "Gestion du temps",
       "amabilite": "Amabilité",
       "gestion_colere": "Gestion de la colère",
