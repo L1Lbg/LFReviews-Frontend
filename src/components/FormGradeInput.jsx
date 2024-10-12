@@ -12,6 +12,13 @@ import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfi
 const StyledRating = styled(Rating)(({ theme }) => ({
   '& .MuiRating-iconEmpty .MuiSvgIcon-root': {
     color: theme.palette.action.disabled,
+    fontSize: '2rem',
+  },
+  '& .MuiRating-iconFilled .MuiSvgIcon-root': {
+    fontSize: '2rem',
+  },
+  '& .MuiRating-iconHover .MuiSvgIcon-root': {
+    fontSize: '2rem',
   },
 }));
 
@@ -49,7 +56,7 @@ IconContainer.propTypes = {
 
 export default function FormGradeInput(props){
 
-  const [grade, setGrade] = useState(3)
+  const [grade, setGrade] = useState(null)
   const handleGradeChange = (e) => {
     setGrade(parseFloat(e.target.value))
   }
@@ -62,15 +69,14 @@ export default function FormGradeInput(props){
           {props.label}
         </label>
         <span>
-          
           <StyledRating
               name={props.name}
-              defaultValue={3}
               IconContainerComponent={IconContainer}
               getLabelText={(value) => customIcons[value].label}
               highlightSelectedOnly
               value={grade}
               onChange={handleGradeChange}
+              size="large"
             />
         </span>
       </div>

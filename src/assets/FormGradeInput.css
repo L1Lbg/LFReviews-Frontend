@@ -2,15 +2,16 @@
     background: var(--grey-light);
     border-radius: 10px;
     color:white;
-    display: grid;
-    grid-template-columns: 1fr  0.7fr;
     align-items: center;
     justify-items: center;
-    height: 10vh;
+    height: 15vh;
     max-height: 70px;
     max-width: 250px;
-    width: 80%;
+    width: 100%;
     padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 3px 3px rgba(94, 94, 94, 0.75);
 }
 .FormGradeInput-Select{
     background: none;
@@ -27,13 +28,12 @@
 }
 .num-label{
     color: white;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-overflow: ellipsis;
     text-align: center;
 }
 .FormGradeInput > span{
     display: flex;
-    background: var(--purple);
     justify-content: center;
     align-items: center;
     padding:5%;
@@ -52,4 +52,10 @@
     align-items: center;
     direction:rtl;
     width: 60%;
+}
+
+@media (max-width:900px) {
+    .num-label{
+        font-size: 0.8rem !important;
+    }
 }
