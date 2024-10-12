@@ -84,6 +84,7 @@ export default function SmallNavbar(){
               }}
               className="Logo"
               id="Navbar-Logo"
+              alt="LFMReviews Logo"
             />
           ) : (
             <img

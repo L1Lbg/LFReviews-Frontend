@@ -126,7 +126,7 @@
 
 .Home-FAQ > details > summary{
     background: var(--grey-light);
-    font-size:1.2vw;
+    font-size:1.2rem;
     padding-left: 5%;
     display: flex;
     align-items: center;
@@ -137,7 +137,7 @@
 
 .Home-FAQ > details > p{
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 1rem;
     margin-left: 3%;
 }
 

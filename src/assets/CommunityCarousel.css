@@ -1,0 +1,17 @@
+.CommunityCarousel{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.CommunityCarousel > .embla {
+    max-width:100vw;
+    margin: auto;
+    --slide-spacing:7vw;
+    --slide-size: 30%;
+
+}
+
+@media (max-width:900px){
+  .embla{
+    --slide-size:90%;
+  }
+}

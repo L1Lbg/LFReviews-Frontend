@@ -1,9 +1,19 @@
+@keyframes loading {
+    0%{background: grey;}
+    50%{background: darkgrey;}
+    100%{background: grey;}
+}
+
+
 #Community{
     min-height: 150vh;
 }
 #Community-title{
     text-align: center;
     font-size: 3.5rem;
+}
+#Community-title > .Logo{
+    font-size: inherit;
 }
 .Community-reviews{
     display: grid;
@@ -13,6 +23,10 @@
     gap: 5%;
     padding: 3%;
     padding-top: 1%;
+}
+#Community-Categories-Container{
+    opacity: 1;
+    transition: 1s;
 }
 .Community-category{
     padding-top: 1%;
@@ -31,25 +45,42 @@
 }
 .Community-review{
     width: 100%;
+    height: 30vh;
     background: var(--grey-dark);
     border-radius: 15px;
     padding: 2%;
+}
+.Community-review-loading{
+    background: grey;
+    animation-name: loading;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 .Community-review-content{
     background:var(--grey-light);
     margin: 2%;
     border-radius: 5px;
 }
-#Community-input-container{
+#Community-input-form{
     display: grid;
+    margin: auto;
     grid-template-columns: 1fr;
+    transition: 0.5s;
+    width: 50vw;
+    margin-bottom: 5vh;
 }
 #Community-input{
-    width: 40%;
-    min-width: 250px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    width: 100%;
     aspect-ratio: 10/1;
+    border-radius: 10px;
+    border: none;
+    color: var(--grey-dark);
     margin: auto;
-    margin-bottom: 5vh;
+}
+#Community-input::placeholder{
+    color:var(--grey-lighter);
 }
 .Community-category-review-relatable{
     display: flex;
@@ -97,6 +128,28 @@ progress::-webkit-progress-value {
 }
 .Community-category-review-relatable > div > div > p:last-child{
     justify-self: right;
+}
+
+#Community-input-results{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: var(--grey-light);
+    width: 70%;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--white);
+}
+#Community-input-results > span{
+    font-size: 1.5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 0.7fr 1fr;
+}
+#Community-input-results > span:hover{
+    background: var(--grey-dark);
+    cursor: pointer;
 }
 
 @media (max-width:900px) {
