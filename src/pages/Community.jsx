@@ -67,7 +67,7 @@ export default function Community(){
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7504130752436386"
             crossorigin="anonymous"></script>
-        <ins class="adsbygoogle"
+        <ins className="adsbygoogle"
             style={{"display":"block"}}
             data-ad-format="fluid"
             data-ad-layout-key="-6t+ed+2i-1n-4w"

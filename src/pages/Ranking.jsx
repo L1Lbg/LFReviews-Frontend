@@ -30,7 +30,7 @@ export default function Ranking(){
             }
 
 
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7504130752436386"
+            {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7504130752436386"
                 crossOrigin="anonymous"></script>
             <ins className="adsbygoogle"
                 style={{'display':'block'}}
@@ -40,7 +40,7 @@ export default function Ranking(){
                 data-full-width-responsive="true"></ins>
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+            </script> */}
         </div>
     )
 }

@@ -73,7 +73,6 @@ export default function CreateReview(){
     const [overall, setOverall] = useState(2.5); 
     const handleSubmit = (e) => {
         e.preventDefault()
-        setSubmitDisabled(true)
         let body = {}
 
         for(let i=0;i<gradesInputs.length;i++){
@@ -86,7 +85,6 @@ export default function CreateReview(){
         const teacher = e.target.teacher.value;
         const subject = e.target.subject.value;
         const year = e.target.year.value
-        console.log(e.target.text_rating.value)
         body['text_rating'] = e.target.text_rating.value
         body['teacher'] = teacher
         body['subject'] = subject
@@ -97,17 +95,14 @@ export default function CreateReview(){
         //todo: sanitize
         if (teacher == -1) {
           setError("wrong-teacher");
-          setSubmitDisabled(false);
           return;
         }
         if (subject == -1) {
           setError("wrong-subject");
-          setSubmitDisabled(false);
           return;
         }
         if(year == -1){
           setError('wrong-year')
-          setSubmitDisabled(false);
           return;
         }
         for (let i = 0; i < gradesInputs.length; i++) {
@@ -123,7 +118,15 @@ export default function CreateReview(){
           return;
         }
 
-        //
+        // const regex = /^[0-9a-zA-Z]$/;
+        // if(!regex.test(e.target.text_rating.value) && e.target.text_rating.value.trim() != ''){
+        //   setError('text-rating-forbidden-characters')
+        //   return;
+        // }
+        
+
+
+        setSubmitDisabled(true);
         customFetch(`/api/rating/0`,
           {
             method:'POST',

@@ -40,7 +40,9 @@
       "Q2":"Combien de cours y a-t-il ?",
       "R2":"La plupart des professeurs de la 6ème à la Terminale sont disponibles. Cependant, vous pouvez nous aider à enrichir notre liste en nous envoyant des informations sur un enseignant que nous n'avons pas encore répertorié via l'onglet 'Ajouter un professeur'.",
       "Q3":"Les gens pourront savoir qui a publié la review?",
-      "R3":"Non, toutes les critiques sont anonymes, personne ne pourra savoir qui les a publiées. Nous demandons votre adresse e-mail uniquement pour des raisons de base de données et pour prévenir la création de plusieurs comptes."
+      "R3":"Non, toutes les critiques sont anonymes, personne ne pourra savoir qui les a publiées. Nous demandons votre adresse e-mail uniquement pour des raisons de base de données et pour prévenir la création de plusieurs comptes.",
+      "Q4":"Les gens pourront savoir qui a publié la review?",
+      "R4":"Non, toutes les critiques sont anonymes, personne ne pourra savoir qui les a publiées. Nous demandons votre adresse e-mail uniquement pour des raisons de base de données et pour prévenir la création de plusieurs comptes."
     },
     "Settings":{
       "PageLanguage":"Langage de la page:"
@@ -81,7 +83,7 @@
       "success":"Compte activée."
     },
     "Teacher":{
-      "no-rating":"Aucune review n'a ete faite par un utilisateur pour cet instant. Soyez le premier!"
+      "no-rating":"Aucune review n'a ete faite par un utilisateur sur ce professeur pour cet instant. Soyez le premier!"
     },
   "CreateReview": {
       
@@ -133,7 +135,8 @@
     "request-reset-password": "La demande n'a ete réalisée. Réessayez s'il vous plait.",
     "404":"La page accédée n'existe pas",
     "ReviewFormIdentical":"Les valeurs n'ont pas été changées",
-    "teacher-query":"Une erreur est survenue en cherchant des professeurs"
+    "teacher-query":"Une erreur est survenue en cherchant des professeurs",
+    "text-rating-forbidden-characters":"Les caractères utilisées (comme les caractères spéciaux et accents) dans la review sont interdits."
   },
   "Success":{
     "ReviewEdit":"Votre review a été modifiée",
