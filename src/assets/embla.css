@@ -28,7 +28,7 @@
   }
 
 @media (max-width:900px){
-  .embla{
+  #Home-container > .embla{
     --slide-size:90%;
   }
 }

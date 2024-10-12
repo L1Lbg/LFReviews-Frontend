@@ -1,13 +1,4 @@
-.embla {
-    overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
+
 
 
 #Home-Presentation-Container{
@@ -75,9 +66,6 @@
     outline-color:rgb(0, 119, 255);
     -webkit-text-fill-color: transparent;
     box-shadow: 0 0 30px 30px rgba(84, 84, 84, 0.5);
-}
-.Home-FAQ-Title{
-    margin-top: 0;
 }
 
 #Home-FAQ-Container{

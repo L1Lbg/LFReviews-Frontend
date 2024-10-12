@@ -43,6 +43,8 @@ const EmblaCarousel = (props) => {
                                 key={review.index}
                                 review={review}
                                 loading={props.loading}
+                                community={props.community}
+                                setCommunity={props.setCommunity}
                             />
                         </div>
                     </div>

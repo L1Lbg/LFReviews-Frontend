@@ -9,14 +9,14 @@ import FormGradeInput from '../components/FormGradeInput';
 import Info from '/Icons/info.svg?url'
 import {useTranslation} from 'react-i18next';
 import { Context } from '../pages/Root'
-import Star from '../../public/Icons/Star.svg';
 
 
 const StyledRating = styled(Rating)(({ theme }) => ({
   // '& .MuiRating-iconEmpty': {
-  //   color: 'white',
+  //   color: 'grey',
+  //   opacity:'0.5'
   // },
-  fontSize:'2rem'
+  fontSize:'3rem'
 }));
 
 function StarIcon(props) {
@@ -230,7 +230,7 @@ export default function CreateReview(){
             </div>
 
             <button
-              id="CreateReview-Submit"
+              id="Home-AuthButton"
               type="submit"
               disabled={submitDisabled}
             >

@@ -2,7 +2,6 @@ import '../assets/Community.css';
 import { useTranslation } from "react-i18next";
 import { useContext, useEffect, useState } from 'react';
 import { Context } from './Root';
-import Review from '../components/Review';
 import TeacherStar from '../components/TeacherStar';
 import CommunityCarousel from '../components/CommunityCarousel';
 export default function Community(){
@@ -13,6 +12,7 @@ export default function Community(){
     const [inputFocus, setInputFocus] = useState(false);
     const [inputValue, setInputValue] = useState('')
     const [loading, setLoading] = useState(false)
+    const [reviewState, setReviewState] = useState({})
     const [requestTimeout, setRequestTimeout] = useState(null)
 
     useEffect(()=>{
@@ -94,7 +94,7 @@ export default function Community(){
     return ( 
         <div id='Community'>
             <h1 id='Community-title'>
-                <span className='Logo'>Reviews</span>
+                <span className='Logo'>Reviews </span>
                 {t('Community.title')}
             </h1>
             <form id="Community-input-form" onSubmit={handleSubmit} onFocus={()=>setInputFocus(true)} onBlur={()=>setInputFocus(false)}>
@@ -129,6 +129,8 @@ export default function Community(){
                                 category={category}
                                 loading={loading}
                                 index={index}
+                                community={reviewState}
+                                setCommunity={setReviewState}
                             />
                         </div>
                     )

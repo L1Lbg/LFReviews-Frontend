@@ -14,23 +14,18 @@
     margin-bottom: 15vh;
     margin-top: 5vh;
 }
-#CreateReview-Submit{
-    color: var(--white);
-    padding: 5%;
-    aspect-ratio: 13/2;
-    background:var(--purple);
-    font-weight: bold;
-    margin: auto;
-    border-radius: 5px;
-    border: none;
+#CreateReview-Form > #Home-AuthButton{
+    width: 30%;
     font-size: 2rem;
+    padding: 5%;
     margin: auto;
-    display: block;
-    transition: 0.5s;
+    border: none;
+    box-shadow: 0 0 10px 10px rgba(84, 84, 84, 0.5);
+    outline-color: #6296da00;
+    font-weight: bolder;
 }
-#CreateReview-Submit:hover{
-    
-    background: #614892;
+#CreateReview-Form > #Home-AuthButton:hover{
+    box-shadow: 0 0 17px 17px rgba(84, 84, 84, 0.5);
 }
 .FormLabel{
     color:var(--purple);
