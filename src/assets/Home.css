@@ -137,10 +137,9 @@
         grid-template-columns: 1fr;
     }
     .Home-FAQ > details > p{
-        font-size:1.6vw;
+        font-size:0.9rem;
     }
-    
     .Home-FAQ > details > summary{
-        font-size:1.7vw;
+        font-size:0.9rem;
     }
 }

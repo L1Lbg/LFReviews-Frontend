@@ -23,7 +23,6 @@ export default function Navbar(){
 
 
     const handleAuthClick = (e) => {
-      let dropdown = document.querySelector('#Navbar-Auth-Dropdown')
       if(dropdownDisplay == 'block'){
         setDropdownDisplay('none')
       } else {
@@ -49,11 +48,7 @@ export default function Navbar(){
           navLinks.forEach(link => {
             link.setAttribute('style', 'transform:translateY(-500px);');  
           });
-        } else {
-          navLinks.forEach(link => {
-            link.setAttribute('style', 'transform:translateX(-1000px);');  
-          });
-        }
+        } 
         logo.setAttribute(
           "style",
           "left: 50%;transform: translateX(-50%);"

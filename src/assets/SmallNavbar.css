@@ -1,0 +1,27 @@
+
+@media (max-width:700px){
+    #SmallNavbar-Logo{
+        width: 15vw;
+        position: absolute;
+        z-index: 1001;
+        left: 4vw;
+        top:50px
+    }
+    #Navbar{
+        min-height: 150px;
+        top:0px;
+        overflow-x: hidden;
+        display: flex;
+    }
+    #Navbar-Logo-Container{
+        top:0
+    }
+    #SmallNavbar-Logo:hover{
+        cursor: pointer;
+    }
+    #Navbar > span{
+        width: 10vw;
+        min-width: 20vw !important;
+    }
+}
+

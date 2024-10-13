@@ -1,5 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import '../assets/Navbar.css'
+import '../assets/SmallNavbar.css'
 import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Logout from "./Logout";
@@ -83,8 +84,9 @@ export default function SmallNavbar(){
                 window.scroll({ top: 0, behavior: "smooth" });
               }}
               className="Logo"
-              id="Navbar-Logo"
+              id="SmallNavbar-Logo"
               alt="LFMReviews Logo"
+              src="./Icons/Logo.svg"
             />
           ) : (
             <img
@@ -92,8 +94,8 @@ export default function SmallNavbar(){
                 navigate('/');
               }}
               className="Logo"
-              id="Navbar-Logo"
-              src=""
+              id="SmallNavbar-Logo"
+              src="./Icons/Logo.svg"
             />
           )}
         </div>
@@ -104,6 +106,7 @@ export default function SmallNavbar(){
         
         {showOthers ? (
           <>
+            <span></span>
             <Link to="/communaute">{t("Navbar.community")}</Link>
             <Link to="/publication">{t("Navbar.publish")}</Link>
 

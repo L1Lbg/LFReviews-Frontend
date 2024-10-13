@@ -1,12 +1,12 @@
 
 
 @keyframes appearFromTop {
-    from{transform: translateY(-500px);}
+    from{transform: translateY(-30vh);}
     to{transform: translateY(0px);}
 }
 @keyframes disappearToTop {
     from{transform: translateY(0px);}
-    to{transform: translateY(-500px);}
+    to{transform: translateY(-30vh);}
 }
 #Navbar{
     display: grid;
@@ -17,10 +17,10 @@
     position: sticky;
     transition: 0.5s;
     height: 15vh;
-    min-height: 5vh;
+    min-height: 130px;
 }
 #Navbar > span{
-    min-width:250px;
+    min-width:280px;
 }
 #Navbar > a, #Navbar > div{
     border-radius: 10px;
@@ -68,9 +68,6 @@
     border-radius: 10px;
     transition: 0.5s;
 }
-#Navbar-Auth-Dropdown > *:hover{
-    background-color: var(--grey-light);
-}
 #Navbar-Auth-Dropdown > button {
     background: var(--white);
     color: var(--black);
@@ -86,10 +83,10 @@
 #Navbar-Logo-Container{
     position: sticky; 
     z-index: 1000;
-    height: 0;
-    top:2.5vh;
+    top:37px;
     padding-left: 2.5vw;
-    width: 100vw;
+    height: 0;
+    width: 95%;
 }
 #Navbar-Logo{
     width: fit-content;
@@ -97,7 +94,7 @@
     position: absolute;
     z-index: 1000;
     transition: 1.3s;
-    left:2%;
+    left:4%;
     transform: translateX(0vw);
     text-align: left !important;
 }
@@ -105,6 +102,7 @@
     background: linear-gradient(180deg, var(--high-gradient-blue), var(--high-gradient-red));
     background-clip:text;
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
 .Logo{
     background: linear-gradient(180deg, var(--gradient-blue), var(--gradient-red));
@@ -120,10 +118,6 @@
     height: 10vh;
     aspect-ratio: 1/1;
 } */
-#Navbar > a:not(#Navbar-Logo):hover{
-    background:#3b3b3b;
-    color:white;
-}
 #Navbar-Auth-Icon{
     transition: transform 0.5s;
     min-width: 30px;
@@ -147,10 +141,4 @@
    'wght' 400,
    'GRAD' 0,
    'opsz' 48;
-}
-
-@media (max-width:700px){
-    #Navbar{
-        display: flex;
-    }
 }
