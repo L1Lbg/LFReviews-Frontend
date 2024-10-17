@@ -7,8 +7,8 @@ import '../assets/CommunityCarousel.css';
 
 
 
-const EmblaCarousel = (props) => {
 
+const EmblaCarousel = (props) => {
     const [speed, setSpeed] = useState(1)
 
     useEffect(()=>{
@@ -25,10 +25,10 @@ const EmblaCarousel = (props) => {
   ])
 
   useEffect(() => {
-    if (!emblaApi) return
-    const autoScroll = emblaApi?.plugins()?.autoScroll
-    if (!autoScroll) return;
-}, [emblaApi])
+        if (!emblaApi) return
+        const autoScroll = emblaApi?.plugins()?.autoScroll
+        if (!autoScroll) return;
+    }, [emblaApi])
 
   return (
     <div className="CommunityCarousel">
@@ -43,8 +43,6 @@ const EmblaCarousel = (props) => {
                                 key={review.index}
                                 review={review}
                                 loading={props.loading}
-                                community={props.community}
-                                setCommunity={props.setCommunity}
                             />
                         </div>
                     </div>

@@ -1,14 +1,68 @@
 import { useContext, useEffect, useState } from "react";
 import TeacherStar from "./TeacherStar"
 import { Context } from "../pages/Root";
+import { useNavigate } from "react-router-dom";
+import { CommunityContext } from "../pages/Community";
 export default function Review(props){
 
-    const {customFetch} = useContext(Context)
+    const {reviewState, setReviewState} = useContext(CommunityContext)
+    const {customFetch, email} = useContext(Context)
     const [tempBlock, setTempBlock] = useState(false)
+    const [scale, setScale] = useState('100%') // to make animations
+    const [userRelated, setUserRelated] = useState()
+    const like_url = './Icons/Like.svg'
+    const liked_url = './Icons/Liked.svg'
+    const dislike_url = './Icons/Dislike.svg'
+    const disliked_url = './Icons/Disliked.svg'
+
+
+    const [likeImgSrc, setLikeImgSrc] = useState(like_url)
+    const [dislikeImgSrc, setDislikeImgSrc] = useState(dislike_url)
+    const navigate = useNavigate()
+
+    // change state every time reviewState is changed
+    useEffect(()=>{
+        setUserRelated(reviewState[props.review.id])
+    }, [reviewState])
+
+
+    // chandle UI changes when userRelated changes
+    useEffect(()=>{
+        if(userRelated == true){
+            setLikeImgSrc(liked_url)
+            setDislikeImgSrc(dislike_url)
+        } else if(userRelated == null){
+            setLikeImgSrc(like_url)
+            setDislikeImgSrc(dislike_url)
+        } else if(userRelated == false){
+            setLikeImgSrc(like_url)
+            setDislikeImgSrc(disliked_url)
+        }
+    }, [userRelated, reviewState])
+    
+    
+
 
     const handleRelate = (valueParam) => {
         if(tempBlock){
             return;
+        }
+
+        let value = valueParam;
+        let method = 'POST';
+        setScale('60%')
+
+
+        //prevent un-authed users
+        if(email == undefined){
+            navigate('/auth')
+            return;
+        }
+        
+        // change value to null if button re-clicked
+        if(value == userRelated){
+            value = null
+            method = 'DELETE'
         }
 
         setTempBlock(true)
@@ -21,31 +75,15 @@ export default function Review(props){
         )
         .then(
             data => {
-                if(!data.error){
-                    const like = document.querySelectorAll(`.Community-category-review-relatable-like-${props.review.id}`)
-                    const dislike = document.querySelectorAll(`.Community-category-review-relatable-dislike-${props.review.id}`)
-
-                    like.forEach((img) => {
-                        img.src = './Icons/Like.svg'
-                    })
-                    dislike.forEach((img) => {
-                        img.src = './Icons/Dislike.svg'
-                    })
-                    if(valueParam == true){
-                        like.forEach((img) => {
-                            img.src = './Icons/Liked.svg'
-                        })
-                    } else if(valueParam == false) {
-                        dislike.forEach((img) => {
-                            img.src = './Icons/Disliked.svg'
-                        })
-                    }
-                } else {
-                    console.error(data.error)
-                }
+                setScale('100%')
+                setReviewState({
+                    ...reviewState,  
+                    [props.review.id]: value 
+                });
             }
         )
     }
+
 
 
 
@@ -82,7 +120,7 @@ export default function Review(props){
                             <p>-"{props.review.text_rating}"</p>
 
                             <div className="Community-category-review-relatable">
-                                <img className={`Community-category-review-relatable-like-${props.review.id}`} src="./Icons/Like.svg" alt="Like" onClick={()=>handleRelate(true)}/>
+                                <img style={{scale:scale}} src={likeImgSrc} alt="Like" onClick={()=>handleRelate(true)}/>
                                 {
                                     props.review.relatable_count > 0 ? (
                                         <div>
@@ -96,7 +134,7 @@ export default function Review(props){
                                         </div>
                                     )
                                 }
-                                <img className={`Community-category-review-relatable-dislike-${props.review.id}`} src="./Icons/Dislike.svg" alt="Dislike" onClick={()=>handleRelate(false)}/>
+                                <img style={{scale:scale}} src={dislikeImgSrc} alt="Dislike" onClick={()=>handleRelate(false)}/>
                                 {
                                     props.review.relatable_count > 0 ? (
                                         <p className='Community-category-review-relatable-count'>({props.review.relatable_count})</p>

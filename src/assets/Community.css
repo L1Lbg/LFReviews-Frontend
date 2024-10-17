@@ -77,6 +77,9 @@
 .Community-review-content > p{
     height: 50%;
 }
+.Community-category-review-relatable > img{
+    transition: 0.5s;
+} 
 #Community-input-form{
     display: grid;
     margin: auto;

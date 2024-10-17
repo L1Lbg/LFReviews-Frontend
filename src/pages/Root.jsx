@@ -30,7 +30,6 @@ export default function Root(){
       )}`;
     }
     options["headers"]["Content-Type"] = "application/json";
-    console.log(options['body'])
     options["body"] = JSON.stringify(options["body"]);
 
     if(url[0] != '/'){
@@ -39,7 +38,6 @@ export default function Root(){
 
     url = `${import.meta.env.VITE_BACKEND_URL}${url}`
 
-    console.log(url)
 
     return fetch(url, options).then(
       (res) => {
@@ -156,7 +154,7 @@ export default function Root(){
     })
 
 
-  // block urls and change titles
+  //* block urls and change titles
   useEffect(()=>{
     if(location.pathname == '/auth' && email != undefined){
       navigate('/settings')

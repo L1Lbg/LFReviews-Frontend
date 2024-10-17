@@ -1,9 +1,14 @@
 import '../assets/Community.css';
 import { useTranslation } from "react-i18next";
-import { useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import { Context } from './Root';
 import TeacherStar from '../components/TeacherStar';
 import CommunityCarousel from '../components/CommunityCarousel';
+
+
+export const CommunityContext = createContext();
+
+
 export default function Community(){
     const [t] = useTranslation('global')
     const [categories, setCategories] = useState([])
@@ -24,11 +29,19 @@ export default function Community(){
         )
         .then(
             data => {
-                setCategories(data);
+                setCategories(data.slice(0, -1));
+                setReviewState(data[data.length-1]);
             }
         )
         
     }, [])
+
+
+    // useEffect(()=>{
+    //     console.log(categories)
+    //     console.log(reviewState)
+    // }, [reviewState, categories])
+
 
     useEffect(()=>{
         const categories = document.querySelector('#Community-Categories-Container')
@@ -57,8 +70,7 @@ export default function Community(){
                     `/api/teachers?query=${inputValue}`, 
                     {
                         method: "GET",
-                    }, 
-                    false
+                    }
                 )
                 .then((data) => {
                         setTeachers(data)
@@ -68,24 +80,21 @@ export default function Community(){
             
         }, [inputValue])
 
-    
-    const handleSubmit = (e) => {
-        e.preventDefault()
-    }
+
     const handleSpanClick = (id) => {
         setLoading(true)
         customFetch(
             `/api/teacher/${id}/reviews`,
             {
                 method:'GET'
-            },
-            false
+            }
         )
         .then(
             data => {
-                setCategories(data)
+                setCategories(data.slice(0, -1))
                 setTeachers([])
                 setLoading(false)
+                setReviewState(data[data.length-1]);
             }
         )
     }
@@ -97,7 +106,7 @@ export default function Community(){
                 <span className='Logo'>Reviews </span>
                 {t('Community.title')}
             </h1>
-            <form id="Community-input-form" onSubmit={handleSubmit} onFocus={()=>setInputFocus(true)} onBlur={()=>setInputFocus(false)}>
+            <form id="Community-input-form" onFocus={()=>setInputFocus(true)} onBlur={()=>setInputFocus(false)} onSubmit={(e) => e.preventDefault()}>
                 <input type="text" autocomplete="off" id="Community-input" placeholder={t('Community.search')}  value={inputValue} onChange={(e)=>setInputValue(e.target.value)} />
 
                 <div id="Community-input-results">
@@ -118,24 +127,26 @@ export default function Community(){
 
 
             <div id="Community-Categories-Container">
-            {
-                categories.map((category,index) => (
-                    category.reviews?.length < 1 ? (
-                        <></>
-                    ) : (
-                        <div key={index} class='Community-category'>
-                            <h2>{t(`Community.${category.title}`)}</h2>
-                            <CommunityCarousel
-                                category={category}
-                                loading={loading}
-                                index={index}
-                                community={reviewState}
-                                setCommunity={setReviewState}
-                            />
-                        </div>
-                    )
-                ))
-            }
+                    <CommunityContext.Provider
+                        value={{reviewState, setReviewState}}
+                    >
+                        {
+                            categories.map((category,index) => (
+                                category.reviews?.length < 1 ? (
+                                    <></>
+                                ) : (
+                                    <div key={index} class='Community-category'>
+                                        <h2>{t(`Community.${category.title}`)}</h2>
+                                        <CommunityCarousel
+                                            category={category}
+                                            loading={loading}
+                                            index={index}
+                                        />
+                                    </div>
+                                )
+                            ))
+                        }
+                    </CommunityContext.Provider>
             </div>
 
 
