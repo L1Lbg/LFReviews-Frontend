@@ -124,8 +124,9 @@
     background: none;
     border: none;
     transition: 0.5s;
-    height:5vh;
-    margin-left: 1vw;
+    height:6vh;
+    max-height: 60px;
+    margin-left: 2vw;
 }
 #GoogleButton >  button > img{
     width: 100%;

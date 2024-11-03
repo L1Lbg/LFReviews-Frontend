@@ -21,7 +21,7 @@
 #Navbar > span{
     min-width:280px;
 }
-#Navbar > a{
+#Navbar > a, #Navbar > div{
     border-radius: 10px;
     padding:10px;
     text-decoration: none;
@@ -35,7 +35,7 @@
     width: fit-content;
     margin: auto;
 }
-#Navbar > a:hover{
+#Navbar > a:hover, #Navbar > div:hover{
     cursor: pointer;
     background-color: var(--grey-light);
 }

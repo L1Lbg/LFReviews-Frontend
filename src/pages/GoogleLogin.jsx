@@ -13,10 +13,8 @@ export default function GoogleLogin(){
         localStorage.setItem("access-expiry",currentUnixTime + parseInt(import.meta.env.VITE_ACCESS_EXPIRY));
         localStorage.setItem("email", email);
 
-        setTimeout(()=>{
-            // we use native js to trigger a refresh, instead of navigate
-            window.location.href = '/'
-        }, 1000)
+        // we use native js to trigger a refresh, instead of navigate
+        window.location.href = '/'
 
         
     },[])

@@ -41,7 +41,7 @@ export default function Navbar(){
     let navbar = document.getElementById('Navbar')
     let logo = document.getElementById('Navbar-Logo')
     clearTimeout(lastTimeout) 
-    const navLinks = document.querySelectorAll('#Navbar > a, #Navbar > button');
+    const navLinks = document.querySelectorAll('#Navbar > a, #Navbar > div');
     if(scrollY > threshold){ 
         //move logo to center
         if(window.outerWidth > 700){
