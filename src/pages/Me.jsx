@@ -18,6 +18,7 @@ export default function Me(){
         )
         .then(
             data => {
+                console.log(data)
                 setEmail(data.email)
                 setReviews(data.reviews)
             }
@@ -28,7 +29,7 @@ export default function Me(){
             {email}
             <br /><br />
             {
-                reviews.map(review => (
+                reviews?.map(review => (
                     <div className="Me-Review" onClick={() => navigate(`/review/${review.id}`)}>
                         {review.prefix}&nbsp;
                         {review.teacher}

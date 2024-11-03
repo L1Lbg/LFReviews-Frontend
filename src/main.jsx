@@ -23,6 +23,7 @@ import Ranking from './pages/Ranking.jsx';
 import Review from './pages/Review.jsx';
 import Me from './pages/Me.jsx';
 import Community from './pages/Community.jsx';
+import GoogleLogin from './pages/GoogleLogin.jsx';
 
 
 if ('serviceWorker' in navigator) {
@@ -111,6 +112,10 @@ const router = createBrowserRouter([
       {
         path: "/ranking",
         element: <Ranking />,
+      },
+      {
+        path: "/google/login",
+        element: <GoogleLogin />,
       },
       // {
       //   path: "/review/:id",
