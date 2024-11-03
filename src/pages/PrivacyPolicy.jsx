@@ -16,7 +16,7 @@ export default function PrivacyPolicy(){
             <ul>
                 <li><strong>Account Management:</strong> To manage your account and provide you with access to our platform.</li>
                 <li><strong>Communications:</strong> To send you updates, notifications, and other communications related to our service.</li>
-                <li><strong>Advertising:</strong> We use Google Ads, which may collect data to deliver personalized ads based on your interests.</li>
+                <li><strong>Advertising:</strong> We use advertising platforms, which may collect data to deliver personalized ads based on your interests.</li>
             </ul>
 
             <h2>3. Sharing Your Information</h2>

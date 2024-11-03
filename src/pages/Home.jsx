@@ -35,23 +35,10 @@ export default function Home(){
 
             <HomeCarousel slides={SLIDES} options={OPTIONS} />
 
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7504130752436386"
-                crossOrigin="anonymous"></script>
-            <ins className="adsbygoogle"
-                style={{'display':'block'}}
-                data-ad-client="ca-pub-7504130752436386"
-                data-ad-slot="7301630973"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-
 
             <hr/>
             <h2 id='Home-FAQ-Title' className='Home-SectionTitle'>FAQ</h2>
 
-            {/* https://whatfix.com/blog/wp-content/uploads/2021/12/Screen-Shot-2021-12-13-at-12.21.26.png */}
 
             <div id="Home-FAQ-Container">
                         <section class="Home-FAQ">
