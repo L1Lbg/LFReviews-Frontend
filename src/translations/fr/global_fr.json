@@ -52,7 +52,10 @@
       "Title":"Merci beaucoup pour votre ",
       "Back":"Retourner a la page principale",
       "Another":"Publier une autre ",
-      "Share":"La partager ou telecharger "
+      "Share":"La partager ou télécharger",
+      "ShareTitle":"Partager cette Review",
+      "ShareText":"Partager cette Review",
+      "Explanation":"Votre avis sera visible dans environ 10 minutes, car il doit être soumis à un processus de validation automatique."
     },
     "Auth":{
       "button-signup": "S'inscrire",

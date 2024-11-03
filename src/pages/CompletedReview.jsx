@@ -8,8 +8,8 @@ export default function CompletedReview(){
         const queryParameters = new URLSearchParams(window.location.search)
         let id = queryParameters.get('id')
         navigator.share({
-            title:'',
-            text:'',
+            title:t('CompletedReview.ShareTitle'),
+            text:t('CompletedReview.ShareText'),
             url:`${import.meta.env.VITE_FRONTEND_URL}/review/${id}`
         })
 
@@ -20,6 +20,7 @@ export default function CompletedReview(){
             <h1>
                 {t('CompletedReview.Title')} <span className="GradientReview">Review</span>!
             </h1>
+            <p>{t('CompletedReview.Explanation')}</p>
             <div id="CompletedReview-Cards-Container">
                 <div className="CompletedReview-Cards" onClick={()=> {navigate('/')}}>
                     <h2>

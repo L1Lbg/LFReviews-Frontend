@@ -46,7 +46,7 @@ export default function FormDropdownInput(props){
           if (
             props.ressource != undefined &&
             !Number.isInteger(parseInt(e.target.value)) &&
-              e.target.value.length > 1
+              e.target.value.length >= 1
           ) {
             customFetch(`/api${props.ressource}?query=${e.target.value}`, {
               method: "GET",

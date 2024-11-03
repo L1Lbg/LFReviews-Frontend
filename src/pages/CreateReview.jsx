@@ -9,6 +9,7 @@ import FormGradeInput from '../components/FormGradeInput';
 import Info from '/Icons/info.svg?url'
 import {useTranslation} from 'react-i18next';
 import { Context } from '../pages/Root'
+import { useNavigate } from 'react-router-dom';
 
 
 const StyledRating = styled(Rating)(({ theme }) => ({
@@ -59,6 +60,7 @@ export default function CreateReview(){
     { name: "Cinquieme", id: "5" },
     { name: "Sixieme", id: "6" },
   ])
+  const navigate = useNavigate()
   const gradesInputs = [
     "clarte", "interaction_soutien",
     "gestion_temps", "gestion_colere", "amabilite", 
@@ -118,7 +120,7 @@ export default function CreateReview(){
           return;
         }
 
-        const regex = /^[0-9a-zA-Z]$/;
+        const regex = /^[[a-zA-Z0-9,\.?!']*$/;
         if(!regex.test(e.target.text_rating.value) && e.target.text_rating.value.trim() != ''){
           setError('text-rating-forbidden-characters')
           return;
@@ -136,7 +138,8 @@ export default function CreateReview(){
         .then(
           data => {
             if(data.message){
-              setSuccess(data.message);
+              // setSuccess(data.message);
+              navigate(`/publication/complete?id=${data.id}`)
             } 
             setSubmitDisabled(false);
           }

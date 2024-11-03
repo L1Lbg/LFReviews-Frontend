@@ -1,9 +1,19 @@
+#CompletedReview{
+    margin-bottom: 15vh;
+}
 #CompletedReview > h1{
     margin: auto;
     margin-top: 5vh;
     font-size: 5rem;
     text-align: center;
     width: 70%;
+}
+#CompletedReview > p{
+    font-size: 1.5rem;
+    text-align: center;
+    color:var(--grey-lighter);
+    width: 60%;
+    margin: auto;
 }
 #CompletedReview-Cards-Container{
     display: grid;
@@ -75,4 +85,35 @@
 }
 #CompletedReview-Cards-Container > *:nth-child(1) > img{
     width: 50%;
+}
+
+
+
+@media (max-width:1100px){
+    #CompletedReview > h1{
+        font-size: 3rem;
+        width: 95%;
+    }
+    #CompletedReview > p{
+        font-size: 1rem;
+        width: 85%;
+        margin-top: 3vh;
+        margin-bottom: 10vh;
+    }
+    #CompletedReview-Cards-Container{
+        width: 100%;
+        margin: none;
+        column-gap: 0;
+        padding: 0;
+
+    }
+    #CompletedReview-Cards-Container > div{
+        padding: 1%;
+        font-size: 0.5rem;
+        border-radius: 10px;
+        width: 80%;
+    }
+    #CompletedReview-Cards-Container > div > img{
+        width: 50%;
+    }
 }
