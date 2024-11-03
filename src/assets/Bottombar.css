@@ -8,7 +8,8 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
 }
 #Bottombar > p{
     text-align: center;
@@ -30,9 +31,8 @@
 }
 #Bottombar-links{
     display: grid;
-    justify-self: right;
-    align-items: center;
     justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(3,1fr);
     column-gap: 3vw;
     width: 100%;

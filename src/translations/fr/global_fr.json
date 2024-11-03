@@ -48,6 +48,12 @@
     "Settings":{
       "PageLanguage":"Langage de la page:"
     },
+    "CompletedReview":{
+      "Title":"Merci beaucoup pour votre ",
+      "Back":"Retourner a la page principale",
+      "Another":"Publier une autre ",
+      "Share":"La partager ou telecharger "
+    },
     "Auth":{
       "button-signup": "S'inscrire",
       "button-login": "Se connecter",

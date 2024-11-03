@@ -1,0 +1,78 @@
+#CompletedReview > h1{
+    margin: auto;
+    margin-top: 5vh;
+    font-size: 5rem;
+    text-align: center;
+    width: 70%;
+}
+#CompletedReview-Cards-Container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    justify-items: center;
+    width: 60%;
+    margin: auto;
+    column-gap: 3vw;
+    padding: 5%;
+}
+.CompletedReview-Cards{
+    background: linear-gradient(180deg, #2340FF,#FF7072);
+    aspect-ratio: 1/2;
+    border-radius: 40px;
+    padding: 5%;
+    width: 100%;
+    height: 90%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.384);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.CompletedReview-Cards:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.CompletedReview-Cards > h2{
+    align-self: self-start;
+    height: 20%;
+}
+.CompletedReview-Cards > h2 > *{
+    width: fit-content;
+    height: fit-content;
+
+}
+.CompletedReview-Cards > img{
+    margin-bottom: 10vh;
+}
+.GradientReview{
+    background: linear-gradient(180deg, var(--gradient-blue),var(--gradient-red));
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+#CompletedReview-Cards-Container > *:nth-child(1){
+    justify-self: right;
+    align-self: flex-end;
+}
+#CompletedReview-Cards-Container > *:nth-child(1) > img{
+    width: 50%;
+}
+
+
+#CompletedReview-Cards-Container > *:nth-child(2) > img{
+    width: 100%;
+}
+
+
+#CompletedReview-Cards-Container > *:nth-child(3){
+    justify-self: left;
+    align-self: flex-end;
+}
+#CompletedReview-Cards-Container > *:nth-child(1) > img{
+    width: 50%;
+}

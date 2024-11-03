@@ -63,8 +63,10 @@
     padding: 5%;
     text-align: center;
     min-height: 5vh;
-    display: grid;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -74,7 +76,10 @@
     border: none;
 }
 #Navbar-Auth-Dropdown > button:hover{
-    color: white;
+    color: var(--white);
+}
+#Navbar-Auth-Dropdown > *:hover{
+    background: var(--black);
 }
 .disappearToTop{
     animation-name: disappearToTop;
