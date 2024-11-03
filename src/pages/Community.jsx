@@ -135,7 +135,7 @@ export default function Community(){
                                 category.reviews?.length < 1 ? (
                                     <></>
                                 ) : (
-                                    <div key={index} class='Community-category'>
+                                    <div key={index} className='Community-category'>
                                         <h2>{t(`Community.${category.title}`)}</h2>
                                         <CommunityCarousel
                                             category={category}

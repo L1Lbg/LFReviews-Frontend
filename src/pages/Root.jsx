@@ -170,7 +170,6 @@ export default function Root(){
 
 
     document.title = "LFMReviews" + trans
-    console.log(t(location.pathname))
 
   },[location.pathname])
 

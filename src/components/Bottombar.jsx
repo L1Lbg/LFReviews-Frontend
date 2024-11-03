@@ -47,7 +47,7 @@ export default function Bottombar() {
         >
           <img src={EmailIcon} alt="Email icon" />
         </a>
-        <a href='https://ko-fi.com/Z8Z314C967' target='_blank'><img height='36' style={{border:'0px;height:36px;'}} src='https://storage.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+        <a href='https://ko-fi.com/Z8Z314C967' target='_blank'><img style={{border:'0px', height:'30px', width:'120px'}} src='/Icons/kofi5.webp' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
       </div>
     </div>
   );
