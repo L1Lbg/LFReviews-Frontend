@@ -2,10 +2,12 @@
 @media (max-width:700px){
     #SmallNavbar-Logo{
         width: 15vw;
+        height: 15vw;
+        aspect-ratio: 1/1;
         position: absolute;
         z-index: 1001;
         left: 4vw;
-        top:50px
+        top:40px
     }
     #Navbar{
         min-height: 150px;

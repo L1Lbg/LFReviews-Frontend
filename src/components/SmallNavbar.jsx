@@ -87,10 +87,12 @@ export default function SmallNavbar(){
               id="SmallNavbar-Logo"
               alt="LFMReviews Logo"
               src="/Icons/Logo.svg"
-            />
-          ) : (
-            <img
-                onClick={() => {
+              width={'50px'}
+              height={'50px'}
+              />
+            ) : (
+              <img
+              onClick={() => {
                 navigate('/');
               }}
               className="Logo"
