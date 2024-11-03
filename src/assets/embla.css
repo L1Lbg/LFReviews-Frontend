@@ -31,7 +31,5 @@
 @media (max-width:900px){
   #Home-container > .embla{
     --slide-size:90%;
-    --slide-width:120%;
-    --slide-spacing:25vw;
   }
 }
