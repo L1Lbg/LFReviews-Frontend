@@ -25,6 +25,13 @@ export default function FormDropdownInput(props){
           setValues(props.options);
           setNameShown('');
           ableInput();
+
+          if(props.options.length == 1){
+            console.log(props.options)
+            setRealId(props.options[0].id)
+            setNameShown(props.options[0].name)
+            setInputAble(false)
+          }
         }
     },[props.options])
 
@@ -36,13 +43,19 @@ export default function FormDropdownInput(props){
 
     //* make queries and update results
     const handleChange = (e) => {
-      setNameShown(e.target.value)
       if(props.name != 'teacher'){
         setListClass("FormDropdownInput-List");
+      }     
+      // prevent user from typing in year and subject inputs, as it doesnt do anything 
+      if(!['year','subject'].includes(props.name)){
+        setNameShown(e.target.value)
       }
+      
+      
       clearTimeout(requestTimeout)
       setRequestTimeout(
         setTimeout(()=>{
+          //* if input gets its results from api query
           if (
             props.ressource != undefined &&
             !Number.isInteger(parseInt(e.target.value)) &&

@@ -4,7 +4,8 @@ import PasswordInput from '../components/PasswordInput';
 import {useTranslation} from 'react-i18next';
 import ResetPasswordButton from '../components/ResetPasswordButton';
 import { Context } from '../pages/Root'
-import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import GoogleButton from '../components/GoogleButton'
 
 export default function Auth(){
     const [t] = useTranslation('global');
@@ -233,13 +234,16 @@ export default function Auth(){
                 display: "none",
               }}
             />
-            <button
-              type="submit"
-              className="Auth-Form-Submit"
-              disabled={submitDisabled}
-            >
-              {t("Auth.button-signup")}
-            </button>
+            <div style={{'display':'flex', alignItems:'center'}}>
+              <button
+                type="submit"
+                className="Auth-Form-Submit"
+                disabled={submitDisabled}
+              >
+                {t("Auth.button-signup")}
+              </button>
+              <GoogleButton />
+            </div>
             {errorContent != "" ? (
               <div className="Auth-Form-Error">
                 <svg
@@ -282,13 +286,18 @@ export default function Auth(){
               new_password={false}
               autoComplete="current-password"
             />
-            <button
-              type="submit"
-              className="Auth-Form-Submit"
-              disabled={submitDisabled}
-            >
-              {t("Auth.button-login")}
-            </button>
+            
+            <div style={{'display':'flex', alignItems:'center'}}>
+              <button
+                type="submit"
+                className="Auth-Form-Submit"
+                disabled={submitDisabled}
+              >
+                {t("Auth.button-login")}
+              </button>
+              <GoogleButton />
+            </div>
+
             {errorContent != "" ? (
               <div className="Auth-Form-Error">
                 <svg
@@ -309,6 +318,10 @@ export default function Auth(){
               <></>
             )}
           </form>
+
+
+
+
           <ResetPasswordButton />
         </div>
       </div>

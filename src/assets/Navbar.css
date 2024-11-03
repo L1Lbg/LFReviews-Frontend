@@ -16,31 +16,28 @@
     background:var(--grey-dark);
     position: sticky;
     transition: 0.5s;
-    height: 15vh;
-    min-height: 130px;
+    height: 150px;
 }
 #Navbar > span{
     min-width:280px;
 }
-#Navbar > a, #Navbar > div{
+#Navbar > a{
     border-radius: 10px;
     padding:10px;
-    text-decoration: underline;
+    text-decoration: none;
     color:white;
     margin-right:1vw;
-    transition: 1.3s;
+    transition: background-color 0.5s, transform 1.3s;
     text-align: center;
     animation-name: appearFromTop;
     animation-duration: 1.3s;
     position: relative;
+    width: fit-content;
+    margin: auto;
 }
-#Navbar > div{
-    background: none;
-    color: white;
-    border: none;
-}
-#Navbar > div:hover{
+#Navbar > a:hover{
     cursor: pointer;
+    background-color: var(--grey-light);
 }
 #Navbar > a > img{
     height: 8vh;
@@ -88,7 +85,8 @@
 #Navbar-Logo-Container{
     position: sticky; 
     z-index: 1000;
-    top:37px;
+    /* top:4.5vh; */
+    top: 50px;
     padding-left: 2.5vw;
     height: 0;
     width: 95%;

@@ -86,7 +86,7 @@ export default function SmallNavbar(){
               className="Logo"
               id="SmallNavbar-Logo"
               alt="LFMReviews Logo"
-              src="./Icons/Logo.svg"
+              src="/Icons/Logo.svg"
             />
           ) : (
             <img
@@ -95,7 +95,7 @@ export default function SmallNavbar(){
               }}
               className="Logo"
               id="SmallNavbar-Logo"
-              src="./Icons/Logo.svg"
+              src="/Icons/Logo.svg"
             />
           )}
         </div>

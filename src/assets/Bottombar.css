@@ -70,6 +70,7 @@
     #Bottombar > p{
         text-align: center;
         margin-bottom: 5vh;
+        width: 100%;
     }
     #Bottombar-legal{
         text-align: center;

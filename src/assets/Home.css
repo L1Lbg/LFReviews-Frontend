@@ -111,7 +111,9 @@
     padding: 0.4vh;
     min-height: 7vh;
 }
-
+.Home-FAQ > details::marker{
+    display: none;
+}
 .Home-FAQ > details > summary{
     background: var(--grey-light);
     font-size:1.2rem;
@@ -128,7 +130,11 @@
     font-size: 1rem;
     margin-left: 3%;
 }
-
+.Home-SectionTitle{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
 @media (max-width:1000px){
     #Home-Presentation-Container{
         width: 95vw;
@@ -141,5 +147,18 @@
     }
     .Home-FAQ > details > summary{
         font-size:0.9rem;
+    }
+    #Home-Description{
+        width: 90%;
+        margin: auto;
+        font-size: 1.2rem;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    #Home-AuthButton{
+        font-size: 2rem;
+    }
+    .Home-SectionTitle{
+        font-size: 2rem;
     }
 }

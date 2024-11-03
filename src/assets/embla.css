@@ -3,6 +3,8 @@
     margin: auto;
     --slide-spacing:0.7vw;
     --slide-size: 50%;
+    --slide-height: fit-content;
+    --slide-width: 100%;
   }
   .embla__viewport {
     overflow: hidden;
@@ -22,13 +24,14 @@
     border-radius: 1.8rem;
     display: block;
     height: var(--slide-height);
-    width: 100%;
-    height: 70vh;
+    width: var(--slide-width);
     object-fit: contain;
   }
 
 @media (max-width:900px){
   #Home-container > .embla{
     --slide-size:90%;
+    --slide-width:120%;
+    --slide-spacing:25vw;
   }
 }

@@ -79,6 +79,8 @@
     font-size: 1rem;
     border: none;
     transition: 0.5s;
+    height: fit-content;
+    aspect-ratio: 6/1;
 }
 #Auth-ToggleButton{
     position:absolute;
@@ -112,6 +114,24 @@
     left: 50%;
     transform: translateX(-50%);
 }
+#GoogleButton{
+    /* position: absolute; */
+    /* bottom: 5vh; */
+}
+#GoogleButton >  button{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    transition: 0.5s;
+    height:5vh;
+    margin-left: 1vw;
+}
+#GoogleButton >  button > img{
+    width: 100%;
+}
+
+
 
 @media (max-width:700px){
 

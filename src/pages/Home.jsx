@@ -30,7 +30,7 @@ export default function Home(){
             <br />
             <br />
 
-            <h2 style={{fontSize:'3rem', color:'white', textAlign:'center'}}>{t('Home.LastReviews')}</h2>
+            <h2 className='Home-SectionTitle'>{t('Home.LastReviews')}</h2>
 
             <HomeCarousel slides={SLIDES} options={OPTIONS} />
 
@@ -48,7 +48,7 @@ export default function Home(){
 
 
             <hr/>
-            <h2 id='Home-FAQ-Title' style={{fontSize:'3rem', color:'white', textAlign:'center'}}>FAQ</h2>
+            <h2 id='Home-FAQ-Title' className='Home-SectionTitle'>FAQ</h2>
 
             {/* https://whatfix.com/blog/wp-content/uploads/2021/12/Screen-Shot-2021-12-13-at-12.21.26.png */}
 
