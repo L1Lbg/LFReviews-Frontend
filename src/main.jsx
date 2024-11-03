@@ -25,6 +25,9 @@ import Me from './pages/Me.jsx';
 import Community from './pages/Community.jsx';
 import GoogleLogin from './pages/GoogleLogin.jsx';
 import CompletedReview from './pages/CompletedReview.jsx';
+import TOS from './pages/TOS.jsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
+import CookiePolicy from './pages/CookiePolicy.jsx';
 
 
 if ('serviceWorker' in navigator) {
@@ -137,6 +140,18 @@ const router = createBrowserRouter([
       {
         path: "/activate/:uid/:token/",
         element: <Activate />,
+      },
+      {
+        path: "/conditions-service",
+        element: <TOS />,
+      },
+      {
+        path: "/politique-des-cookies",
+        element: <CookiePolicy />,
+      },
+      {
+        path: "/politique-de-privacite",
+        element: <PrivacyPolicy />,
       },
     ],
     errorElement: <Error />,

@@ -1,0 +1,8 @@
+.LegalText {
+       margin-bottom: 10vh;
+       padding: 2%;
+       padding-top: 0;
+}
+.LegalText > ul > li > a, .LegalText > p > a {
+    color: rgb(128, 179, 255);
+}
