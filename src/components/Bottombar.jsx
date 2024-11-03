@@ -38,7 +38,7 @@ export default function Bottombar() {
           target="_blank"
           href="https://www.instagram.com/lfmreviews/"
         >
-          <img src={InstagramIcon} alt="Instagram icon" />
+          <img src={InstagramIcon} alt="Instagram icon"/>
         </a>
         <a
           target="_blank"

@@ -16,7 +16,7 @@ export default function Home(){
         <div id="Home-container">
             <div id="Home-Presentation-Container">
                 <div id="Home-Presentation-Media-Container">
-                    <iframe src="/Media/video.mp4" id="Home-Presentation-Media" preload='none' loop='true' type="video/mp4" autoPlay controls muted></iframe>
+                    <iframe title="Video Presentation" src="/Media/video.mp4" id="Home-Presentation-Media" preload='none' loop='true' type="video/mp4" autoPlay controls muted></iframe>
                     {/* <img loading='lazy' src="https://www.techspot.com/images2/news/bigimage/2020/07/2020-07-20-image.png" alt="Main Image" id="Home-Presentation-Media" /> */}
                     {/* <iframe id="Home-Presentation-Media" width="1300" height="728" src={`https://www.youtube.com/embed/WPt-kuKnOG0?autoplay=1&mute=1&color=white&controls=0&hl=${localStorage.getItem('lang')}&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=0&playlist=WPt-kuKnOG0`} title="Lip dub Lycée Français de Madrid LFM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                 </div>

@@ -72,7 +72,7 @@
 .Auth-Form-Submit, #Auth-ToggleButton{
     color:white;
     background: #015FDF;
-    font-family: "DM Sans";
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     font-weight: 700;
     padding: 10px;
     border-radius: 15px !important;
