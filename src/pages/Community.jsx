@@ -107,7 +107,7 @@ export default function Community(){
                 {t('Community.title')}
             </h1>
             <form id="Community-input-form" onFocus={()=>setInputFocus(true)} onBlur={()=>setInputFocus(false)} onSubmit={(e) => e.preventDefault()}>
-                <input type="text" autocomplete="off" id="Community-input" placeholder={t('Community.search')}  value={inputValue} onChange={(e)=>setInputValue(e.target.value)} />
+                <input type="text" autoComplete="off" id="Community-input" placeholder={t('Community.search')}  value={inputValue} onChange={(e)=>setInputValue(e.target.value)} />
 
                 <div id="Community-input-results">
                     {

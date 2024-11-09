@@ -24,6 +24,24 @@
     padding: 3%;
     padding-top: 1%;
 }
+.Community-review-manage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+}
+.Community-review-manage > button:nth-child(2){
+    justify-self: right;
+    background: none;
+    border: none;
+}
+.Community-review-manage > * {
+    cursor: pointer;
+    width: fit-content;
+}
+.Community-review-manage > * > img{
+    height: 150%;
+}
+
 #Community-Categories-Container{
     opacity: 1;
     transition: 1s;

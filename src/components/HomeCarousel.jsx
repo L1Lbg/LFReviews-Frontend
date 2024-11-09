@@ -3,7 +3,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
 import '../assets/embla.css'
 
-const TWEEN_FACTOR_BASE = 0.2
+
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props

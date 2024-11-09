@@ -3,6 +3,8 @@ import TeacherStar from "./TeacherStar"
 import { Context } from "../pages/Root";
 import { useNavigate } from "react-router-dom";
 import { CommunityContext } from "../pages/Community";
+import FlagReview from "./FlagReview";
+import FavoriteReview from "./FavoriteReview";
 export default function Review(props){
 
     const {reviewState, setReviewState} = useContext(CommunityContext)
@@ -10,6 +12,7 @@ export default function Review(props){
     const [tempBlock, setTempBlock] = useState(false)
     const [scale, setScale] = useState('100%') // to make animations
     const [userRelated, setUserRelated] = useState()
+    const [userLiked, setUserLiked] = useState(false)
     const like_url = './Icons/Like.svg'
     const liked_url = './Icons/Liked.svg'
     const dislike_url = './Icons/Dislike.svg'
@@ -22,7 +25,8 @@ export default function Review(props){
 
     // change state every time reviewState is changed
     useEffect(()=>{
-        setUserRelated(reviewState[props.review.id])
+        setUserRelated(reviewState[props.review.id][0])
+        setUserLiked(reviewState[props.review.id][1])
     }, [reviewState])
 
 
@@ -77,8 +81,11 @@ export default function Review(props){
             data => {
                 setScale('100%')
                 setReviewState({
-                    ...reviewState,  
-                    [props.review.id]: value 
+                    ...reviewState,
+                    [props.review.id]: [
+                        value,
+                        ...reviewState[props.review.id].slice(1) // Keep the rest of the array as is
+                    ]
                 });
             }
         )
@@ -110,6 +117,17 @@ export default function Review(props){
             {
                 !props.loading ? (
                     <>
+                        <div className="Community-review-manage">
+                            <FlagReview
+                                id={props.review.id}
+                            />
+                            <FavoriteReview
+                                id={props.review.id}
+                                reviewState={reviewState}
+                                setReviewState={setReviewState}
+                            />
+
+                        </div>
                         <TeacherStar
                             rating={props.review.tot_rating}
                         />

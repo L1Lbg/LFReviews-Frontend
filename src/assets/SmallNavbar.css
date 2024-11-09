@@ -4,19 +4,12 @@
         width: 15vw;
         height: 15vw;
         aspect-ratio: 1/1;
-        position: absolute;
         z-index: 1001;
-        left: 4vw;
-        top:40px
     }
     #Navbar{
         min-height: 150px;
         top:0px;
-        overflow-x: hidden;
         display: flex;
-    }
-    #Navbar-Logo-Container{
-        top:0
     }
     #SmallNavbar-Logo:hover{
         cursor: pointer;
@@ -24,6 +17,10 @@
     #Navbar > span{
         width: 10vw;
         min-width: 20vw !important;
+    }
+    #Navbar-Auth-Dropdown{
+        right: 0%;
+        top: 100%;
     }
 }
 

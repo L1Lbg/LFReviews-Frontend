@@ -17,6 +17,7 @@
     position: sticky;
     transition: 0.5s;
     height: 150px;
+    overflow:visible;
 }
 #Navbar > span{
     min-width:280px;
@@ -43,10 +44,11 @@
     height: 8vh;
 }
 #Navbar-Auth-Dropdown{
-    position: absolute;
-    top:120%;
-    left: 20%;
+    position:absolute;
+    right: -100%;
+    top: 100%;
     width: 50%;
+    display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr;
@@ -54,6 +56,7 @@
     border-radius: 10px;
     padding: 5%;
     min-width: 200px;
+    z-index: 2000;
 }
 #Navbar-Auth-Dropdown > * {
     color: white;
@@ -123,25 +126,9 @@
 } */
 #Navbar-Auth-Icon{
     transition: transform 0.5s;
-    min-width: 30px;
+    width: 4vw;
     aspect-ratio: 1/1;
 }
 #Navbar-Auth-Icon:hover {
-    transform: scale(1.05);
-}
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-    transition: 0.5s;
-    font-size: 3rem;
-}
-.material-symbols-outlined:hover{
-   font-variation-settings:
-   'FILL' 100,
-   'wght' 400,
-   'GRAD' 0,
-   'opsz' 48;
+    transform: scale(1.1);
 }

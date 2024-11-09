@@ -1,0 +1,59 @@
+.FlagReview-dialog > dialog{
+    background: var(--black);
+    border: none;
+    border-radius: 15px;
+    height: 60vh;
+    min-width: 200px;
+    aspect-ratio: 3/4;
+}
+.FlagReview-dialog > dialog::backdrop{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.FlagReview-dialog > dialog[open] > form{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 5fr 1fr;
+    align-items: center;
+    gap: 2vh;
+}
+.FlagReview-dialog > dialog[open] > form > *{
+    border-radius: 15px;
+    transition: 0.5s;
+    border: none;
+    color: var(--white);
+}
+.FlagReview-dialog > dialog[open] > form > button{
+    background:var(--grey-lighter)
+}
+.FlagReview-dialog > dialog[open] > form > button > img{
+    height: 60%;
+}
+.FlagReview-dialog > dialog[open] > form > button:hover{
+    background:var(--grey-light)
+}
+/* close button */
+.FlagReview-dialog > dialog[open] > form > button:nth-child(1){
+    justify-self: left;
+    width: 10%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+}
+/*  text area */
+.FlagReview-dialog > dialog[open] > form > textarea:nth-child(2){
+    resize: none;
+    width: 100%;
+    border: solid 2px var(--grey-lighter);
+    height: 100%;
+    background: var(--grey-light);
+    font-size:2rem;
+}
+/* submit button */
+.FlagReview-dialog > dialog[open] > form > button:nth-child(3){
+    width: 50%;
+    margin: auto;
+    height: 50%;
+}

@@ -120,7 +120,7 @@ export default function CreateReview(){
           return;
         }
 
-        const regex = /^[[a-zA-Z0-9,\.?!']*$/;
+        const regex = /^[a-zA-Z0-9,\.?!' ]*$/;
         if(!regex.test(e.target.text_rating.value) && e.target.text_rating.value.trim() != ''){
           setError('text-rating-forbidden-characters')
           return;

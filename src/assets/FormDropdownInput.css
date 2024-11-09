@@ -94,15 +94,13 @@
 .FormDropdownInput-ListItem{
     color:var(--white);
     text-overflow: ellipsis;
-    padding:5%;
+    padding:2%;
     margin-bottom: 0;
-    align-items: center;
-    justify-content: center;
     display: grid;
-    grid-template-columns:1fr 1fr;
     align-items: center;
     justify-items: center;
-    height: 5vh;
+    grid-template-columns:1fr 1fr;
+    height: fit-content;
 }
 .FormDropdownInput-ListItem:hover{
     background:#252525;
