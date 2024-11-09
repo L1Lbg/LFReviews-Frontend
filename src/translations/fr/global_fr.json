@@ -155,6 +155,14 @@
     "login":"Vous êtes connecté correctement a votre compte",
     "request-reset-password":"La demande a ete réalisée. Vérifiez votre boite mail."
   },
+  "Me":{
+    "average":"Moyenne des Reviews",
+    "popularity":"Moyenne des avis",
+    "joined":"En LFMReviews depuis",
+    "title":"Mon Profil",
+    "myreviews":"Voir toutes mes Reviews",
+    "favorites":"Voir mes Reviews favories "
+  },
   "Year":{
     "0":"Terminale",
     "1":"Premiere",

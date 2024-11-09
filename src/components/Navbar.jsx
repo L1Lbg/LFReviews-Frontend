@@ -113,10 +113,10 @@ export default function Navbar(){
                 <Link to="/auth" id="Navbar-Auth">
                   <img
                     id="Navbar-Auth-Icon"
-                    src='./Icons/AccountCircle.svg'
+                    src='/Icons/AccountCircle.svg'
                     alt='Auth Icon'
-                    onMouseEnter={(e)=>{e.currentTarget.src = './Icons/AccountCircleFilled.svg'}}
-                    onMouseLeave={(e)=>{e.currentTarget.src = './Icons/AccountCircle.svg'}}
+                    onMouseEnter={(e)=>{e.currentTarget.src = '/Icons/AccountCircleFilled.svg'}}
+                    onMouseLeave={(e)=>{e.currentTarget.src = '/Icons/AccountCircle.svg'}}
                   />
                 </Link>
               </>
@@ -125,10 +125,10 @@ export default function Navbar(){
                 <div onClick={handleAuthClick}>
                   <img
                     id="Navbar-Auth-Icon"
-                    src='./Icons/AccountCircle.svg'
+                    src='/Icons/AccountCircle.svg'
                     alt='Auth Icon'
-                    onMouseEnter={(e)=>{e.currentTarget.src = './Icons/AccountCircleFilled.svg'}}
-                    onMouseLeave={(e)=>{e.currentTarget.src = './Icons/AccountCircle.svg'}}
+                    onMouseEnter={(e)=>{e.currentTarget.src = '/Icons/AccountCircleFilled.svg'}}
+                    onMouseLeave={(e)=>{e.currentTarget.src = '/Icons/AccountCircle.svg'}}
                   />
                   <div id="Navbar-Auth-Dropdown" style={{display:dropdownDisplay}}>
                     <Link to="/me" id="Navbar-Auth">{t('Navbar.profile')}</Link>

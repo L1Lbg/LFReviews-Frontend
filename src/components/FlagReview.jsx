@@ -33,12 +33,12 @@ export default function FlagReview(props){
     }
     return (
         <div id={`FlagReview-${props.id}`}  className="FlagReview">
-            <img src="./Icons/Flag.svg" alt="Flag Request" onClick={()=>{setModalOpen(true)}}/>
+            <img src="/Icons/Flag.svg" alt="Flag Request" onClick={()=>{setModalOpen(true)}}/>
             <div className="FlagReview-dialog">
                 <dialog>
                     <form action="POST" onSubmit={handleSubmit}>
                         <button type="button" onClick={(e)=>{setModalOpen(false)}}>
-                            <img src="./Icons/Close.svg" alt="Close"/>
+                            <img src="/Icons/Close.svg" alt="Close"/>
                         </button>
                         <textarea type="text" name="content" maxLength={512}/>
                         <button type="submit">{t('Global.Submit')}</button>

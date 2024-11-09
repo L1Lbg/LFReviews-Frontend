@@ -26,6 +26,8 @@ import CompletedReview from './pages/CompletedReview.jsx';
 import TOS from './pages/TOS.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 import CookiePolicy from './pages/CookiePolicy.jsx';
+import Favorites from './pages/Favorites.jsx';
+import MyReviews from './pages/MyReviews.jsx';
 
 
 if ('serviceWorker' in navigator) {
@@ -94,6 +96,14 @@ const router = createBrowserRouter([
       {
         path: "/me",
         element: <Me />,
+      },
+      {
+        path: "/me/favorites",
+        element: <Favorites />,
+      },
+      {
+        path: "/me/reviews",
+        element: <MyReviews />,
       },
       {
         path: "/publication",

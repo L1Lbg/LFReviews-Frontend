@@ -19,7 +19,7 @@ export default function Root(){
   const [success, setSuccess] = useState("");
   const [email, setEmail] = useState(localStorage.getItem('email'));
   const [maintenance, setMaintenance] = useState(false);
-  const [width, setWidth] = useState(window.outerWidth)
+  const [width, setWidth] = useState(window.innerWidth)
 
   //* custom fetch
   const customFetch = (url, options, auth) => {
@@ -150,7 +150,8 @@ export default function Root(){
 
 
     addEventListener('resize', (e) =>{
-       setWidth(window.outerWidth)
+      // console.log(window.innerWidth)
+       setWidth(window.innerWidth)
     })
 
 

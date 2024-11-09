@@ -45,7 +45,7 @@
 }
 #Navbar-Auth-Dropdown{
     position:absolute;
-    right: -100%;
+    right: -90%;
     top: 100%;
     width: 50%;
     display: grid;
@@ -88,8 +88,8 @@
 #Navbar-Logo-Container{
     position: sticky; 
     z-index: 1000;
-    /* top:4.5vh; */
-    top: 50px;
+    /* top:2.5vh; */
+    top: 24px;
     padding-left: 2.5vw;
     height: 0;
     width: 95%;

@@ -1,15 +1,104 @@
-#me{
-    min-height: 100vh;
+#me > span{
+    margin-top: 2.5vh;
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    font-weight: bolder;
 }
-.Me-Review{
-    background: var(--white);
-    border-radius: 15px;
-    padding: 1%;
+#me > span > img{
+    width: 15vw;
+    max-width: 90px;
+    min-width: 60px;
+}
+
+#me-ranking{
+    background: #D4AF37;
+    margin: auto;
     width: fit-content;
-    margin: 2%;
-    color: var(--black);
-    aspect-ratio: 3/1;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 2rem;
+    padding: 1%;
+    box-shadow: 0 0 15px 15px var(--black);
+    border-radius: 8px;
 }
-.Me-Review:hover{
-    cursor: pointer;
+#me-ranking > div:nth-child(1){
+    position: absolute;
+    box-shadow: inherit;
+    background: white;
+    color: black;
+    z-index: 2;
+    translate: -75% -95%;
+    rotate: -30deg;
+    padding: 0.75%;
+    border-radius: inherit;
+}
+
+#me-stats{
+    margin-top: 5vh;
+    background: var(--black);
+    font-size: 2rem;
+    padding: 2%;
+    font-weight: bold;
+
+}
+#me-stats > div, a{
+    --margin:2.5vh;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+    z-index: 2;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#me-stats > div:nth-child(1){
+    margin-top: 0;
+}
+#me-stats > div > div {
+    width: 10%;
+    min-width: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+}
+
+#me-stats > div > div > img {
+    width: 100%;
+}
+
+#me-stats > div > div > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: white; /* Adjust color as needed for better contrast */
+}
+
+@media (max-width:900px){
+    #me-ranking{
+        --margin:12.5vh;
+        margin-top: var(--margin);
+        margin-bottom: var(--margin);
+        margin-left: 35%;
+    }
+    #me-stats{
+        font-size: 1rem;
+        padding: 5%;
+    }
+    #me-stats > div > div{
+        width: 30%;
+        min-width: 0;
+    }
+    #me-stats > div > div > span{
+        font-size: 1.5rem;
+    }
 }

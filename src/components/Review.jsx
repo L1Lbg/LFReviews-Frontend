@@ -13,10 +13,10 @@ export default function Review(props){
     const [scale, setScale] = useState('100%') // to make animations
     const [userRelated, setUserRelated] = useState()
     const [userLiked, setUserLiked] = useState(false)
-    const like_url = './Icons/Like.svg'
-    const liked_url = './Icons/Liked.svg'
-    const dislike_url = './Icons/Dislike.svg'
-    const disliked_url = './Icons/Disliked.svg'
+    const like_url = '/Icons/Like.svg'
+    const liked_url = '/Icons/Liked.svg'
+    const dislike_url = '/Icons/Dislike.svg'
+    const disliked_url = '/Icons/Disliked.svg'
 
 
     const [likeImgSrc, setLikeImgSrc] = useState(like_url)

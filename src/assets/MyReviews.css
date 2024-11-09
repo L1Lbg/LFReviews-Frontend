@@ -1,0 +1,92 @@
+#MyReviews{
+    min-height: 100vh;
+}
+#MyReviews > h1{
+    text-align: center;
+}
+#MyReviews > h1 > span{
+    background: linear-gradient(180deg, var(--high-gradient-blue), var(--high-gradient-red));;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 3%;
+}
+.MyReviews-Review{
+    display: flex;
+    align-items: center;
+    background: #383838;
+    margin: 1%;
+    padding-left: 2%;
+    height: 10vh;
+    --margin-sides:2.5vw;
+
+    margin-left: var(--margin-sides);
+    margin-right:var(--margin-sides);
+    padding-right: var(--margin-sides);
+}
+/*  Teacher name */
+.MyReviews-Review > h2 {
+    font-weight: 400;
+    width: 40%;
+    word-wrap:break-word;
+}
+/* Review Rating */
+.MyReviews-Review > .TeacherStar{
+    width: 50%;
+    justify-content: left;
+}
+/* date, popularity */
+.MyReviews-Review > span{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap:5%;
+}
+/* edit button */
+.MyReviews-Review > a{
+    background: var(--grey-light);
+    aspect-ratio: 2.5/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 3px #00000078;
+    height: 70%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 0.5%;
+    color:var(--grey-lighter);
+    transition: 0.5s;
+}
+.MyReviews-Review > a:hover{
+    background: var(--grey-dark);
+}
+/*  pencil */
+.MyReviews-Review > a > img{
+    height: 60%;
+    margin-left: 5%;
+}
+
+@media (max-width:900px) {
+    .MyReviews-Review{
+        display: block;
+        height: fit-content;
+        text-align: center;
+        padding: 4%;
+        border-radius: 15px;
+        margin-bottom: 2vh;
+    }
+    .MyReviews-Review > *{
+        margin: auto;
+    }
+    .MyReviews-Review > .TeacherStar{
+        justify-content: center;
+    }
+    .MyReviews-Review > h2{
+        width: 100%;
+    }
+    .MyReviews-Review > a {
+        width: 40%;
+        max-width: 200px;
+    }
+}

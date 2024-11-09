@@ -22,10 +22,10 @@ export default function TeacherStar(props){
         // Generate the star components
         const starsArray = [];
         for (let i = 0; i < fullStars; i++) {
-          starsArray.push(<img src="./Icons/Star.svg" key={`full-${i}}`} />);
+          starsArray.push(<img src="/Icons/Star.svg" key={`full-${i}}`} />);
         }
         if (hasHalfStar) {
-          starsArray.push(<img src="./Icons/HalfStar.svg" className='HalfStar' key="half" />);
+          starsArray.push(<img src="/Icons/HalfStar.svg" className='HalfStar' key="half" />);
         }
 
         setStars(starsArray);

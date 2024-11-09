@@ -1,0 +1,69 @@
+#Favorites{
+    min-height: 100vh;
+}
+#Favorites > h1{
+    text-align: center;
+}
+#Favorites > h1 > span{
+    background: linear-gradient(180deg, var(--high-gradient-blue), var(--high-gradient-red));;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 3%;
+}
+.Favorites-Review{
+    display: flex;
+    align-items: center;
+    background: #383838;
+    margin: 1%;
+    padding-left: 2%;
+    height: 10vh;
+    --margin-sides:2.5vw;
+
+    margin-left: var(--margin-sides);
+    margin-right:var(--margin-sides);
+    padding-right: var(--margin-sides);
+}
+/*  Teacher name */
+.Favorites-Review > h2 {
+    font-weight: 400;
+    width: 40%;
+    word-wrap:break-word;
+}
+/* Review Rating */
+.Favorites-Review > .TeacherStar{
+    width: 50%;
+    justify-content: left;
+}
+/* date, popularity */
+.Favorites-Review > span{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap:5%;
+}
+/* unfavourite button */
+.Favorites-Review > button{
+    background: none;
+    border: none;
+    
+}
+
+@media (max-width:900px) {
+    .Favorites-Review{
+        display: block;
+        height: fit-content;
+        text-align: center;
+        padding: 4%;
+        border-radius: 15px;
+        margin-bottom: 2vh;
+    }
+    .Favorites-Review > *{
+        margin: auto;
+    }
+    .Favorites-Review > .TeacherStar{
+        justify-content: center;
+    }
+    .Favorites-Review > h2{
+        width: 100%;
+    }
+}

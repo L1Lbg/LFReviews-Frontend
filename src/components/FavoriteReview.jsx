@@ -2,16 +2,16 @@ import { useContext, useEffect, useState } from "react"
 import { Context } from "../pages/Root"
 
 export default function FavoriteReview(props){
-    const [imgSrc, setImgSrc] = useState('./Icons/EmptyHeart.svg')
+    const [imgSrc, setImgSrc] = useState('/Icons/EmptyHeart.svg')
     const { customFetch } = useContext(Context);
     const [userLiked, setUserLiked] = useState(false)
     const [disabled, setDisabled] = useState(false)
 
     useEffect(()=>{
         if(userLiked){
-            setImgSrc('./Icons/FilledHeart.svg')
+            setImgSrc('/Icons/FilledHeart.svg')
         } else {
-            setImgSrc('./Icons/EmptyHeart.svg')
+            setImgSrc('/Icons/EmptyHeart.svg')
         }
     }, [userLiked])
 
