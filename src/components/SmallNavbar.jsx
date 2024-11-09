@@ -115,23 +115,25 @@ export default function SmallNavbar(){
             {email == undefined ? (
               <>
                 <Link to="/auth" id="Navbar-Auth">
-                  <span
+                  <img
                     id="Navbar-Auth-Icon"
-                    className="material-symbols-outlined"
-                  >
-                    account_circle
-                  </span>
+                    src='./Icons/AccountCircle.svg'
+                    alt='Auth Icon'
+                    onMouseEnter={(e)=>{e.currentTarget.src = './Icons/AccountCircleFilled.svg'}}
+                    onMouseLeave={(e)=>{e.currentTarget.src = './Icons/AccountCircle.svg'}}
+                  />
                 </Link>
               </>
             ) : (
               <>
                 <div onClick={handleAuthClick}>
-                  <span
+                  <img
                     id="Navbar-Auth-Icon"
-                    className="material-symbols-outlined"
-                  >
-                    account_circle
-                  </span>
+                    src='./Icons/AccountCircle.svg'
+                    alt='Auth Icon'
+                    onMouseEnter={(e)=>{e.currentTarget.src = './Icons/AccountCircleFilled.svg'}}
+                    onMouseLeave={(e)=>{e.currentTarget.src = './Icons/AccountCircle.svg'}}
+                  />
                   <div id="Navbar-Auth-Dropdown" style={{display:dropdownDisplay}}>
                     <Link to="/me" id="Navbar-Auth">{t('Navbar.profile')}</Link>
                     <br />

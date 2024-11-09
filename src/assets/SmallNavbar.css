@@ -22,5 +22,9 @@
         right: 0%;
         top: 100%;
     }
+    #Navbar-Auth-Icon{
+        width: 15vw;
+        max-width: 70px;
+    }
 }
 

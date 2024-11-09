@@ -126,7 +126,7 @@
 } */
 #Navbar-Auth-Icon{
     transition: transform 0.5s;
-    width: 4vw;
+    height: 60px;
     aspect-ratio: 1/1;
 }
 #Navbar-Auth-Icon:hover {
