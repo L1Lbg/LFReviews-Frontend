@@ -88,8 +88,7 @@
 #Navbar-Logo-Container{
     position: sticky; 
     z-index: 1000;
-    /* top:2.5vh; */
-    top: 24px;
+    top: 48px;
     padding-left: 2.5vw;
     height: 0;
     width: 95%;

@@ -1,0 +1,81 @@
+#Ranking{
+    min-height: 100vh;
+}
+#Ranking > h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+}
+#Ranking > ol > li{
+    width: 60%;
+    grid-template-rows: 13vh; /* this acts as height attribute */
+    margin: auto;
+    padding: 0.5%;
+    background: var(--grey-light);
+    display: grid;
+    grid-template-columns:auto 1fr 2fr 1fr auto;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+#Ranking > ol > li > img{
+    height: 50%;
+    justify-self: right;
+}
+#Ranking > ol > li > h3{
+    font-size: 2rem;
+    padding-right: 1.5vw;
+}
+#Ranking > ol > li:nth-child(1) > h3{
+    color: #D4AF37;
+}
+#Ranking > ol > li:nth-child(2) > h3{
+    color: grey;
+}
+#Ranking > ol > li:nth-child(3) > h3{
+    color: #774700;
+}
+
+#Ranking > ol > li > h2{
+    font-weight: 500;
+}
+#Ranking > ol > li > span:nth-child(3) > p{
+    background: #2F2F2F;
+    border-radius: 5px;
+    color:var(--grey-lighter);
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2%;
+    width: 90%;
+    margin: auto;
+    --margin:3%;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+    height: 40%;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+#Ranking > ol > li > span:last-child{
+    justify-self: right;
+    font-size: 2rem;
+}
+@media (max-width:1500px) {
+    #Ranking > ol{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+    }
+    #Ranking > ol > li{
+        width: 95%;
+    }
+    #Ranking > ol > li > span:nth-child(3) > p{
+        padding: 1.5%;
+    }
+}
+@media (max-width:700px){
+    #Ranking > ol > li > span:nth-child(3) > p{
+        display: none;
+    }
+    #Ranking > ol > li{
+        grid-template-columns: auto 2fr 0fr 1fr auto;
+    }
+}

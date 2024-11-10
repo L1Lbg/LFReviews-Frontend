@@ -148,9 +148,9 @@
     height: 60%;
 }
 .Community-category-review-relatable-count{
-    /* width: 0%;*/
     margin: 0;
     text-align: center;
+    text-wrap:nowrap;
 }
 progress{
     width: 100%;
