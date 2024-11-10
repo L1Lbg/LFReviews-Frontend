@@ -61,7 +61,6 @@ export default function Home(){
                                     <details>
                                         <summary>
                                             {t(`FAQ.Q${3}`)}
-                                            
                                         </summary>
                                         <p>{t(`FAQ.R${3}`)}</p>
                                     </details>

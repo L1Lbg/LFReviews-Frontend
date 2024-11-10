@@ -123,6 +123,10 @@
     height: 10vh;
     max-height: 100px;
     border-radius: 7px;
+    list-style: none;
+}
+.Home-FAQ > details > summary::-webkit-details-marker{
+    display: none;
 }
 
 .Home-FAQ > details > p{
