@@ -7,7 +7,6 @@ export default function FlagReview(props){
     const [modalOpen, setModalOpen] = useState(false)
     const [t] = useTranslation('global');
     useEffect(()=>{
-        console.log(modalOpen)
         const modal = document.getElementById(`FlagReview-${props.id}`).lastElementChild.firstElementChild
         if(modalOpen == true){
             modal.showModal()

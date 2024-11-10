@@ -28,7 +28,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 import CookiePolicy from './pages/CookiePolicy.jsx';
 import Favorites from './pages/Favorites.jsx';
 import MyReviews from './pages/MyReviews.jsx';
-
+import Teacher from './pages/Teacher.jsx'
 
 if ('serviceWorker' in navigator) {
    window.addEventListener('load', () => {
@@ -109,10 +109,10 @@ const router = createBrowserRouter([
         path: "/publication",
         element: <CreateReview />,
       },
-      // {
-      //   path: "/teacher/:id",
-      //   element: <Teacher />,
-      // },
+      {
+        path: "/teacher/:id",
+        element: <Teacher />,
+      },
       {
         path: "/communaute",
         element: <Community />,

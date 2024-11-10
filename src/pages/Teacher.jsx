@@ -7,9 +7,7 @@ import { Context } from '../pages/Root'
 export default function Teacher(){
     const {id} = useParams();
     const [t] = useTranslation('global')
-    const [name, setName] = useState('')
-    const [rating, setRating] = useState(0)
-    const [subjects, setSubjects] = useState([]);
+    const [data, setData] = useState({})
     const { customFetch } = useContext(Context); 
     
     useEffect(()=>{
@@ -21,20 +19,18 @@ export default function Teacher(){
         )
         .then(
             data => {
-                setName(data.name);
-                setSubjects(data.subjects);
-                setRating(data.rating)
+                setData(data);
             }
         )
     },[])
     return (
         <div id="Teacher">
-            {name}
+            {data.prefix} {data?.name}
             <br />
             {   
-                rating != null ? (
+                data.rating != null ? (
                     <TeacherStar
-                    rating={rating}
+                    rating={data.rating}
                     />
                 ) : (
                     <>
@@ -43,12 +39,14 @@ export default function Teacher(){
                 )
             }
             {
-                subjects.map((subject)=>(
-                    <div style={{'border':`solid 1px ${subject.color}`}} className="Teacher-Subject">
+                data.subjects?.map((subject, index)=>(
+                    <div key={index} style={{'border':`solid 1px ${subject.color}`}} className="Teacher-Subject">
                         {subject.name}
                     </div>
                 ))
             }
+
+            
 
         </div>
     )

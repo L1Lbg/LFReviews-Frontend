@@ -64,15 +64,19 @@
 }
 .Community-review{
     width: 100%;
-    height: 40vh;
+    aspect-ratio: 3/2.5;
+    max-height: 400px;
     background: var(--grey-dark);
     border-radius: 10px;
     padding: 2%;
     margin-bottom: 1%;
 }
+.Community-review{
+    cursor: grab;
+}
 .Community-review > ul{
     color: var(--grey-lighter);
-    height: 10%;
+    text-overflow: ellipsis;
 }
 .Community-review > .TeacherStar{
     /* width: 60%;
@@ -91,6 +95,7 @@
     margin: 1%;
     height: 70%;
     border-radius: 5px;
+    word-break: break-all;
 }
 .Community-review-content > p{
     height: 50%;
@@ -172,6 +177,7 @@ progress::-webkit-progress-value {
     grid-template-columns: 1fr;
     background: var(--grey-light);
     min-width: 200px;
+    width: 80%;
     max-width: 500px;
     margin: auto;
     border-bottom-left-radius: 10px;
@@ -181,6 +187,7 @@ progress::-webkit-progress-value {
 #Community-input-results > span{
     font-size: 1.3rem;
     display: grid;
+    width: 100%;
     justify-items: center;
     align-items: center;
     grid-template-columns: 0.7fr 1fr;
@@ -190,17 +197,90 @@ progress::-webkit-progress-value {
     cursor: pointer;
 }
 
-
+#Community-TeacherContainer > div{
+    display: flex;
+}
+#Community-TeacherName{
+    color:grey;
+    font-size: 3rem;
+    font-weight: 560;
+}
+#Community-TeacherName > div{
+    font-size: 2.5rem;
+}
+#Community-TeacherName > div:before {
+    content:"• ";
+}
+#Community-TeacherName > span{
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-left: 4.5%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+#Community-TeacherContainer{
+    padding-bottom: 6vh;
+}
+#Community-TeacherContainer > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#Community-TeacherContainer > div > div:nth-child(2) > div{
+    background: var(--grey-dark);
+    width: fit-content;
+    min-width: 35%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 10%;
+    padding: 1.5%;
+}
+#Community-TeacherContainer > div > div:nth-child(2) > span {
+    background: var(--black);
+    display: table;
+    margin: 0 auto;
+    border-radius: 7.5px;
+    padding: 2%;
+    margin-top: 1vh;
+}
+#Community-TeacherContainer > a{
+    box-shadow: 0 0 20px 0px black;
+    text-decoration: none;
+    color:white;
+    padding: 2%;
+    border-radius: 15px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 5vh;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#Community-TeacherContainer > a:hover{
+    box-shadow: 0 0 40px 0px black;
+}
 
 @media (max-width:900px) {
-    .Community-reviews{
-        grid-template-columns: 1fr;
-        height: 130vh;
-    }
     .Community-category-review-relatable > img{
         height: 100%;
     }
     #Community-input-results > span > .TeacherStar > img {
         width: 30px;
+    }
+    #Community-TeacherContainer > div{
+        display: block;
+    }
+    #Community-TeacherName{
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    #Community-TeacherContainer > a {
+        width: 80%;
     }
 }

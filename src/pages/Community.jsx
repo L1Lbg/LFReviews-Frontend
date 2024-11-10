@@ -4,6 +4,7 @@ import { createContext, useContext, useEffect, useState } from 'react';
 import { Context } from './Root';
 import TeacherStar from '../components/TeacherStar';
 import CommunityCarousel from '../components/CommunityCarousel';
+import Teacher from './Teacher';
 
 
 export const CommunityContext = createContext();
@@ -19,7 +20,9 @@ export default function Community(){
     const [loading, setLoading] = useState(false)
     const [reviewState, setReviewState] = useState({})
     const [requestTimeout, setRequestTimeout] = useState(null)
+    const [teacherData, setTeacherData] = useState(null) //* after single teacher was already queried
 
+    //* do initial community fetch
     useEffect(()=>{
         customFetch(
             '/api/rating/community',
@@ -37,16 +40,11 @@ export default function Community(){
     }, [])
 
 
-    // useEffect(()=>{
-    //     console.log(categories)
-    //     console.log(reviewState)
-    // }, [reviewState, categories])
 
-
+    //* animate input
     useEffect(()=>{
         const categories = document.querySelector('#Community-Categories-Container')
         const inputForm = document.querySelector('#Community-input-form')
-        const input = document.querySelector('#Community-input')
         if(inputFocus){
             categories.style.opacity = 0
             inputForm.style.marginTop = '18vh'
@@ -58,6 +56,7 @@ export default function Community(){
         }
     }, [inputFocus])
 
+    //* make teacher query
     useEffect(()=>{
         if(inputValue.length < 2){
             return;
@@ -81,8 +80,10 @@ export default function Community(){
         }, [inputValue])
 
 
+    //* when clicked, get the reviews related to the teacher
     const handleSpanClick = (id) => {
         setLoading(true)
+        //* query reviews
         customFetch(
             `/api/teacher/${id}/reviews`,
             {
@@ -95,6 +96,20 @@ export default function Community(){
                 setTeachers([])
                 setLoading(false)
                 setReviewState(data[data.length-1]);
+            }
+        )
+        
+        //* query teacher data
+        customFetch(
+            `/api/teacher/${id}`,
+            {
+                method:'GET'
+            }
+        )
+        .then(
+            data => {
+                console.log(data);
+                setTeacherData(data);
             }
         )
     }
@@ -111,9 +126,9 @@ export default function Community(){
 
                 <div id="Community-input-results">
                     {
-                        teachers.map((teacher) => (
-                            <span onClick={() => {handleSpanClick(teacher.id)}}>
-                                {teacher.prefix}
+                        teachers.map((teacher, index) => (
+                            <span key={index} onClick={() => {handleSpanClick(teacher.id)}}>
+                                {teacher.prefix} &nbsp;
                                 {teacher.name}
                                 <TeacherStar
                                     rating={teacher.rating}
@@ -124,6 +139,39 @@ export default function Community(){
                     }
                 </div>
             </form>
+
+            {
+                teacherData != null ? (
+                    <div id='Community-TeacherContainer'>
+                        <div>
+                            <div id="Community-TeacherName">
+                                <div>
+                                    {teacherData.prefix} {teacherData.name}
+                                </div>
+                                {
+                                    teacherData.subjects.map((subject)=>(
+                                        <span>{subject.name} </span>
+                                    ))
+                                }
+                            </div>
+
+                            <div>
+                                <div>
+                                    <TeacherStar 
+                                        rating={teacherData?.rating}
+                                    />
+                                    {parseFloat(teacherData?.rating).toFixed(1)}
+                                </div>
+                                <span>- {teacherData.reviews} Reviews</span>
+                            </div>
+                        </div>
+
+                        <a target="_blank" href={`/publication?teacher=${teacherData.id}`}>{t('CreateReview.TeacherCTA')} {teacherData.prefix} {teacherData.name}</a>
+                    </div>
+                ) : (
+                    <></>
+                )
+            }
 
 
             <div id="Community-Categories-Container">

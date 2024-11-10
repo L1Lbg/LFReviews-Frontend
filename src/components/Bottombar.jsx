@@ -16,6 +16,7 @@ export default function Bottombar() {
     } else {
       setStyle({
         'position':'absolute',
+        'width':'100%'
       })
     }
   }, [pathname])

@@ -215,7 +215,7 @@ export default function CreateReview(){
                   name="text_rating"
                   maxLength="256"
                 />
-                <span title='Soyez respectueux'>
+                <span data-tooltip={t('CreateReview.respect')}>
                   <img src={Info} alt="Information" />
                 </span>
               </div>

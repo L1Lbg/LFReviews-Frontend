@@ -45,7 +45,7 @@
     font-weight: bold;
 
 }
-#me-stats > div, a{
+#me-stats > div, #me-stats > a{
     --margin:2.5vh;
     margin-top: var(--margin);
     margin-bottom: var(--margin);

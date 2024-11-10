@@ -15,10 +15,40 @@ export default function FormDropdownInput(props){
     );
     const [teacherDisplay, setTeacherDisplay] = useState('flex')
     const { customFetch, setError } = useContext(Context); 
-    const [inputDisabled, setInputDisabled] = useState(false);
     const requestInterval = 500
     const setSpecial = props.special_method;
-    
+
+    //* if teacher is specified on URL
+    useEffect(() => {
+      if(props.name == 'teacher'){
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const teacher = urlParams.get('teacher')
+        if(teacher == null){
+          return;
+        }
+
+        customFetch(
+          `/api/teacher/${teacher}`,
+          {
+            method: "GET",
+          }
+        )
+        .then(
+          data => {
+            if(data.name){
+              setNameShown(`${data.prefix} ${data.name}`)
+              setRealId(teacher)
+              setInputAble(false)
+              setSpecial(data.subjects)
+            }
+          }
+        )
+      }
+    },[])
+
+
+
     //* if it's a predefined list
     useEffect(()=>{
         if(props.options != undefined){
@@ -88,7 +118,6 @@ export default function FormDropdownInput(props){
       setNameShown(e.currentTarget.getAttribute("name"))
       setRealId(id);
       setListClass("FormDropdownInput-List FormDropdownInput-ListClosed");
-      setInputDisabled(true);
       setInputAble(false)
       if(props.name == 'teacher' && setSpecial != null){
         let value = values.find((teacher) => teacher.id == id);
@@ -101,7 +130,6 @@ export default function FormDropdownInput(props){
 
     //* make input clickable again
     const ableInput = () => {
-      setInputDisabled(false);
       setInputAble(true);
       setNameShown('');
       setRealId(-1);
@@ -149,7 +177,7 @@ export default function FormDropdownInput(props){
             onChange={handleChange}
             value={nameShown}
             autoComplete="off"
-            disabled={inputDisabled}
+            disabled={!inputAble}
             onBlur={inputBlur}
             onFocus={inputFocus}
           />
