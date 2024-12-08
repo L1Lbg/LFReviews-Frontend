@@ -11,7 +11,7 @@ import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfi
 
 const StyledRating = styled(Rating)(({ theme }) => ({
   '& .MuiRating-iconEmpty .MuiSvgIcon-root': {
-    color: theme.palette.action.disabled,
+    color: '#878484',
     fontSize: '2.5rem',
   },
   '& .MuiRating-iconFilled .MuiSvgIcon-root': {

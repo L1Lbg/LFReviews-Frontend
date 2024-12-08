@@ -117,7 +117,7 @@ export default function Community(){
 
     return ( 
         <div id='Community'>
-            <h1 id='Community-title'>
+            <h1 id='Community-title' style={{opacity:teacherData ? '0%' : '100%'}}>
                 <span className='Logo'>Reviews </span>
                 {t('Community.title')}
             </h1>
@@ -160,7 +160,7 @@ export default function Community(){
                                     <TeacherStar 
                                         rating={teacherData?.rating}
                                     />
-                                    {parseFloat(teacherData?.rating).toFixed(1)}
+                                    {parseFloat(teacherData?.rating).toFixed(1)/2}
                                 </div>
                                 <span>- {teacherData.reviews} Reviews</span>
                             </div>

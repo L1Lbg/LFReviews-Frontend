@@ -26,16 +26,17 @@
     color:var(--black);
 }
 .num-label{
-    color: white;
-    font-size: 0.9vw;
+    color: var(--lite-white);
+    font-size: 1.2rem;
     text-overflow: ellipsis;
     text-align: center;
+    font-family: 'Roboto';
+    font-weight: 450;
 }
 .FormGradeInput > span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:5%;
     min-width: 4vw;
     border-radius: 5px;
     
@@ -51,10 +52,4 @@
     align-items: center;
     direction:rtl;
     width: 60%;
-}
-
-@media (max-width:900px) {
-    .num-label{
-        font-size: 0.8rem !important;
-    }
 }

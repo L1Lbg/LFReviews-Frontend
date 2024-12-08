@@ -29,8 +29,7 @@
     transform: rotate(45deg);
 } */
 .FormDropdownInput-Delete{
-    color:var(--purple);
-    fill:var(--purple);
+    fill:var(--lite-white);
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -48,7 +47,7 @@
     object-fit: contain;
 }
 .FormDropdownInput-Container > label {
-    color:var(--purple);
+    color:var(--lite-white);
     text-align: center;
 }
 .FormDropdownInput > input {

@@ -10,6 +10,9 @@
     margin-bottom: 3vh;
     min-height: 70px;
 }
+.FormCheckboxInput-Container > label{
+    color:var(--white)
+}
 .FormCheckboxInput-Container > select, .FormCheckboxInput-Container > select > option {
     color:var(--black);
     font-weight: bold;

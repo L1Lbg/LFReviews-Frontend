@@ -139,27 +139,15 @@ export default function Review(props){
 
                             <div className="Community-category-review-relatable">
                                 <img style={{scale:scale}} src={likeImgSrc} alt="Like" onClick={()=>handleRelate(true)}/>
-                                {
-                                    props.review.relatable_count > 0 ? (
-                                        <div>
-                                            <progress value={props.review.relatable} max='100'/>
-                                            <div><p>{props.review.relatable}%</p> <p>{100 - props.review.relatable}%</p></div>
-                                        </div>
-                                    ) : (
-                                        <div>
-                                            <progress value={props.review.relatable} max='100'/>
-                                            <div><p>{props.review.relatable}%</p> <p>{100 - props.review.relatable}%</p></div>
-                                        </div>
-                                    )
-                                }
-                                <img style={{scale:scale}} src={dislikeImgSrc} alt="Dislike" onClick={()=>handleRelate(false)}/>
-                                {
-                                    props.review.relatable_count > 0 ? (
+                                <div>
+                                    <progress value={props.review.relatable} max='100'/>
+                                    <div>
+                                        <p>{props.review.relatable}%</p> 
                                         <p className='Community-category-review-relatable-count'>({props.review.relatable_count})</p>
-                                    ) : (
-                                        <p className='Community-category-review-relatable-count'>(0)</p>
-                                    )
-                                }
+                                        <p>{100 - props.review.relatable}%</p>
+                                    </div>
+                                </div>
+                                <img style={{scale:scale}} src={dislikeImgSrc} alt="Dislike" onClick={()=>handleRelate(false)}/>
                             </div>
                         </div>
                     </>

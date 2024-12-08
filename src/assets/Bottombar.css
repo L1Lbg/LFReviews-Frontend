@@ -1,6 +1,6 @@
 #Bottombar{
     background: #111111;
-    /* height: 15vh; */
+    height: 15vh;
     color:white;
     text-decoration: none;
     bottom:0;
@@ -63,29 +63,28 @@
     #Bottombar{
         display: block;
         height: fit-content;
-        padding: 5vw;
+        padding: 2vw;
     }
     #Bottombar > p{
         text-align: center;
-        margin-bottom: 5vh;
+        margin-bottom: 2vh;
         width: 100%;
+        padding-left: 0;
+
     }
     #Bottombar-legal{
         text-align: center;
         margin: auto;
         justify-items: center;
         width: 80vw;
-        margin-left: 7vw;
     }
     #Bottombar-links{
         display: grid;
         grid-template-columns: 0.fr 0.fr 1fr;
         margin: auto;
-        margin-top: 5vh;
-        margin-left: 5vw;
+        margin-top: 2vh;
         justify-content: center;
         max-width: 80vw;
-        margin-bottom: 5vh;
     }
     #Bottombar-links > a:nth-child(1), #Bottombar-links > a:nth-child(2){
         justify-self: left;

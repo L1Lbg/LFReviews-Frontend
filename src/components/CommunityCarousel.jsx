@@ -21,7 +21,7 @@ const EmblaCarousel = (props) => {
 
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true, loop: true }, [
-    AutoScroll({ playOnInit: true, speed:speed, stopOnInteraction:false})
+    AutoScroll({ playOnInit: true, speed:speed, stopOnInteraction:false, startDelay:0})
   ])
 
   useEffect(() => {

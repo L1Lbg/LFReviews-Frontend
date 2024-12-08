@@ -5,6 +5,9 @@
     --slide-height: fit-content;
     --slide-width: 100%;
   }
+  .embla:hover{
+    cursor: grab;
+  }
   .embla__viewport {
     overflow: hidden;
   }

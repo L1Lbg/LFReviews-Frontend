@@ -28,7 +28,7 @@
     box-shadow: 0 0 17px 17px rgba(84, 84, 84, 0.5);
 }
 .FormLabel{
-    color:var(--purple);
+    color:var(--lite-white);
     font-size: 1.1vw;
     font-weight:normal;
     text-align: center;
