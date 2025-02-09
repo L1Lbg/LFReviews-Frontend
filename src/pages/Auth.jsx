@@ -184,13 +184,23 @@ export default function Auth() {
               required
             />
             <div className="flex items-center gap-4">
-              <button
+              {/* <button
                 type="submit"
                 className="flex-1 bg-gradient-blue text-white py-3 rounded-lg font-semibold hover:bg-high-gradient-blue transition-colors duration-200 disabled:opacity-50"
                 disabled={isSubmitting}
               >
+                
                 {isSubmitting ? t("Auth.submitting") : t("Auth.button-login")}
-              </button>
+              </button> */}
+              <button
+                  id="Home-AuthButton"
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="h-12 !outline-0 !text-2xl shadow-[0_0_10px_rgba(255,255,255,0.5)] hover:!shadow-[0_0_20px_rgba(255,255,255,0.8)] transition-shadow duration-300"
+ 
+                >
+              {isSubmitting ? t("Auth.submitting") : t("Auth.button-signup")}
+            </button>
               <GoogleButton />
             </div>
           </form>
@@ -237,14 +247,25 @@ export default function Auth() {
               onChange={(e) => setSignupConfirmPassword(e.target.value)}
               required
             />
-            <div className="flex items-center gap-4">
-              <button
+            <div className="flex items-center mt-5 gap-4">
+              {/* <button
                 type="submit"
                 className="flex-1 bg-gradient-blue text-white py-3 rounded-lg font-semibold hover:bg-high-gradient-blue transition-colors duration-200 disabled:opacity-50"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? t("Auth.submitting") : t("Auth.button-signup")}
-              </button>
+              </button> */}
+
+              <button
+                  id="Home-AuthButton"
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="h-12 !outline-0 !text-2xl shadow-[0_0_10px_rgba(255,255,255,0.5)] hover:!shadow-[0_0_20px_rgba(255,255,255,0.8)] transition-shadow duration-300"
+ 
+                >
+              {isSubmitting ? t("Auth.submitting") : t("Auth.button-signup")}
+            </button>
+              
               <GoogleButton />
             </div>
           </form>
