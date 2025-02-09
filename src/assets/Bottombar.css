@@ -1,6 +1,6 @@
 #Bottombar{
     background: #111111;
-    height: 15vh;
+    height: 20vh;
     color:white;
     text-decoration: none;
     bottom:0;
@@ -27,18 +27,24 @@
     overflow: hidden;
     font-size: 0.8rem;
 }
+#Bottombar-legal > a:hover{
+    text-decoration: underline;
+}
 #Bottombar-links{
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 3vw;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 2.5vw;
     width: 100%;
-    max-width: 200px;
+    max-width: 350px;
+
 }
 #Bottombar-links > a{
     width: fit-content;
-
+}
+#Bottombar-links > a > img{
+    object-fit: contain;
 }
 #Bottombar-links > a > svg, #Bottombar-links > a > img{
     color: inherit;
@@ -47,9 +53,6 @@
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-}
-#Bottombar-links > a > svg{
-    height: 6vh;
 }
 #Bottombar-links > a > img{
     height: 4vh;

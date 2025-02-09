@@ -24,7 +24,7 @@ export default function Bottombar() {
 
   return (
     <div id="Bottombar" style={style}>
-      <p>LFMReviews 2024</p>
+      <p>LFMReviews 2025</p>
       <div id="Bottombar-legal">
         <a href="/regles-de-la-communaute">{t('Bottombar.communityRules')}</a>
         <a href="/politique-des-cookies">{t('Bottombar.cookiePolicy')}</a>
@@ -48,7 +48,7 @@ export default function Bottombar() {
         >
           <img src={EmailIcon} alt="Email icon" />
         </a>
-        <a href='https://ko-fi.com/Z8Z314C967' target='_blank'><img style={{border:'0px', height:'30px', width:'120px'}} src='/Icons/kofi5.webp' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+        <a href='https://ko-fi.com/Z8Z314C967' target='_blank'><img src='/Icons/kofi5.webp' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
       </div>
     </div>
   );

@@ -273,6 +273,13 @@ progress::-webkit-progress-value {
 }
 
 @media (max-width:900px) {
+    #Community-title{
+        font-size: 1.7rem;
+
+    }
+    #Community-input{
+        font-size: 1.5rem;
+    }
     .Community-category-review-relatable > img{
         height: 100%;
     }

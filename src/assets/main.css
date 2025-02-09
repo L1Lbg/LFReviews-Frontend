@@ -18,7 +18,7 @@
     --lite-white:rgb(187, 187, 187);
 }
 * {
-    font-family: "Roboto";
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 input:focus, textarea:focus, select:focus{
     outline:0;
@@ -65,7 +65,7 @@ html{
 }
 body{
     background: #252525;
-    font-family: "Inter";
+    font-family: "-apple-system";
     font-display: swap;
     margin: 0;
     color:white;

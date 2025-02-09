@@ -33,47 +33,47 @@ export default function SmallNavbar(){
 
     }
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  // }, []);
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, []);
 
-  // useEffect(() => {
-  //   let navbar = document.getElementById('Navbar')
-  //   let logo = document.getElementById('Navbar-Logo')
-  //   clearTimeout(lastTimeout) 
-  //   const navLinks = document.querySelectorAll('#Navbar > a, #Navbar > button');
-  //   if(scrollY > threshold){ 
-  //       if(window.outerWidth > 700){
-  //         navLinks.forEach(link => {
-  //           link.setAttribute('style', 'transform:translateY(-500px);');  
-  //         });
-  //       } else {
-  //         navLinks.forEach(link => {
-  //           link.setAttribute('style', 'transform:translateX(-1000px);');  
-  //         });
-  //       }
-  //       logo.setAttribute(
-  //         "style",
-  //         "left: 50%;transform: translateX(-50%);"
-  //       );
+  useEffect(() => {
+    let navbar = document.getElementById('Navbar-Logo-Container')
+    let logo = document.getElementById('SmallNavbar-Logo')
+    clearTimeout(lastTimeout) 
+    const navLinks = document.querySelectorAll('#Navbar > a, #Navbar > button');
+    if(scrollY > threshold){ 
+        if(window.outerWidth > 700){
+          navLinks.forEach(link => {
+            link.setAttribute('style', 'transform:translateY(-500px);');  
+          });
+        } else {
+          navLinks.forEach(link => {
+            link.setAttribute('style', 'transform:translateY(-1000px);');  
+          });
+        }
+        logo.setAttribute(
+          "style",
+          "transform: translateX(-50%) scale(1.3); left:55%;"
+        );
 
-  //       setLastTimeout( 
-  //           setTimeout(()=>{
-  //               if(window.scrollY > threshold){
-  //                   setShowOthers(false)
-  //               }
-  //           }, 1300)
-  //       )
+        setLastTimeout( 
+            setTimeout(()=>{
+                if(window.scrollY > threshold){
+                    setShowOthers(false)
+                }
+            }, 1300)
+        )
 
-  //   } else { // make everything re-appear
-  //     navbar.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
-  //     logo.setAttribute('style', 'transform:translateX(0%) scale(1);');   
-  //     setShowOthers(true)
-  //     navLinks.forEach(link => {
-  //         link.setAttribute('style', 'transform:translateY(0px) translateX(0px);');  
-  //     });
-  //   }
-  // }, [scrollY, email]);
+    } else { // make everything re-appear
+      navbar.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
+      logo.setAttribute('style', 'transform:translateX(0%) scale(1); left:5%;');   
+      setShowOthers(true)
+      navLinks.forEach(link => {
+          link.setAttribute('style', 'transform:translateY(0px) translateX(0px);');  
+      });
+    }
+  }, [scrollY, email]);
 
     return (
       <>
@@ -87,8 +87,6 @@ export default function SmallNavbar(){
               id="SmallNavbar-Logo"
               alt="LFMReviews Logo"
               src="/Icons/Logo.svg"
-              width={'50px'}
-              height={'50px'}
               />
             ) : (
               <img

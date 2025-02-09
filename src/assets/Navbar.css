@@ -16,7 +16,7 @@
     background:var(--grey-dark);
     position: sticky;
     transition: 0.5s;
-    height: 150px;
+    height: 15vh;
     overflow:visible;
 }
 #Navbar > span{
@@ -88,7 +88,7 @@
 #Navbar-Logo-Container{
     position: sticky; 
     z-index: 1000;
-    top: 48px;
+    top: 41px;
     padding-left: 2.5vw;
     height: 0;
     width: 95%;
