@@ -1,66 +1,64 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
-export default function PasswordInput(props){
-    const [shown, setShown] = useState(false)
-    const [passwordType, setPasswordType] = useState('password')
-    const [autocomplete, setAutocomplete] = useState(null)
+const PasswordInput = (props) => {
+  const [showPassword, setShowPassword] = useState(false)
 
-    useEffect(()=>{
-        if(props.new_password == false){
-            setAutocomplete("current-password")
-        } else {
-            setAutocomplete("new-password")
-        }
-    },[])
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword)
+  }
 
-    useEffect(()=>{
-        if(shown == false){
-
-        }
-    }, [shown])
-
-    const toggleShown = () => {
-        if(shown){
-            setShown(false);
-            setPasswordType('password');
-        } else {
-            setShown(true);
-            setPasswordType('text');
-        }
-    }
-
-    return (
-      <div style={props.custom_style} className="Auth-Password-Input-Container">
-        <input
-          type={passwordType}
-          autoComplete={autocomplete}
-          name={props.name}
-          placeholder={props.placeholder}
-          className="Auth-Password-Input"
-        ></input>
-        <button onClick={toggleShown} type="button">
-          {shown ? (
-            <svg
-              focusable="false"
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7M2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2m4.31-.78 3.15 3.15.02-.16c0-1.66-1.34-3-3-3z"
-              ></path>
-            </svg>
-          ) : (
-            <svg
-              focusable="false"
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5m0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"
-              ></path>
-            </svg>
-          )}
-        </button>
-      </div>
-    );
+  return (
+    <div className="relative" style={props.custom_style}>
+      <input
+        type={showPassword ? "text" : "password"}
+        name={props.name}
+        placeholder={props.placeholder}
+        autoComplete={props.autoComplete}
+        onChange={e => props.onChange(e)}
+        className="w-full bg-grey-light text-white px-4 py-3 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-gradient-blue"
+        style={props.custom_style}
+      />
+      <button
+        type="button"
+        onClick={toggleShowPassword}
+        className="absolute right-3 top-1/3 transform -translate-y-1/2 text-grey-lighter hover:text-white transition-colors duration-200"
+      >
+        {showPassword ? (
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+            />
+          </svg>
+        ) : (
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
+            />
+          </svg>
+        )}
+      </button>
+    </div>
+  )
 }
+
+export default PasswordInput
+

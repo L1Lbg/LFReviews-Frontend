@@ -40,16 +40,16 @@ export default function ResetPasswordButton(props) {
           autoComplete="email"
           name="email"
           placeholder={t("Auth.mail-address-placeholder")}
-          className="flex-1 bg-transparent text-white px-4 py-2 text-sm focus:outline-none"
+          className="flex-1 bg-transparent text-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gradient-blue"
         />
       ) : null}
       <button
         type="submit"
         disabled={disabled}
-        className="bg-grey-dark text-white px-4 py-2 text-sm hover:bg-black transition-colors duration-200 disabled:opacity-50"
+        className="bg-gradient-blue text-white px-6 py-3 text-sm font-semibold hover:bg-high-gradient-blue transition-colors duration-200 disabled:opacity-50"
       >
         {t("Auth.reset-password-button")}
       </button>
     </form>
-  );
+  )
 }
