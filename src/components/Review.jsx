@@ -38,6 +38,9 @@ export default function Review(props){
         } else if(userRelated == false){
             setLikeImgSrc(like_url)
             setDislikeImgSrc(disliked_url)
+        } else {
+            setLikeImgSrc(like_url)
+            setDislikeImgSrc(dislike_url)
         }
     }, [userRelated, reviewState])
     

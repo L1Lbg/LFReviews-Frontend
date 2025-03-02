@@ -70,7 +70,10 @@ body{
     margin: 0;
     color:white;
 }
-
+svg{
+    width: 100%;
+    height:auto;
+}
 
 .flex-center{
     display: flex;
