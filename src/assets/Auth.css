@@ -1,4 +1,3 @@
-/* Keep only the animation related styles */
 .disappear {
     animation-name: disappear;
     animation-duration: 1s;

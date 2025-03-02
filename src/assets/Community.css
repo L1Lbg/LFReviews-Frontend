@@ -94,16 +94,37 @@
 .Community-review-content{
     background:var(--grey-light);
     margin: 1%;
-    height: 70%;
+    height: 65%;
     border-radius: 5px;
     word-break: break-all;
 }
 .Community-review-content > p{
-    height: 50%;
+    height: 58%;
+    overflow-y: auto;
+    font-size: 1.67rem;
+    margin: 0;
+}
+.Community-review-content > p::-webkit-scrollbar-track{
+    margin: 0 !important;
 }
 .Community-category-review-relatable > img{
     transition: 0.5s;
+    width: 10%;
 } 
+.Community-category-review-relatable > #Like{
+}
+.Community-category-review-relatable > #Like:hover{
+    transform:rotate(-5deg) translate(0px, -1px);
+}
+.Community-category-review-relatable > #Like:active{
+    transform:rotate(-10deg) translate(0px, -2px);
+}
+.Community-category-review-relatable > #Dislike:hover{
+    transform:rotate(-5deg) translate(0px, 1px);
+}
+.Community-category-review-relatable > #Dislike:active{
+    transform:rotate(-10deg) translate(0px, 2px);
+}
 #Community-input-form{
     display: grid;
     margin: auto;
@@ -147,7 +168,7 @@
 .Community-category-review-relatable > div{
     width: 60%;
     font-weight: bold;
-    height: 60%;
+    margin-top: 1.3rem;
 }
 .Community-category-review-relatable-count{
     margin: 0;
@@ -272,10 +293,9 @@ progress::-webkit-progress-value {
     box-shadow: 0 0 40px 0px black;
 }
 
-@media (max-width:900px) {
+@media (max-width:1200px) {
     #Community-title{
         font-size: 1.7rem;
-
     }
     #Community-input{
         font-size: 1.5rem;
@@ -295,5 +315,8 @@ progress::-webkit-progress-value {
     }
     #Community-TeacherContainer > a {
         width: 80%;
+    }
+    .Community-review-content > p{
+        font-size: 1rem;
     }
 }

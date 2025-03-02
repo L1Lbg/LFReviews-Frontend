@@ -1,13 +1,10 @@
-.CommunityCarousel{
-
-}
 .CommunityCarousel > .embla {
     max-width:100vw;
     --slide-spacing:4vw;
     --slide-size: 33vw;
 }
 
-@media (max-width:900px){
+@media (max-width:1000px){
     .CommunityCarousel > .embla{
       --slide-size:70%;
     }

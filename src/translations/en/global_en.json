@@ -4,111 +4,125 @@
     "false": "False",
     "yes": "Yes",
     "no": "No",
-    "Slogan": "Listen to the students' opinions"
+    "Slogan": "Listen to students' opinions",
+    "Submit": "Submit"
   },
   "Community": {
     "title": "of the community",
     "search": "Search for a teacher",
     "recent": "Most recent",
     "highest": "Highest rated",
-    "lowest": "Lowest rated"
+    "lowest": "Lowest rated",
+    "relevant": "Most relevant"
   },
   "Titles": {
-    "": "Listen to the students' opinions",
+    "": "Listen to students' opinions",
     "communaute": "Community Reviews",
     "publication": "Publish a Review",
-    "me": "My profile",
-    "settings": "My settings",
+    "me": "My Profile",
+    "settings": "My Settings",
     "auth": "Authentication"
   },
   "Home": {
     "LastReviews": "Latest Reviews",
     "AuthButton": "Let's go!",
-    "Description": "Welcome to LFMReviews! Share and check reviews about your teachers to improve the educational quality of your community."
+    "Description": "Welcome to LFMReviews! Share and read reviews about your teachers to improve the educational quality of your community."
   },
   "Bottombar": {
     "communityRules": "Community Rules",
     "cookiePolicy": "Cookie Policy",
     "privacyPolicy": "Privacy Policy",
     "disclaimer": "Disclaimer",
-    "securityProtection": "Security and Protection",
+    "securityProtection": "Security & Protection",
     "termsOfService": "Terms of Service"
   },
   "FAQ": {
     "Q1": "What is LFMReviews?",
-    "R1": "LFMReviews is a site where you can write and check the community's reviews about different teachers in various grades and subjects at LFM.",
+    "R1": "LFMReviews is a website where you can write and read community reviews about different teachers in various grades and subjects at LFM.",
     "Q2": "How many courses are there?",
-    "R2": "Most teachers from 6th grade to Terminale are available. However, you can help us enrich our list by sending information about a teacher we haven't listed yet via the 'Add a teacher' tab.",
-    "Q3": "Will people know who published the review?",
-    "R3": "No, all reviews are anonymous. No one will know who published them. We only ask for your email address for database purposes and to prevent the creation of multiple accounts.",
-    "Q4": "Will people know who published the review?",
-    "R4": "No, all reviews are anonymous. No one will know who published them. We only ask for your email address for database purposes and to prevent the creation of multiple accounts."
+    "R2": "Most teachers from 6th grade to Terminale are available. However, you can help us expand our list by sending us information about a teacher we haven't listed yet through the 'Add a Teacher' tab.",
+    "Q3": "Can people know who posted the review?",
+    "R3": "No, all reviews are anonymous, and no one will know who posted them. We ask for your email address only for database purposes and to prevent multiple account creation.",
+    "Q4": "Can people know who posted the review?",
+    "R4": "No, all reviews are anonymous, and no one will know who posted them. We ask for your email address only for database purposes and to prevent multiple account creation."
   },
   "Settings": {
-    "PageLanguage": "Page Language:"
+    "PageLanguage": "Page language:"
+  },
+  "CompletedReview": {
+    "Title": "Thank you very much for your ",
+    "Back": "Return to the main page",
+    "Another": "Publish another ",
+    "Share": "Share or download it",
+    "ShareTitle": "Share this Review",
+    "ShareText": "Share this Review",
+    "Explanation": "Your review will be visible in about 10 minutes as it must go through an automatic validation process."
   },
   "Auth": {
     "button-signup": "Sign up",
     "button-login": "Log in",
     "signup-message": "Welcome!",
     "signup-paragraph": "Join us and share your reviews now!",
-    "login-message": "Happy to see you again!",
-    "login-paragraph": "Thanks for coming back, we look forward to your new Reviews.",
+    "login-message": "Glad to see you back!",
+    "login-paragraph": "Thank you for returning, we look forward to your new Reviews.",
     "invalid-mail": "The email address is not valid. Please check and try again.",
-    "invalid-password": "The password must be at least 8 characters long, varied between alphanumeric and special characters. It should not contain a common password. Please try again.",
+    "invalid-password": "The password must be at least 8 characters long, including alphanumeric and special characters. It should not contain a common password. Please try again.",
     "not-corresponding-password": "Passwords do not match. Please check and try again.",
     "password-too-short": "The password must be at least 8 characters long.",
+    "all-fields-required": "You have not filled in all the fields.",
     "mail-address-placeholder": "Email Address",
     "password-placeholder": "Password",
     "re-password-placeholder": "Confirm Password",
     "email-used": "This email address has already been used to create another account.",
-    "reset-password-button": "Reset my password"
+    "reset-password-button": "Reset my password",
+    "submitting": "Submitting..."
   },
   "Navbar": {
     "community": "Community Reviews",
     "publish": "Publish a Review",
     "settings": "Settings",
     "teachers": "Teachers",
-    "profile": "My profile"
+    "profile": "My Profile"
   },
   "Cookies": {
-    "cookie-acceptance": "This website uses functional cookies and third-party cookies to enhance your experience. You can choose to accept or reject these cookies. If you continue browsing without selecting an option, we will consider that you accept the use of cookies. To change your preferences, visit the Settings page. For more information, please see our "
+    "cookie-acceptance": "This website uses functional and third-party cookies to enhance your experience. You can choose to accept or decline these cookies. If you continue browsing without selecting an option, we will assume that you accept the use of cookies. To change your preferences, visit the Settings page. For more information, please see our "
   },
   "Activate": {
     "error": "An error occurred",
     "success": "Account activated."
   },
   "Teacher": {
-    "no-rating": "No reviews have been made by a user so far. Be the first!"
+    "no-rating": "No reviews have been made for this teacher yet. Be the first!"
   },
   "CreateReview": {
-    "clarte": "Clarity of explanations",
-    "interaction_soutien": "Interaction and support",
-    "methodes": "Teaching methods",
-    "justice": "Fairness in grading",
-    "ambiance": "Classroom atmosphere",
-    "relation_eleves": "Relationship with students",
-    "gestion_temps": "Time management",
+    "clarte": "Clarity/Explanation Methods",
+    "interaction_soutien": "Interaction and Support",
+    "methodes": "Teaching Methods",
+    "justice": "Fairness in Evaluation",
+    "ambiance": "Classroom Atmosphere",
+    "gestion_temps": "Time Management",
     "amabilite": "Kindness",
-    "gestion_colere": "Anger management",
+    "gestion_colere": "Anger Management",
     "charge_travail": "Workload",
     "distraction": "Distraction",
-    "difficulte": "Course difficulty level",
-    "ponctuel": "Is he/she punctual?",
+    "difficulte": "Course Difficulty Level",
+    "ponctuel": "Is the teacher punctual?",
     "aide": "Help with exams?",
     "greves": "Participates in strikes?",
     "punitions": "Applies punishments?",
-    "text_rating": "Final comment",
-    "tot_rating": "Final rating",
+    "text_rating": "Final Comment",
+    "tot_rating": "Final Rating",
+    "respect": "For more information, please visit the community rules.",
+    "TeacherCTA": "Publish a Review on",
     "publication": "Publication",
     "ofA": "of a",
     "review": "Review",
     "chooseTeacher": "To start, please choose the teacher you want to evaluate.",
     "selectSubject": "Next, select the subject this teacher teaches.",
-    "selectYear": "Which year does this teacher teach?",
-    "startEvaluation": "- Now we can start the evaluation. Please fill in the fields below.",
-    "yesOrNoQuestions": "- Now, please answer the next questions with yes or no",
-    "optionalComment": "- You have the option to add a comment (optional). Any type of insult, threat, or inappropriate behavior will not be tolerated.",
+    "selectYear": "In which year does this teacher teach?",
+    "startEvaluation": "-Now we can start the evaluation. Please fill in the fields below.",
+    "yesOrNoQuestions": "- Now please answer the next questions with yes or no",
+    "optionalComment": "-You have the option to add a comment (optional). Any type of insult, threat, or other inappropriate behavior will not be tolerated.",
     "textPlaceholder": "Click to start writing...",
     "submit": "PUBLISH"
   },
@@ -116,33 +130,44 @@
     "maintenance": "Website maintenance will start in less than 5 minutes...",
     "fatal": "An unknown error occurred. Please try again.",
     "duplicate-review": "A review for this teacher, subject, and year has already been created by the user.",
-    "collision": "You already created similar content.",
+    "collision": "You have already created similar content.",
     "wrong-teacher": "The selected teacher is invalid. Please choose a valid teacher.",
     "wrong-subject": "The selected subject is invalid. Please choose a valid subject.",
     "wrong-year": "The selected year is invalid. Please choose a valid year.",
-    "incorrect-grade": "The provided rating is incorrect. Ratings must be between 0 and 10.",
+    "incorrect-grade": "The provided grade is incorrect. Grades must be between 0 and 10.",
     "incorrect-overall": "The overall rating is incorrect. The overall rating must be between 0 and 10.",
-    "wrong-login": "No active account found with the provided credentials. Check if you have verified your account through your inbox.",
+    "wrong-login": "No active account was found with the provided credentials. Check if you have verified your account via your email inbox.",
     "request-reset-password": "The request was not completed. Please try again.",
-    "404": "The accessed page does not exist",
-    "ReviewFormIdentical": "Values have not been changed",
-    "teacher-query": "An error occurred while searching for teachers",
-    "text-rating-forbidden-characters": "The characters used (such as special characters and accents) in the review are forbidden."
+    "404": "The accessed page does not exist.",
+    "ReviewFormIdentical": "Values have not been changed.",
+    "teacher-query": "An error occurred while searching for teachers.",
+    "text-rating-forbidden-characters": "The characters used (such as special characters and accents) in the review are not allowed."
   },
   "Success": {
-    "ReviewEdit": "Your review has been edited",
-    "create-review": "The review has been successfully created",
-    "signup": "Your account has been created successfully. Check your inbox to activate it.",
-    "login": "You are successfully logged in to your account",
-    "request-reset-password": "The request was successful. Check your inbox."
+    "ReviewEdit": "Your review has been modified.",
+    "create-review": "The review has been successfully created.",
+    "signup": "Your account has been successfully created. Check your email to activate it.",
+    "login": "You have successfully logged into your account.",
+    "request-reset-password": "The request was successful. Check your email."
+  },
+  "Me": {
+    "average": "Average Reviews",
+    "popularity": "Average Ratings",
+    "joined": "In LFMReviews since",
+    "title": "My Profile",
+    "myreviews": "See all my Reviews",
+    "favorites": "See my favorite Reviews"
   },
   "Year": {
     "0": "Terminale",
-    "1": "Premiere",
+    "1": "Première",
     "2": "Seconde",
     "3": "Troisième",
     "4": "Quatrième",
     "5": "Cinquième",
     "6": "Sixième"
+  },
+  "Ranking": {
+    "title": "Best Teachers"
   }
 }

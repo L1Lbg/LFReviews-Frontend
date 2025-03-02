@@ -67,7 +67,7 @@
     margin-left: 5%;
 }
 
-@media (max-width:900px) {
+@media (max-width:1200px) {
     .MyReviews-Review{
         display: block;
         height: fit-content;

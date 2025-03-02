@@ -4,46 +4,59 @@
     "false": "Falso",
     "yes": "Sí",
     "no": "No",
-    "Slogan": "Escucha la opinión de los estudiantes"
+    "Slogan": "Escucha la opinión de los alumnos",
+    "Submit": "Enviar"
   },
   "Community": {
     "title": "de la comunidad",
     "search": "Buscar un profesor",
     "recent": "Las más recientes",
     "highest": "Las mejor valoradas",
-    "lowest": "Las peor valoradas"
+    "lowest": "Las peor valoradas",
+    "relevant": "Las más relevantes"
   },
   "Titles": {
-    "": "Escucha la opinión de los estudiantes",
-    "communaute": "Reviews de la comunidad",
-    "publication": "Publicar una Review",
+    "": "Escucha la opinión de los alumnos",
+    "communaute": "Reseñas de la comunidad",
+    "publication": "Publicar una reseña",
     "me": "Mi perfil",
     "settings": "Mis ajustes",
     "auth": "Autenticación"
   },
   "Home": {
-    "LastReviews": "Últimas Reviews",
+    "LastReviews": "Últimas reseñas",
     "AuthButton": "¡Vamos!",
-    "Description": "¡Bienvenido a LFMReviews! Comparte y consulta opiniones sobre tus profesores para mejorar la calidad educativa de tu comunidad."
+    "Description": "¡Bienvenido a LFMReview! Comparte y consulta opiniones sobre tus profesores para mejorar la calidad educativa de tu comunidad."
   },
   "Bottombar": {
     "communityRules": "Reglas de la comunidad",
     "cookiePolicy": "Política de cookies",
     "privacyPolicy": "Política de privacidad",
-    "disclaimer": "Descargo de responsabilidad",
+    "disclaimer": "Aviso legal",
     "securityProtection": "Seguridad y protección",
     "termsOfService": "Términos de servicio"
   },
   "FAQ": {
     "Q1": "¿Qué es LFMReviews?",
-    "R1": "LFMReviews es un sitio donde puedes escribir y consultar las opiniones de la comunidad sobre diferentes profesores en varios grados y materias del LFM.",
+    "R1": "LFMReviews es un sitio donde puedes escribir y consultar las opiniones de la comunidad sobre diferentes profesores en distintos años y materias del LFM.",
     "Q2": "¿Cuántos cursos hay?",
-    "R2": "La mayoría de los profesores de 6º a Terminal están disponibles. Sin embargo, puedes ayudarnos a enriquecer nuestra lista enviándonos información sobre un profesor que no hayamos incluido todavía a través de la pestaña 'Agregar un profesor'.",
-    "Q3": "¿Las personas sabrán quién publicó la review?",
-    "R3": "No, todas las críticas son anónimas, nadie sabrá quién las publicó. Solo pedimos tu dirección de correo electrónico por motivos de base de datos y para prevenir la creación de múltiples cuentas."
+    "R2": "La mayoría de los profesores desde 6º hasta Terminale están disponibles. Sin embargo, puedes ayudarnos a enriquecer nuestra lista enviándonos información sobre un profesor que aún no hayamos registrado a través de la pestaña 'Añadir un profesor'.",
+    "Q3": "¿Las personas podrán saber quién publicó la reseña?",
+    "R3": "No, todas las reseñas son anónimas, nadie podrá saber quién las publicó. Pedimos tu dirección de correo electrónico solo por razones de base de datos y para evitar la creación de múltiples cuentas.",
+    "Q4": "¿Las personas podrán saber quién publicó la reseña?",
+    "R4": "No, todas las reseñas son anónimas, nadie podrá saber quién las publicó. Pedimos tu dirección de correo electrónico solo por razones de base de datos y para evitar la creación de múltiples cuentas."
   },
   "Settings": {
     "PageLanguage": "Idioma de la página:"
+  },
+  "CompletedReview": {
+    "Title": "Muchas gracias por tu ",
+    "Back": "Volver a la página principal",
+    "Another": "Publicar otra ",
+    "Share": "Compartir o descargar",
+    "ShareTitle": "Compartir esta reseña",
+    "ShareText": "Compartir esta reseña",
+    "Explanation": "Tu reseña será visible en unos 10 minutos, ya que debe someterse a un proceso de validación automática."
   },
   "Auth": {
     "button-signup": "Registrarse",
@@ -51,96 +64,92 @@
     "signup-message": "¡Bienvenido!",
     "signup-paragraph": "¡Únete a nosotros y comparte tus opiniones ahora!",
     "login-message": "¡Nos alegra verte de nuevo!",
-    "login-paragraph": "Gracias por regresar, esperamos con ansias tus nuevas Reviews.",
-    "invalid-mail": "La dirección de correo no es válida. Por favor, verifica e intenta de nuevo.",
-    "invalid-password": "La contraseña debe tener al menos 8 caracteres, variando entre alfanuméricos y caracteres especiales. No debe contener contraseñas comunes. Inténtalo de nuevo.",
-    "not-corresponding-password": "Las contraseñas no coinciden. Por favor, verifica e inténtalo nuevamente.",
+    "login-paragraph": "Gracias por volver, esperamos tus nuevas reseñas con entusiasmo.",
+
+    "invalid-mail": "La dirección de correo electrónico no es válida. Verifícala e inténtalo de nuevo.",
+    "invalid-password": "La contraseña debe tener al menos 8 caracteres, con una combinación de alfanuméricos y caracteres especiales. No debe ser una contraseña demasiado común. Inténtalo de nuevo.",
+    "not-corresponding-password": "Las contraseñas no coinciden. Verifícalas e inténtalo de nuevo.",
     "password-too-short": "La contraseña debe tener al menos 8 caracteres.",
-    "mail-address-placeholder": "Correo Electrónico",
+    "all-fields-required": "No has completado todos los campos.",
+
+    "mail-address-placeholder": "Dirección de correo",
     "password-placeholder": "Contraseña",
-    "re-password-placeholder": "Confirmar Contraseña",
+    "re-password-placeholder": "Confirmación de contraseña",
+
     "email-used": "Esta dirección de correo ya ha sido utilizada para crear otra cuenta.",
-    "reset-password-button": "Restablecer mi contraseña"
+
+    "reset-password-button": "Restablecer mi contraseña",
+    "submitting": "Enviando..."
   },
   "Navbar": {
-    "community": "Reviews de la comunidad",
-    "publish": "Publicar una Review",
+    "community": "Reseñas de la comunidad",
+    "publish": "Publicar una reseña",
     "settings": "Ajustes",
     "teachers": "Profesores",
     "profile": "Mi perfil"
   },
   "Cookies": {
-    "cookie-acceptance": "Este sitio web utiliza cookies funcionales y cookies de terceros para mejorar tu experiencia. Puedes elegir aceptar o rechazar estas cookies. Si continúas navegando sin seleccionar una opción, consideraremos que aceptas el uso de cookies. Para cambiar tus preferencias visita la página de Ajustes. Para más información, consulta nuestra "
+    "cookie-acceptance": "Este sitio web utiliza cookies funcionales y de terceros para mejorar tu experiencia. Puedes aceptar o rechazar estas cookies. Si continúas navegando sin seleccionar una opción, asumiremos que aceptas el uso de cookies. Para cambiar tus preferencias, visita la página de Ajustes. Para más información, consulta nuestra "
   },
   "Activate": {
-    "error": "Ocurrió un error",
+    "error": "Ha ocurrido un error",
     "success": "Cuenta activada."
   },
   "Teacher": {
-    "no-rating": "Ninguna review ha sido hecha por un usuario hasta ahora. ¡Sé el primero!"
+    "no-rating": "Aún no hay reseñas de usuarios sobre este profesor. ¡Sé el primero en escribir una!"
   },
   "CreateReview": {
-    "clarte": "Claridad de las explicaciones",
+    "clarte": "Claridad/Métodos de explicación",
     "interaction_soutien": "Interacción y apoyo",
     "methodes": "Métodos de enseñanza",
     "justice": "Justicia en la evaluación",
     "ambiance": "Ambiente en clase",
-    "relation_eleves": "Relación con los alumnos",
     "gestion_temps": "Gestión del tiempo",
     "amabilite": "Amabilidad",
-    "gestion_colere": "Manejo de la ira",
+    "gestion_colere": "Gestión del enfado",
     "charge_travail": "Carga de trabajo",
     "distraction": "Distracción",
     "difficulte": "Nivel de dificultad de las clases",
+
     "ponctuel": "¿Es puntual?",
     "aide": "¿Ayuda en los exámenes?",
     "greves": "¿Participa en huelgas?",
     "punitions": "¿Aplica castigos?",
+
     "text_rating": "Comentario final",
     "tot_rating": "Calificación final",
+    "respect": "Para más información, por favor visita las reglas de la comunidad.",
+    "TeacherCTA": "Publicar una reseña sobre",
+
     "publication": "Publicación",
     "ofA": "de una",
-    "review": "Review",
-    "chooseTeacher": "Para comenzar, por favor elige el profesor al que deseas evaluar.",
-    "selectSubject": "Luego, selecciona la materia que enseña este profesor.",
+    "review": "Reseña",
+    "chooseTeacher": "Para comenzar, elige el profesor al que deseas evaluar.",
+    "selectSubject": "A continuación, selecciona la materia que enseña este profesor.",
     "selectYear": "¿En qué año enseña este profesor?",
-    "startEvaluation": "- Ahora podemos comenzar la evaluación. Completa los campos a continuación.",
-    "yesOrNoQuestions": "- Ahora, por favor responde las siguientes preguntas con sí o no",
-    "optionalComment": "- Tienes la opción de agregar un comentario (opcional). No se tolerarán insultos, amenazas o conductas inapropiadas.",
-    "textPlaceholder": "Haz clic para comenzar a escribir...",
+    "startEvaluation": "Ahora podemos comenzar la evaluación. Completa los siguientes campos.",
+    "yesOrNoQuestions": "Ahora, por favor, responde las siguientes preguntas con sí o no.",
+    "optionalComment": "Puedes añadir un comentario (opcional). No se tolerarán insultos, amenazas u otro comportamiento inapropiado.",
+    "textPlaceholder": "Haz clic para empezar a escribir...",
     "submit": "PUBLICAR"
   },
   "Error": {
     "maintenance": "El mantenimiento del sitio web comenzará en menos de 5 minutos...",
-    "fatal": "Ocurrió un error desconocido. Por favor, inténtalo de nuevo.",
-    "duplicate-review": "Una review sobre este profesor, materia y año ya ha sido creada por el usuario.",
-    "collision": "Ya creaste un contenido similar.",
-    "wrong-teacher": "El profesor seleccionado no es válido. Por favor, elige un profesor válido.",
-    "wrong-subject": "La materia seleccionada no es válida. Por favor, elige una materia válida.",
-    "wrong-year": "El año seleccionado no es válido. Por favor, elige un año válido.",
-    "incorrect-grade": "La calificación proporcionada es incorrecta. Las calificaciones deben estar entre 0 y 10.",
-    "incorrect-overall": "La calificación global es incorrecta. Debe estar entre 0 y 10.",
-    "wrong-login": "No se encontró ninguna cuenta activa con las credenciales proporcionadas. Verifica si has activado tu cuenta a través de tu correo.",
-    "request-reset-password": "No se realizó la solicitud. Inténtalo de nuevo.",
-    "404": "La página a la que intentas acceder no existe",
-    "ReviewFormIdentical": "Los valores no han sido cambiados",
-    "teacher-query": "Ocurrió un error al buscar profesores",
-    "text-rating-forbidden-characters": "Los caracteres utilizados (como caracteres especiales y acentos) en la review están prohibidos."
+    "fatal": "Ha ocurrido un error desconocido. Inténtalo de nuevo.",
+    "duplicate-review": "Ya has creado una reseña para este profesor, materia y año.",
+    "collision": "Ya has creado un contenido similar.",
+    "wrong-teacher": "El profesor seleccionado no es válido. Por favor, elige uno correcto.",
+    "wrong-subject": "La materia seleccionada no es válida. Por favor, elige una correcta.",
+    "wrong-year": "El año seleccionado no es válido. Por favor, elige uno correcto.",
+    "incorrect-grade": "La nota proporcionada no es válida. Debe estar entre 0 y 10.",
+    "incorrect-overall": "La calificación global no es válida. Debe estar entre 0 y 10.",
+    "wrong-login": "No se encontró una cuenta activa con esas credenciales. Verifica si activaste tu cuenta en tu correo.",
+    "request-reset-password": "No se pudo completar la solicitud. Inténtalo de nuevo."
   },
   "Success": {
-    "ReviewEdit": "Tu review ha sido editada",
-    "create-review": "La review ha sido creada con éxito",
+    "ReviewEdit": "Tu reseña ha sido modificada.",
+    "create-review": "La reseña se ha creado con éxito.",
     "signup": "Tu cuenta ha sido creada correctamente. Revisa tu correo para activarla.",
-    "login": "Te has conectado correctamente a tu cuenta",
-    "request-reset-password": "La solicitud se ha realizado. Revisa tu correo."
-  },
-  "Year": {
-    "0": "Terminal",
-    "1": "Primero",
-    "2": "Segundo",
-    "3": "Tercero",
-    "4": "Cuarto",
-    "5": "Quinto",
-    "6": "Sexto"
+    "login": "Has iniciado sesión correctamente."
   }
 }

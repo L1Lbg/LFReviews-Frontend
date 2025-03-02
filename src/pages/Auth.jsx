@@ -199,7 +199,7 @@ export default function Auth() {
                   className="h-12 !outline-0 !text-2xl shadow-[0_0_10px_rgba(255,255,255,0.5)] hover:!shadow-[0_0_20px_rgba(255,255,255,0.8)] transition-shadow duration-300"
  
                 >
-              {isSubmitting ? t("Auth.submitting") : t("Auth.button-signup")}
+              {isSubmitting ? t("Auth.submitting") : t("Auth.button-login")}
             </button>
               <GoogleButton />
             </div>

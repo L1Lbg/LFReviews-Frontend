@@ -9,10 +9,9 @@ export default function Review(props){
 
     const {reviewState, setReviewState} = useContext(CommunityContext)
     const {customFetch, email} = useContext(Context)
-    const [tempBlock, setTempBlock] = useState(false)
+    const [disabled, setDisabled] = useState(false)
     const [scale, setScale] = useState('100%') // to make animations
     const [userRelated, setUserRelated] = useState()
-    const [userLiked, setUserLiked] = useState(false)
     const like_url = '/Icons/Like.svg'
     const liked_url = '/Icons/Liked.svg'
     const dislike_url = '/Icons/Dislike.svg'
@@ -26,7 +25,6 @@ export default function Review(props){
     // change state every time reviewState is changed
     useEffect(()=>{
         setUserRelated(reviewState[props.review.id][0])
-        setUserLiked(reviewState[props.review.id][1])
     }, [reviewState])
 
 
@@ -48,13 +46,13 @@ export default function Review(props){
 
 
     const handleRelate = (valueParam) => {
-        if(tempBlock){
+        if(disabled){
             return;
         }
 
         let value = valueParam;
         let method = 'POST';
-        setScale('60%')
+        // setScale('60%')
 
 
         //prevent un-authed users
@@ -69,7 +67,14 @@ export default function Review(props){
             method = 'DELETE'
         }
 
-        setTempBlock(true)
+        setDisabled(true)
+        setReviewState({
+            ...reviewState,
+            [props.review.id]: [
+                value,
+                ...reviewState[props.review.id].slice(1) // Keep the rest of the array as is
+            ]
+        });
         customFetch(
             `/api/relatable/${props.review.id}`,
             {
@@ -79,7 +84,7 @@ export default function Review(props){
         )
         .then(
             data => {
-                setScale('100%')
+                // setScale('100%')
                 setReviewState({
                     ...reviewState,
                     [props.review.id]: [
@@ -87,21 +92,10 @@ export default function Review(props){
                         ...reviewState[props.review.id].slice(1) // Keep the rest of the array as is
                     ]
                 });
+                setDisabled(false)
             }
         )
     }
-
-
-
-
-
-    useEffect(()=>{
-        if(tempBlock){
-            setTimeout(()=>{
-                setTempBlock(false)
-            }, 2000)
-        }
-    }, [tempBlock])
 
     useEffect(()=>{
         let reviews = document.querySelectorAll('.Community-review')
@@ -138,7 +132,7 @@ export default function Review(props){
                             <p>-"{props.review.text_rating}"</p>
 
                             <div className="Community-category-review-relatable">
-                                <img style={{scale:scale}} src={likeImgSrc} alt="Like" onClick={()=>handleRelate(true)}/>
+                                <img style={{scale:scale}} src={likeImgSrc} alt="Like" id='Like' onClick={()=>handleRelate(true)}/>
                                 <div>
                                     <progress value={props.review.relatable} max='100'/>
                                     <div>
@@ -147,7 +141,7 @@ export default function Review(props){
                                         <p>{100 - props.review.relatable}%</p>
                                     </div>
                                 </div>
-                                <img style={{scale:scale}} src={dislikeImgSrc} alt="Dislike" onClick={()=>handleRelate(false)}/>
+                                <img style={{scale:scale}} src={dislikeImgSrc} alt="Dislike" id='Dislike' onClick={()=>handleRelate(false)}/>
                             </div>
                         </div>
                     </>

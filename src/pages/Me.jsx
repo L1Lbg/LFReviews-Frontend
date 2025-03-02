@@ -28,20 +28,28 @@ export default function Me(){
                 {t('Me.title')}
             </span>
             <div id="me-ranking">
-                <div>
+                {/* <div>
                     TOP #1
+                </div> */}
+                <div>
+                    {data.num} Reviews
                 </div>
-                <div>{data.num} Reviews</div>
             </div>
             <div id="me-stats">
-                <div>
-                    {t('Me.average')}: 
                     <div>
-                        <img src="/Icons/Star.svg" alt="Star" />
-                        <span>{parseFloat(data.average).toFixed(1)}</span>
-                    </div>
-                </div>
-                <div>{t('Me.popularity')}: {data.popularity}%</div>
+                            {t('Me.average')}: 
+                            <div>
+                                <img src="/Icons/Star.svg" alt="Star" />
+                            {
+                                    data.average != null ? (
+                                        <span>{parseFloat(data.average).toFixed(1)}</span>
+                                    ) : (
+                                        <span>?</span>
+                                    )
+                                }
+                            </div>
+                        </div>
+                <div>{t('Me.popularity')}: {data.popularity != null && `${data.popularity}%`}</div>
                 <div>{t('Me.joined')} {data.since}</div>
                 <a href="/me/reviews">{t('Me.myreviews')}</a>
                 <a href="/me/favorites">{t('Me.favorites')}</a>
