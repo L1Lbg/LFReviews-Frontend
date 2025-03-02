@@ -111,20 +111,21 @@
     transition: 0.5s;
     width: 10%;
 } 
-.Community-category-review-relatable > #Like{
+@media screen and (min-width:900px) {
+    .Community-category-review-relatable > #Like:hover{
+        transform:rotate(-5deg) translate(0px, -1px);
+    }
+    .Community-category-review-relatable > #Like:active{
+        transform:rotate(-10deg) translate(0px, -2px);
+    }
+    .Community-category-review-relatable > #Dislike:hover{
+        transform:rotate(-5deg) translate(0px, 1px);
+    }
+    .Community-category-review-relatable > #Dislike:active{
+        transform:rotate(-10deg) translate(0px, 2px);
+    }
 }
-.Community-category-review-relatable > #Like:hover{
-    transform:rotate(-5deg) translate(0px, -1px);
-}
-.Community-category-review-relatable > #Like:active{
-    transform:rotate(-10deg) translate(0px, -2px);
-}
-.Community-category-review-relatable > #Dislike:hover{
-    transform:rotate(-5deg) translate(0px, 1px);
-}
-.Community-category-review-relatable > #Dislike:active{
-    transform:rotate(-10deg) translate(0px, 2px);
-}
+
 #Community-input-form{
     display: grid;
     margin: auto;
@@ -302,6 +303,9 @@ progress::-webkit-progress-value {
     }
     .Community-category-review-relatable > img{
         height: 100%;
+    }
+    .Community-category-review-relatable {
+        width: 100%;
     }
     #Community-input-results > span > .TeacherStar > img {
         width: 30px;
