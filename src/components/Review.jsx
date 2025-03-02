@@ -128,7 +128,10 @@ export default function Review(props){
                             <p>-"{props.review.text_rating}"</p>
 
                             <div className="Community-category-review-relatable">
-                                <img  src={likeImgSrc ? likeImgSrc : '/Icons/Like.svg'} alt="Like" id='Like' onClick={()=>handleRelate(true)}/>
+                                <img  
+                                // src={likeImgSrc ? likeImgSrc : '/Icons/Like.svg'}
+                                src={dislikeImgSrc}
+                                alt="Like" id='Like' onClick={()=>handleRelate(true)}/>
                                 <div>
                                     <progress value={props.review.relatable} max='100'/>
                                     <div>
@@ -137,7 +140,10 @@ export default function Review(props){
                                         <p>{100 - props.review.relatable}%</p>
                                     </div>
                                 </div>
-                                <img  src={dislikeImgSrc ? dislikeImgSrc : '/Icons/Dislike.svg'} alt="Dislike" id='Dislike' onClick={()=>handleRelate(false)}/>
+                                <img  
+                                // src={dislikeImgSrc ? dislikeImgSrc : '/Icons/Dislike.svg'} 
+                                src={dislikeImgSrc}
+                                alt="Dislike" id='Dislike' onClick={()=>handleRelate(false)}/>
                             </div>
                         </div>
                     </>
