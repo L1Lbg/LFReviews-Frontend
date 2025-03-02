@@ -4,7 +4,6 @@ import { createContext, useContext, useEffect, useState } from 'react';
 import { Context } from './Root';
 import TeacherStar from '../components/TeacherStar';
 import CommunityCarousel from '../components/CommunityCarousel';
-import Teacher from './Teacher';
 
 
 export const CommunityContext = createContext();

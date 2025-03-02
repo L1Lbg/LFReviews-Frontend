@@ -42,7 +42,7 @@ export default function Review(props){
             setLikeImgSrc(like_url)
             setDislikeImgSrc(dislike_url)
         }
-    }, [userRelated, reviewState])
+    }, [userRelated])
     
     
 
@@ -70,13 +70,7 @@ export default function Review(props){
         }
 
         setDisabled(true)
-        setReviewState({
-            ...reviewState,
-            [props.review.id]: [
-                value,
-                ...reviewState[props.review.id].slice(1) // Keep the rest of the array as is
-            ]
-        });
+        setUserRelated(value);
         customFetch(
             `/api/relatable/${props.review.id}`,
             {

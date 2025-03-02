@@ -111,7 +111,7 @@
     transition: 0.5s;
     width: 10%;
 } 
-@media screen and (min-width:900px) {
+@media (min-width:900px) {
     .Community-category-review-relatable > #Like:hover{
         transform:rotate(-5deg) translate(0px, -1px);
     }
