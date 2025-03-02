@@ -10,7 +10,6 @@ export default function Review(props){
     const {reviewState, setReviewState} = useContext(CommunityContext)
     const {customFetch, email} = useContext(Context)
     const [disabled, setDisabled] = useState(false)
-    const [scale, setScale] = useState('100%') // to make animations
     const [userRelated, setUserRelated] = useState()
     const like_url = '/Icons/Like.svg'
     const liked_url = '/Icons/Liked.svg'
@@ -132,7 +131,7 @@ export default function Review(props){
                             <p>-"{props.review.text_rating}"</p>
 
                             <div className="Community-category-review-relatable">
-                                <img style={{scale:scale}} src={likeImgSrc} alt="Like" id='Like' onClick={()=>handleRelate(true)}/>
+                                <img  src={likeImgSrc} alt="Like" id='Like' onClick={()=>handleRelate(true)}/>
                                 <div>
                                     <progress value={props.review.relatable} max='100'/>
                                     <div>
@@ -141,7 +140,7 @@ export default function Review(props){
                                         <p>{100 - props.review.relatable}%</p>
                                     </div>
                                 </div>
-                                <img style={{scale:scale}} src={dislikeImgSrc} alt="Dislike" id='Dislike' onClick={()=>handleRelate(false)}/>
+                                <img  src={dislikeImgSrc} alt="Dislike" id='Dislike' onClick={()=>handleRelate(false)}/>
                             </div>
                         </div>
                     </>

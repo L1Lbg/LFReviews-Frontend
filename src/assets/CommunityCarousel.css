@@ -4,8 +4,26 @@
     --slide-size: 33vw;
 }
 
-@media (max-width:1000px){
+@media (max-width:1200px){
     .CommunityCarousel > .embla{
-      --slide-size:70%;
+      --slide-size:40%;
+    }
+  }
+
+  @media (max-width:900px){
+    .CommunityCarousel > .embla{
+      --slide-size:60%;
+    }
+  }
+
+  @media (max-width:500px){
+    .CommunityCarousel > .embla{
+      --slide-size:80%;
+    }
+  }
+
+  @media (max-width:350px){
+    .CommunityCarousel > .embla{
+      --slide-size:100%;
     }
   }

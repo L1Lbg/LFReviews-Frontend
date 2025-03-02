@@ -94,7 +94,7 @@
 .Community-review-content{
     background:var(--grey-light);
     margin: 1%;
-    height: 65%;
+    height: 75%;
     border-radius: 5px;
     word-break: break-all;
 }

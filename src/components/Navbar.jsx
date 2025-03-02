@@ -74,7 +74,7 @@ export default function Navbar(){
 
     return (
       <>
-        <div id="Navbar-Logo-Container">
+        <div id="Navbar-Logo-Container" >
           {pathname == "/" ? (
             <a
               onClick={() => {

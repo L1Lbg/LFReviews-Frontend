@@ -12,7 +12,9 @@ export const CommunityContext = createContext();
 
 export default function Community(){
     const [t] = useTranslation('global')
-    const [categories, setCategories] = useState([])
+    const [categories, setCategories] = useState([
+        
+    ])
     const { customFetch } = useContext(Context);
     const [teachers, setTeachers] =  useState([])
     const [inputFocus, setInputFocus] = useState(false);
