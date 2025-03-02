@@ -10,11 +10,11 @@ export default function Review(props){
     const {reviewState, setReviewState} = useContext(CommunityContext)
     const {customFetch, email} = useContext(Context)
     const [disabled, setDisabled] = useState(false)
-    const [userRelated, setUserRelated] = useState()
-    const like_url = '/Icons/Like.svg'
-    const liked_url = '/Icons/Liked.svg'
-    const dislike_url = '/Icons/Dislike.svg'
-    const disliked_url = '/Icons/Disliked.svg'
+    const [userRelated, setUserRelated] = useState(null)
+    const like_url = '/Icons/Relate.svg'
+    const liked_url = '/Icons/Related.svg'
+    const dislike_url = '/Icons/NotRelate.svg'
+    const disliked_url = '/Icons/NotRelated.svg'
 
 
     const [likeImgSrc, setLikeImgSrc] = useState(like_url)
@@ -130,7 +130,7 @@ export default function Review(props){
                             <div className="Community-category-review-relatable">
                                 <img  
                                 // src={likeImgSrc ? likeImgSrc : '/Icons/Like.svg'}
-                                src={dislikeImgSrc}
+                                src={likeImgSrc}
                                 alt="Like" id='Like' onClick={()=>handleRelate(true)}/>
                                 <div>
                                     <progress value={props.review.relatable} max='100'/>
@@ -141,8 +141,7 @@ export default function Review(props){
                                     </div>
                                 </div>
                                 <img  
-                                // src={dislikeImgSrc ? dislikeImgSrc : '/Icons/Dislike.svg'} 
-                                src={dislikeImgSrc}
+                                src={dislikeImgSrc} 
                                 alt="Dislike" id='Dislike' onClick={()=>handleRelate(false)}/>
                             </div>
                         </div>
