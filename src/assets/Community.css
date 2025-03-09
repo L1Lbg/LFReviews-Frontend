@@ -111,20 +111,6 @@
     transition: 0.5s;
     width: 10%;
 } 
-@media (min-width:900px) {
-    .Community-category-review-relatable > #Like:hover{
-        transform:rotate(-5deg) translate(0px, -1px);
-    }
-    .Community-category-review-relatable > #Like:active{
-        transform:rotate(-10deg) translate(0px, -2px);
-    }
-    .Community-category-review-relatable > #Dislike:hover{
-        transform:rotate(-5deg) translate(0px, 1px);
-    }
-    .Community-category-review-relatable > #Dislike:active{
-        transform:rotate(-10deg) translate(0px, 2px);
-    }
-}
 
 #Community-input-form{
     display: grid;
