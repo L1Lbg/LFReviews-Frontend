@@ -11,14 +11,14 @@ export default function Review(props){
     const {customFetch, email} = useContext(Context)
     const [disabled, setDisabled] = useState(false)
     const [userRelated, setUserRelated] = useState(null)
-    const like_url = '/Icons/Relate.svg'
-    const liked_url = '/Icons/Related.svg'
-    const dislike_url = '/Icons/NotRelate.svg'
-    const disliked_url = '/Icons/NotRelated.svg'
+    const like_url = '/Icons/Relate.svg';
+    const liked_url = '/Icons/Related.svg';
+    const dislike_url = '/Icons/NotRelate.svg';
+    const disliked_url = '/Icons/NotRelated.svg';
 
 
-    const [likeImgSrc, setLikeImgSrc] = useState(like_url)
-    const [dislikeImgSrc, setDislikeImgSrc] = useState(dislike_url)
+    const [likeImgSrc, setLikeImgSrc] = useState(like_url);
+    const [dislikeImgSrc, setDislikeImgSrc] = useState(dislike_url);
     const navigate = useNavigate()
 
     // change state every time reviewState is changed
@@ -30,17 +30,17 @@ export default function Review(props){
     // chandle UI changes when userRelated changes
     useEffect(()=>{
         if(userRelated == true){
-            setLikeImgSrc(liked_url)
-            setDislikeImgSrc(dislike_url)
+            setLikeImgSrc(liked_url);
+            setDislikeImgSrc(dislike_url);
         } else if(userRelated == null){
-            setLikeImgSrc(like_url)
-            setDislikeImgSrc(dislike_url)
+            setLikeImgSrc(like_url);
+            setDislikeImgSrc(dislike_url);
         } else if(userRelated == false){
-            setLikeImgSrc(like_url)
-            setDislikeImgSrc(disliked_url)
+            setLikeImgSrc(like_url);
+            setDislikeImgSrc(disliked_url);
         } else {
-            setLikeImgSrc(like_url)
-            setDislikeImgSrc(dislike_url)
+            setLikeImgSrc(like_url);
+            setDislikeImgSrc(dislike_url);
         }
     }, [userRelated])
     
@@ -88,7 +88,7 @@ export default function Review(props){
                         ...reviewState[props.review.id].slice(1) // Keep the rest of the array as is
                     ]
                 });
-                setDisabled(false)
+                setDisabled(false);
             }
         )
     }
@@ -128,10 +128,10 @@ export default function Review(props){
                             <p>-"{props.review.text_rating}"</p>
 
                             <div className="Community-category-review-relatable">
-                                <img  
-                                // src={likeImgSrc ? likeImgSrc : '/Icons/Like.svg'}
-                                src={likeImgSrc}
-                                alt="Like" id='Like' onClick={()=>handleRelate(true)}/>
+                                <img
+                                    src={likeImgSrc}
+                                    alt="Like" id='Like' onClick={()=>handleRelate(true)}
+                                />
                                 <div>
                                     <progress value={props.review.relatable} max='100'/>
                                     <div>
@@ -141,8 +141,9 @@ export default function Review(props){
                                     </div>
                                 </div>
                                 <img  
-                                src={dislikeImgSrc} 
-                                alt="Dislike" id='Dislike' onClick={()=>handleRelate(false)}/>
+                                    src={dislikeImgSrc}
+                                    alt="Dislike" id='Dislike' onClick={()=>handleRelate(false)}
+                                />
                             </div>
                         </div>
                     </>
