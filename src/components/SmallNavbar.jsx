@@ -24,7 +24,6 @@ export default function SmallNavbar(){
 
 
     const handleAuthClick = (e) => {
-      let dropdown = document.querySelector('#Navbar-Auth-Dropdown')
       if(dropdownDisplay == 'block'){
         setDropdownDisplay('none')
       } else {
@@ -54,7 +53,7 @@ export default function SmallNavbar(){
         }
         logo.setAttribute(
           "style",
-          "transform: translateX(-50%) scale(1.3); left:55%;"
+          "transform: translateX(-50%) scale(1.3); left:50%;"
         );
 
         setLastTimeout( 
