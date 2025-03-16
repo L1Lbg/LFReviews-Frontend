@@ -169,5 +169,149 @@
   },
   "Ranking": {
     "title": "Best Teachers"
+  },
+  "privacy_policy": {
+    "title": "Privacy Policy",
+    "intro": "LFMReviews (\"we\", \"us\", \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you visit or use our website ({{siteUrl}}).",
+    "section1": {
+      "title": "1. Information We Collect",
+      "personal_info": {
+        "title": "Personal Information:",
+        "description": "When you create an account, we collect your email address or information provided via social login (Google)."
+      },
+      "usage_data": {
+        "title": "Usage Data:",
+        "description": "We collect information about how you use our website, including your IP address."
+      },
+      "cookies": {
+        "title": "Cookies:",
+        "description": "We use third parties, who analyze site traffic, and deliver personalized content. For more details, please see our Cookie Policy ({{cookiePolicyUrl}})."
+      }
+    },
+    "section2": {
+      "title": "2. How We Use Your Information",
+      "account_management": {
+        "title": "Account Management:",
+        "description": "To manage your account and provide you with access to our platform."
+      },
+      "communications": {
+        "title": "Communications:",
+        "description": "To send you updates, notifications, and other communications related to our service."
+      },
+      "advertising": {
+        "title": "Advertising:",
+        "description": "We use advertising platforms, which may collect data to deliver personalized ads based on your interests."
+      }
+    },
+    "section3": {
+      "title": "3. Sharing Your Information",
+      "intro": "We do not sell your personal information. However, we may share your information with:",
+      "service_providers": {
+        "title": "Service Providers:",
+        "description": "Third parties who assist us in operating our website advertisements."
+      },
+      "legal_compliance": {
+        "title": "Legal Compliance:",
+        "description": "If required by law or in response to legal processes."
+      }
+    },
+    "section4": {
+      "title": "4. Your Rights",
+      "deletion": {
+        "title": "Deletion:",
+        "description": "You can request the deletion of your account and personal data."
+      },
+      "opt_out": {
+        "title": "Opt-Out:",
+        "description": "You can opt out of personalized ads by using tools provided by Google."
+      }
+    },
+    "section5": {
+      "title": "5. Data Security",
+      "description": "We take appropriate measures to protect your information from unauthorized access, alteration, or destruction."
+    },
+    "section6": {
+      "title": "6. Contact Us",
+      "description": "If you have any questions or concerns about this Privacy Policy, please contact us at {{email}}."
+    }
+  },
+  "cookie_policy": {
+    "title": "Cookie Policy",
+    "intro": "LFMReviews uses cookies and similar tracking technologies to enhance your experience on our website. This Cookie Policy explains what cookies are, how we use them, and how you can control their use.",
+    "section1": {
+      "title": "1. What Are Cookies?",
+      "description": "Cookies are small text files that are placed on your device when you visit a website. They help websites remember your preferences and track your browsing behavior."
+    },
+    "section2": {
+      "title": "2. Types of Cookies We Use",
+      "advertising": {
+        "title": "Advertising Cookies:",
+        "description": "Used by advertisers to deliver personalized ads based on your interests."
+      }
+    },
+    "section3": {
+      "title": "3. How We Use Cookies",
+      "advertising": {
+        "title": "Advertising:",
+        "description": "To deliver relevant ads and measure their effectiveness."
+      }
+    },
+    "section4": {
+      "title": "4. Managing Cookies",
+      "description": "You can control and manage cookies through your browser settings. However, disabling cookies may affect your ability to use certain features of our website."
+    },
+    "section5": {
+      "title": "5. Contact Us",
+      "description": "For any questions regarding this Cookie Policy, please contact us at {{email}}."
+    }
+  },
+  "tos": {
+    "title": "Terms of Service",
+    "section1": {
+      "title": "1. Introduction",
+      "description": "Welcome to LFMReviews ({{url}}), a platform where students can log in, create reviews about their teachers, and interact with reviews posted by others. By accessing or using our website, you agree to comply with and be bound by the following Terms of Service."
+    },
+    "section2": {
+      "title": "2. User Responsibilities",
+      "description": "When posting reviews and interacting with the platform, you agree to:",
+      "rules": {
+        "respect": "Treat teachers with respect. Avoid using harmful, offensive, or disrespectful language.",
+        "no_inappropriate": "Do not post any content that is sexually explicit, aggressive, or otherwise inappropriate.",
+        "laws": "Adhere to all applicable laws and guidelines when using the site."
+      },
+      "consequences": "Failure to follow these guidelines may result in the suspension or termination of your account."
+    },
+    "section3": {
+      "title": "3. Account Creation",
+      "description": "To participate, you must create an account using a valid email address or social login (Google). You are responsible for maintaining the confidentiality of your account information."
+    },
+    "section4": {
+      "title": "4. No Payments",
+      "description": "Our service is free to use. There are no payments required for any features on this platform."
+    },
+    "section5": {
+      "title": "5. Content Ownership",
+      "description": "Any content you post on LFMReviews belongs to you. We do not claim ownership of your reviews or comments. However, by posting content, you grant us a non-exclusive license to display it on our platform."
+    },
+    "section6": {
+      "title": "6. Account Termination",
+      "description": "We reserve the right to terminate or suspend your account if you violate our user responsibilities or for any other reason, at our discretion, without prior notice."
+    },
+    "section7": {
+      "title": "7. Dispute Resolution",
+      "description": "In the event of a dispute arising from or in connection with these Terms or your use of LFMReviews, you agree to first contact us directly at {{email}} to seek an informal resolution. If we are unable to resolve the dispute amicably, the matter will be referred to and resolved through binding arbitration in accordance with the rules of the Spanish Arbitration Court, except where prohibited by law."
+    },
+    "section8": {
+      "title": "8. Changes to the Terms",
+      "description": "We may update these Terms of Service from time to time. If we make significant changes, we will notify you via email. Continued use of the service after such changes implies your acceptance of the revised terms."
+    },
+    "section9": {
+      "title": "9. Governing Law",
+      "description": "These Terms of Service are governed by and construed in accordance with the laws of Spain. Any legal proceedings related to these Terms will be subject to the exclusive jurisdiction of the courts located in Spain."
+    },
+    "section10": {
+      "title": "10. Contact Us",
+      "description": "If you have any questions or concerns about these Terms, please contact us at {{email}}."
+    }
   }
 }

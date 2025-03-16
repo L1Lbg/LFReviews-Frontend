@@ -26,11 +26,11 @@ export default function Bottombar() {
     <div id="Bottombar" style={style}>
       <p>LFMReviews 2025</p>
       <div id="Bottombar-legal">
-        <a href="/regles-de-la-communaute">{t('Bottombar.communityRules')}</a>
+        {/* <a href="/regles-de-la-communaute">{t('Bottombar.communityRules')}</a> */}
         <a href="/politique-des-cookies">{t('Bottombar.cookiePolicy')}</a>
         <a href="/politique-de-privacite">{t('Bottombar.privacyPolicy')}</a>
-        <a href="/clause-non-responsabilite">{t('Bottombar.disclaimer')}</a>
-        <a href="/securite-protection">{t('Bottombar.securityProtection')}</a>
+        {/* <a href="/clause-non-responsabilite">{t('Bottombar.disclaimer')}</a> */}
+        {/* <a href="/securite-protection">{t('Bottombar.securityProtection')}</a> */}
         <a href="/conditions-service">{t('Bottombar.termsOfService')}</a>
       </div>
       <div id="Bottombar-links">

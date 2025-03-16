@@ -151,5 +151,149 @@
     "create-review": "La reseña se ha creado con éxito.",
     "signup": "Tu cuenta ha sido creada correctamente. Revisa tu correo para activarla.",
     "login": "Has iniciado sesión correctamente."
+  },
+  "privacy_policy": {
+    "title": "Política de privacidad",
+    "intro": "LFMReviews (\"nosotros\", \"nuestro\") se compromete a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y compartimos su información personal cuando visita o usa nuestro sitio web ({{siteUrl}}).",
+    "section1": {
+      "title": "1. Información que recopilamos",
+      "personal_info": {
+        "title": "Información personal:",
+        "description": "Cuando crea una cuenta, recopilamos su dirección de correo electrónico o la información proporcionada a través del inicio de sesión social (Google)."
+      },
+      "usage_data": {
+        "title": "Datos de uso:",
+        "description": "Recopilamos información sobre cómo usa nuestro sitio web, incluida su dirección IP."
+      },
+      "cookies": {
+        "title": "Cookies:",
+        "description": "Utilizamos terceros que analizan el tráfico del sitio y proporcionan contenido personalizado. Para más detalles, consulte nuestra Política de Cookies ({{cookiePolicyUrl}})."
+      }
+    },
+    "section2": {
+      "title": "2. Cómo usamos su información",
+      "account_management": {
+        "title": "Gestión de cuenta:",
+        "description": "Para gestionar su cuenta y proporcionarle acceso a nuestra plataforma."
+      },
+      "communications": {
+        "title": "Comunicaciones:",
+        "description": "Para enviarle actualizaciones, notificaciones y otras comunicaciones relacionadas con nuestro servicio."
+      },
+      "advertising": {
+        "title": "Publicidad:",
+        "description": "Utilizamos plataformas publicitarias que pueden recopilar datos para ofrecer anuncios personalizados según sus intereses."
+      }
+    },
+    "section3": {
+      "title": "3. Compartir su información",
+      "intro": "No vendemos su información personal. Sin embargo, podemos compartir su información con:",
+      "service_providers": {
+        "title": "Proveedores de servicios:",
+        "description": "Terceros que nos ayudan a operar nuestro sitio web y anuncios publicitarios."
+      },
+      "legal_compliance": {
+        "title": "Cumplimiento legal:",
+        "description": "Si la ley lo requiere o en respuesta a procesos legales."
+      }
+    },
+    "section4": {
+      "title": "4. Sus derechos",
+      "deletion": {
+        "title": "Eliminación:",
+        "description": "Puede solicitar la eliminación de su cuenta y sus datos personales."
+      },
+      "opt_out": {
+        "title": "Exclusión voluntaria:",
+        "description": "Puede optar por no recibir anuncios personalizados utilizando las herramientas proporcionadas por Google."
+      }
+    },
+    "section5": {
+      "title": "5. Seguridad de los datos",
+      "description": "Tomamos medidas adecuadas para proteger su información contra accesos no autorizados, alteraciones o destrucción."
+    },
+    "section6": {
+      "title": "6. Contáctenos",
+      "description": "Si tiene preguntas o inquietudes sobre esta Política de Privacidad, comuníquese con nosotros en {{email}}."
+    }
+  },
+  "cookie_policy": {
+    "title": "Política de Cookies",
+    "intro": "LFMReviews utiliza cookies y tecnologías de seguimiento similares para mejorar su experiencia en nuestro sitio web. Esta Política de Cookies explica qué son las cookies, cómo las usamos y cómo puede controlar su uso.",
+    "section1": {
+      "title": "1. ¿Qué son las cookies?",
+      "description": "Las cookies son pequeños archivos de texto que se colocan en su dispositivo cuando visita un sitio web. Ayudan a los sitios web a recordar sus preferencias y a rastrear su comportamiento de navegación."
+    },
+    "section2": {
+      "title": "2. Tipos de cookies que utilizamos",
+      "advertising": {
+        "title": "Cookies publicitarias:",
+        "description": "Utilizadas por anunciantes para ofrecer anuncios personalizados según sus intereses."
+      }
+    },
+    "section3": {
+      "title": "3. ¿Cómo usamos las cookies?",
+      "advertising": {
+        "title": "Publicidad:",
+        "description": "Para ofrecer anuncios relevantes y medir su efectividad."
+      }
+    },
+    "section4": {
+      "title": "4. Gestión de cookies",
+      "description": "Puede controlar y gestionar las cookies a través de la configuración de su navegador. Sin embargo, deshabilitar las cookies puede afectar su capacidad para usar ciertas funciones de nuestro sitio web."
+    },
+    "section5": {
+      "title": "5. Contáctenos",
+      "description": "Si tiene alguna pregunta sobre esta Política de Cookies, por favor contáctenos en {{email}}."
+    }
+  },
+  "tos": {
+    "title": "Términos de Servicio",
+    "section1": {
+      "title": "1. Introducción",
+      "description": "Bienvenido a LFMReviews ({{url}}), una plataforma donde los estudiantes pueden iniciar sesión, crear reseñas sobre sus profesores e interactuar con reseñas publicadas por otros. Al acceder o usar nuestro sitio web, aceptas cumplir con estos Términos de Servicio."
+    },
+    "section2": {
+      "title": "2. Responsabilidades del Usuario",
+      "description": "Al publicar reseñas e interactuar en la plataforma, aceptas:",
+      "rules": {
+        "respect": "Tratar a los profesores con respeto. Evitar el uso de lenguaje dañino, ofensivo o irrespetuoso.",
+        "no_inappropriate": "No publicar contenido sexualmente explícito, agresivo o inapropiado.",
+        "laws": "Cumplir con todas las leyes y normativas aplicables al usar el sitio."
+      },
+      "consequences": "El incumplimiento de estas normas puede resultar en la suspensión o eliminación de tu cuenta."
+    },
+    "section3": {
+      "title": "3. Creación de Cuenta",
+      "description": "Para participar, debes crear una cuenta con un correo electrónico válido o mediante el inicio de sesión social (Google). Eres responsable de mantener la confidencialidad de tu información de cuenta."
+    },
+    "section4": {
+      "title": "4. Sin Pagos",
+      "description": "Nuestro servicio es gratuito. No se requieren pagos para ninguna función de la plataforma."
+    },
+    "section5": {
+      "title": "5. Propiedad del Contenido",
+      "description": "Cualquier contenido que publiques en LFMReviews te pertenece. No reclamamos la propiedad de tus reseñas o comentarios. Sin embargo, al publicar contenido, nos otorgas una licencia no exclusiva para mostrarlo en nuestra plataforma."
+    },
+    "section6": {
+      "title": "6. Terminación de Cuenta",
+      "description": "Nos reservamos el derecho de suspender o eliminar tu cuenta si violas nuestras reglas de usuario o por cualquier otra razón, a nuestra discreción, sin previo aviso."
+    },
+    "section7": {
+      "title": "7. Resolución de Disputas",
+      "description": "En caso de disputa, primero contáctanos en {{email}} para intentar una resolución informal. Si no es posible, la disputa se resolverá mediante arbitraje vinculante según las reglas del Tribunal de Arbitraje de España."
+    },
+    "section8": {
+      "title": "8. Cambios en los Términos",
+      "description": "Podemos actualizar estos Términos de Servicio periódicamente. Si realizamos cambios importantes, te notificaremos por correo electrónico. El uso continuado del servicio después de dichos cambios implica tu aceptación de los términos revisados."
+    },
+    "section9": {
+      "title": "9. Legislación Aplicable",
+      "description": "Estos Términos de Servicio se rigen e interpretan de acuerdo con las leyes de España. Cualquier procedimiento legal relacionado con estos términos estará sujeto a la jurisdicción exclusiva de los tribunales ubicados en España."
+    },
+    "section10": {
+      "title": "10. Contacto",
+      "description": "Si tienes alguna pregunta o inquietud sobre estos Términos, contáctanos en {{email}}."
+    }
   }
 }

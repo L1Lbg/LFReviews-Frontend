@@ -178,5 +178,149 @@
   },
   "Ranking":{
     "title":"Meilleurs Professeurs"
+  },
+  "privacy_policy": {
+    "title": "Politique de confidentialité",
+    "intro": "LFMReviews (\"nous\", \"notre\") s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons et partageons vos informations personnelles lorsque vous visitez ou utilisez notre site web ({{siteUrl}}).",
+    "section1": {
+      "title": "1. Informations que nous collectons",
+      "personal_info": {
+        "title": "Informations personnelles :",
+        "description": "Lorsque vous créez un compte, nous collectons votre adresse e-mail ou les informations fournies via la connexion sociale (Google)."
+      },
+      "usage_data": {
+        "title": "Données d'utilisation :",
+        "description": "Nous collectons des informations sur votre utilisation de notre site web, y compris votre adresse IP."
+      },
+      "cookies": {
+        "title": "Cookies :",
+        "description": "Nous utilisons des tiers qui analysent le trafic du site et fournissent un contenu personnalisé. Pour plus de détails, veuillez consulter notre Politique en matière de cookies ({{cookiePolicyUrl}})."
+      }
+    },
+    "section2": {
+      "title": "2. Comment nous utilisons vos informations",
+      "account_management": {
+        "title": "Gestion du compte :",
+        "description": "Pour gérer votre compte et vous fournir un accès à notre plateforme."
+      },
+      "communications": {
+        "title": "Communications :",
+        "description": "Pour vous envoyer des mises à jour, des notifications et d'autres communications liées à notre service."
+      },
+      "advertising": {
+        "title": "Publicité :",
+        "description": "Nous utilisons des plateformes publicitaires qui peuvent collecter des données pour diffuser des publicités personnalisées en fonction de vos intérêts."
+      }
+    },
+    "section3": {
+      "title": "3. Partage de vos informations",
+      "intro": "Nous ne vendons pas vos informations personnelles. Cependant, nous pouvons les partager avec :",
+      "service_providers": {
+        "title": "Fournisseurs de services :",
+        "description": "Des tiers qui nous aident à exploiter notre site web et nos publicités."
+      },
+      "legal_compliance": {
+        "title": "Conformité légale :",
+        "description": "Si la loi l'exige ou en réponse à des procédures judiciaires."
+      }
+    },
+    "section4": {
+      "title": "4. Vos droits",
+      "deletion": {
+        "title": "Suppression :",
+        "description": "Vous pouvez demander la suppression de votre compte et de vos données personnelles."
+      },
+      "opt_out": {
+        "title": "Désinscription :",
+        "description": "Vous pouvez désactiver les publicités personnalisées en utilisant les outils fournis par Google."
+      }
+    },
+    "section5": {
+      "title": "5. Sécurité des données",
+      "description": "Nous prenons des mesures appropriées pour protéger vos informations contre tout accès non autorisé, modification ou destruction."
+    },
+    "section6": {
+      "title": "6. Contactez-nous",
+      "description": "Si vous avez des questions ou préoccupations concernant cette politique de confidentialité, veuillez nous contacter à {{email}}."
+    }
+  },
+  "cookie_policy": {
+    "title": "Politique de cookies",
+    "intro": "LFMReviews utilise des cookies et des technologies de suivi similaires pour améliorer votre expérience sur notre site Web. Cette politique de cookies explique ce que sont les cookies, comment nous les utilisons et comment vous pouvez contrôler leur utilisation.",
+    "section1": {
+      "title": "1. Qu'est-ce qu'un cookie ?",
+      "description": "Les cookies sont de petits fichiers texte placés sur votre appareil lorsque vous visitez un site Web. Ils aident les sites à se souvenir de vos préférences et à suivre votre comportement de navigation."
+    },
+    "section2": {
+      "title": "2. Types de cookies que nous utilisons",
+      "advertising": {
+        "title": "Cookies publicitaires :",
+        "description": "Utilisés par les annonceurs pour diffuser des publicités personnalisées en fonction de vos intérêts."
+      }
+    },
+    "section3": {
+      "title": "3. Comment utilisons-nous les cookies ?",
+      "advertising": {
+        "title": "Publicité :",
+        "description": "Pour diffuser des annonces pertinentes et mesurer leur efficacité."
+      }
+    },
+    "section4": {
+      "title": "4. Gestion des cookies",
+      "description": "Vous pouvez contrôler et gérer les cookies via les paramètres de votre navigateur. Cependant, la désactivation des cookies peut affecter votre capacité à utiliser certaines fonctionnalités de notre site Web."
+    },
+    "section5": {
+      "title": "5. Nous contacter",
+      "description": "Pour toute question concernant cette politique de cookies, veuillez nous contacter à {{email}}."
+    }
+  },
+  "tos": {
+    "title": "Conditions d'Utilisation",
+    "section1": {
+      "title": "1. Introduction",
+      "description": "Bienvenue sur LFMReviews ({{url}}), une plateforme où les étudiants peuvent se connecter, rédiger des avis sur leurs professeurs et interagir avec les avis publiés par d'autres. En accédant à notre site Web ou en l'utilisant, vous acceptez de vous conformer aux présentes Conditions d'Utilisation."
+    },
+    "section2": {
+      "title": "2. Responsabilités de l'Utilisateur",
+      "description": "En publiant des avis et en interagissant sur la plateforme, vous acceptez de :",
+      "rules": {
+        "respect": "Traiter les enseignants avec respect. Évitez tout langage offensant, nuisible ou irrespectueux.",
+        "no_inappropriate": "Ne pas publier de contenu sexuellement explicite, agressif ou inapproprié.",
+        "laws": "Respecter toutes les lois et réglementations applicables lors de l'utilisation du site."
+      },
+      "consequences": "Le non-respect de ces règles peut entraîner la suspension ou la suppression de votre compte."
+    },
+    "section3": {
+      "title": "3. Création de Compte",
+      "description": "Pour participer, vous devez créer un compte en utilisant une adresse e-mail valide ou une connexion sociale (Google). Vous êtes responsable de la confidentialité de vos informations de compte."
+    },
+    "section4": {
+      "title": "4. Aucune Paiement",
+      "description": "Notre service est gratuit. Aucun paiement n'est requis pour utiliser les fonctionnalités de cette plateforme."
+    },
+    "section5": {
+      "title": "5. Propriété du Contenu",
+      "description": "Tout contenu que vous publiez sur LFMReviews vous appartient. Nous ne revendiquons aucun droit de propriété sur vos avis ou commentaires. Cependant, en publiant du contenu, vous nous accordez une licence non exclusive pour l'afficher sur notre plateforme."
+    },
+    "section6": {
+      "title": "6. Suppression de Compte",
+      "description": "Nous nous réservons le droit de suspendre ou de supprimer votre compte si vous ne respectez pas nos règles d'utilisation ou pour toute autre raison, à notre seule discrétion, sans préavis."
+    },
+    "section7": {
+      "title": "7. Résolution des Conflits",
+      "description": "En cas de litige découlant de ces Conditions ou de votre utilisation de LFMReviews, vous acceptez de nous contacter d'abord à {{email}} pour tenter une résolution amiable. Si aucune solution n'est trouvée, le différend sera soumis à un arbitrage obligatoire conformément aux règles du Tribunal d'Arbitrage Espagnol."
+    },
+    "section8": {
+      "title": "8. Modifications des Conditions",
+      "description": "Nous pouvons modifier ces Conditions d'Utilisation de temps à autre. En cas de modifications importantes, nous vous en informerons par e-mail. L'utilisation continue du service après de telles modifications implique votre acceptation des nouvelles conditions."
+    },
+    "section9": {
+      "title": "9. Droit Applicable",
+      "description": "Ces Conditions d'Utilisation sont régies et interprétées conformément aux lois espagnoles. Tout litige relatif à ces conditions sera soumis à la juridiction exclusive des tribunaux situés en Espagne."
+    },
+    "section10": {
+      "title": "10. Contact",
+      "description": "Si vous avez des questions ou des préoccupations concernant ces Conditions, veuillez nous contacter à {{email}}."
+    }
   }
 }
